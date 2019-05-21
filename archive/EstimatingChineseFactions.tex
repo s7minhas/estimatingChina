@@ -1,0 +1,124 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fullpage,array,amsmath,graphicx,psfrag,amssymb,subfigure,tabularx,booktabs}
+\usepackage{float}
+\usepackage{endnotes}
+\usepackage{setspace}
+\usepackage{rotating}
+\usepackage{natbib}
+\usepackage{colortbl}
+\usepackage{changebar}
+\usepackage{multicol}
+\usepackage{dcolumn}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{pifont}
+\usepackage[T1]{fontenc}
+\usepackage{multirow}
+%\usepackage[top=3cm, bottom=3cm, left=2.3cm, right=2.3cm]{geometry} 
+\pdfpagewidth=8.5in % for pdflatex
+\pdfpageheight=11in % for pdflatex
+
+\setcitestyle{authordate,round,semicolon,aysep={,},yysep={,}}
+\bibpunct[:]{(}{)}{;}{a}{,}{,}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@maketitle}
+  {\ifx\@empty\@dedicatory}
+  {\ifx\@empty\@date \else {\vskip3ex \centering\footnotesize\@date\par\vskip1ex}\fi
+   \ifx\@empty\@dedicatory}
+  {}{}
+\patchcmd{\@adminfootnotes}
+  {\ifx\@empty\@date\else \@footnotetext{\@setdate}\fi}
+  {}{}{}
+\makeatother
+\begin{document}
+
+\title{Exploring the Latent Space of Public Co-Occurrences: A Network Approach to Elite Politics in China}
+\author{Max Gallop}
+\author{Peter Gries} 
+\author{Narisong Huhe}
+\date{\today}
+
+\maketitle
+
+\begin{abstract}
+While the inner dynamics of political elites are key to our understanding of political developments in authoritarian regimes, scholars have long found it difficult to collect and analyze relational data on how the circle of inner elites evolves over time. In this study, we focus on the public co-occurrences of political elites in China, and introduce a latent space approach to exploring the shifts in their power-sharing dynamics. Specifically, we theorize public co-occurrences as ?foci,? around which various political activities are organized. Since elites? engagement in these foci is highly selective, their co-occurrences signal important information about elites? collusion and cooptation. Relying on the China Vitae database, which tracks the occurrences of over 200 leading Chinese officials, we systematically examine how the latent distances between them have changed under Xi?s administration.
+\end{abstract}
+
+\section{Introduction}
+\textcolor{red}{Both}
+\begin{itemize}
+\item Why we care about Chinese internal politics.
+\item Why its so hard to predict/understand.
+\item Possibility of serious shifts, so need for prediction.
+\end{itemize}
+%talk a bit about different models used
+\subsection{Lit Review}
+\textcolor{red}{Naris}
+\begin{itemize}
+\item Work on internal politics of autocracies
+\item Biographical stuff
+\item Historiographical/qualitative stuff
+\end{itemize}
+\section{Argument}
+\label{argument}
+\textcolor{red}{Both?}
+Why coappearance data matters.
+\begin{itemize}
+\item Ethnic Collusion
+\item Social Signaling
+\end{itemize}
+Important
+\section{Data and Methods}
+\subsection{Data}
+\textcolor{red}{Peter?}
+\begin{itemize}
+\item Discussion of coappearance data and its limitations.
+\item EDA of the data
+\end{itemize}
+\subsection{Methods}
+To estimate the latent factions of Chinese leaders we rely on two assumptions. First, as detailed in section \ref{argument}, that coappearances by these leaders carry some information about the leaders latent preferences and allegiances. Second, we treat these appearances as relational data that takes place in a network, and assume that there are interdepencies in these appearances. In general, social network analysis focuses on three types of dependencies -- first order dependencies are the tendencies of certain actors to be more active than others, for instance Xi Xinping will make more appearances overall, and thus have more coappearances, than the average Chinese offical; third order dependencies are the way that relationships between actors depend on the behavior of third parties, for example we cannot understand the relation between [NARIS ADD EXAMPLE HERE].\footnote{When networks are directed, we also need to account for second order dependencies, in particular reciprocity, but since we cannot determine which actor initiates a coappearance, we treat this as a symmetric network.}
+
+In particular, our analysis focuses on the role of third order dependencies, and their ability to characterize, not just the relationship between two actors, but the general factions and allegiances in the system. The model we use, in particular, can account for two important types of third-order dependencies -- stochastic equivalence and homophily. Stochastic equivalence refers to the idea that there are communities of nodes in a network, and actors within a community act similarly towards those in other communities. Thus the community membership of an actor provides us with information on how that actor will act towards others in the network. Put more concretely, a pair of actors $ij$ are stochastically equivalent if the probability of $i$ relating to, and being related to, by every other actor is the same as the probability for $j$ \citep{anderson:etal:1992}. An example of stochastic equivalence might be two actors who share a powerful patron, and are thus more likely to make appearances with that patron, and less likely to coappear with rivals of that patron. An additional dependence pattern that often manifests in networks is homophily -- the tendency of actors to form transitive links. The presence of homophily in a network implies that actors may cluster together because they share some latent attribute. In the context of clustering coappearance data, homophily might come from shared ideological preferences, or similarities in biography.
+
+We estimate these higher order dependence patterns using a latent factor model (LFM) that allows us to capture both homophily and stochastic equivalence \citep{hoff:2007,minhas:etal:2016:arxiv}. Using this model helps to ensure transitive relations in our results, if [EXAMPLE OF TRANSITIVITY FROM LEADERS HERE]. What is particularly useful to us is that this latent factor model accounts for these interdependencies by positioning actors in a $k$ dimensional latent vector space, in this space, actors which have their vectors pointed in similar dimensions are more likely to have similar preferences and be members of the same factions, and the angle between these actors vectors provide a measure of how similar the preferences and factional links are. This allows us not only to estimate the likelihood of coappearances, but also to map actors positions in the space, which we can then use to predict other factional behaviors. 
+
+We generate this measure by constructing $T$ different $n \by n$ matrices, where $T$ is our number of time periods, and $n$ our number of actors.\footnote{The number of actors can vary by time period.} The network cell $y_{ij}$ for time $T$ represents the number of coappearances between official $i$ and official $j$ in year $T$.\footnote{Note that this data is symmetric and so $y_{ij} = y_{ji}$ for all $i,j,T$. The approach we describe below has already been generalized to the case where $y_{ij} \neq y_{ji}$.}
+In order to obtain a lower-dimension relational measure of Chinese factions, we use the LFM separately for each time point: 
+\begin{align*}
+	Y &= f(\theta)\\
+	\theta &= \beta^{\top} X + Z \\
+	Z &= M + E  \\
+	M &= U \Lambda U^{\top}\text{, where } \\
+	&\qquad u_{i} \in \rm I\!R^{k} \text{ and } \\ 
+	&\qquad \Lambda \text{ is a } k \times k \text{ diagonal matrix}
+\end{align*}
+where $f(.)$ is a general link function corresponding to the distribution of $Y$ and $\beta^{\top}\mathbf{X}$ is the standard regression term for dyadic and nodal fixed effects. In this application, for the sake of parsimony we abstain from using fixed effects. However, if one was interested in estimating a measure of factions that accounted for, for example, seasonal variation in coappearances, we could have a model that parsed out the effect of seasons on the magnitude of coappearances. 
+
+The way this model accounts for network interdependencies is through decomposition of the error term $Z$. \citet{hoff:2009} notes that we can write $Z = M + E$ such that the matrix $E$ represents noise, and $M$ is systematic effects. By matrix theory, we can factorize $M$ into the product of two simpler matrices: $M = U \Lambda U^{\top}$, where $u_{i} \in \rm I\!R^{k}$ is a latent vector associated to node $i$ and $\Lambda$ is a $k \times k$ diagonal matrix. Thus under this framework a vector of latent characteristics are estimated for each actor, $u_{i} = \{u_{i,1}, \ldots, u_{i,k}\}$. Similarity in the latent factors between two actors, $u_{i} \approx u_{j}$, corresponds to how stochastically equivalent they are and the diagonal entries in $\Lambda$, $\lambda_{k} > 0 \text{ or } \lambda_{k} < 0$, determine the level of homophily (or antihomophily) in the network \citep{minhas:etal:2016:arxiv}.\footnote{A Bayesian procedure to estimate the LFM is available in the \pkg{amen} $\sf{R}$ package \citep{amenpkg}. }
+
+For our purposes, the key output is $U \Lambda U^{\top}$. This matrix provides us the effect of stochastic equivalence and homophily on official appearances. We can look at the matrix $U,$ an $n \times k$ matrix which represents each actors vector in the $k$-dimensional latent space. But key to interpreting this space is that it is non-Euclidean, as actor's latent positions are actually embedded within a k-dimensional hypersphere, and so we cannot simply look at distances in this space. Rather, the important measure here is an actors vector in this space, and the similarity between the vector of one actor and another.  Comparing the similarity of preferences between two states, $\{i,j\}$, can be accomplished by comparing the direction to which their respective factor vectors point. A commonly used metric for this sort of problem in the recommender system literature from computer science is the cosine of the angle formed by the latent vectors of both actors.\footnote{For a review of this literature see \citep{amatriain:etal:2015}.} We refer to this distance metric as latent angle distance. We refer to this distance metric as latent angle distance. Thus, if the estimated latent vectors of two actors are in the same direction, they are apt to have made appearances with similar partners. We measure this by looking at the absolute distance of the angles created by each officials position and the center of the latent space in a given year.
+
+\section{Latent Positions}
+\textcolor{red}{Naris}
+EDA of results.
+
+Discussion of how well they conform to our prior beliefs / face validity.
+
+Yearly shifts in data.
+\section{Prediction}
+\textcolor{red}{Max}
+Predicting recent rounds of promotions.
+
+Comparison to biographical approach.
+\section{Conclusion}
+\textcolor{red}{Both}
+What we learned
+
+What we need to do from here.
+
+
+\end{document}

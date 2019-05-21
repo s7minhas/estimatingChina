@@ -1,0 +1,4828 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{dcolumn}
+%\usepackage{indentfirst}
+\usepackage{parskip}
+\usepackage{booktabs}
+\date{}
+%\usepackage{endnotes}
+%\let\footnote=\endnote
+\usepackage{graphicx}
+\newcommand{\indep}{\rotatebox[origin=c]{90}{$\models$}}
+\renewcommand\thesection{\Roman{section}}
+\renewcommand\thesubsection{\Alph{subsection}}
+%\usepackage{tikz}  % main function for plotting game
+%\usetikzlibrary{calc}  % calculations of coordinates
+%\usetikzlibrary{arrows, automata}% LaTeX
+%\usepackage{rotating}
+\usepackage[ragged, bottom, multiple]{footmisc}
+\usepackage[colorlinks, urlcolor=blue, citecolor=blue, linkcolor=blue]{hyperref}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 2
+\tocdepth -2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes true
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\author -1949513326 "Narisong Huhe" hoohnaris@gmail.com
+\author -1696835126 "Max Gallop"
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{spacing}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+
+\series bold
+Who's in Charge, Who Do I Work With, and Who Are My Friends: A Latent Space
+ Approach to Understanding Elite Coappearance
+\change_inserted -1949513326 1530130131
+s
+\change_unchanged
+ in China
+\series default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The replication files will be made available online.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushleft}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+
+\change_inserted -1949513326 1529393723
+How the ruling elite arrange and maintain their power-sharing is key to
+ our understanding of authoritarian politics.
+ We propose a latent space framework to systematically analyze the dynamics
+ of elite power-sharing in authoritarian regimes.
+ We also introduce a 
+\change_unchanged
+novel dataset tracking appearances of elite Chinese Community Party (CCP)
+ members at political events
+\change_inserted -1949513326 1530216388
+.
+ Our new framework and data allow us to disentangle three key aspects of
+ elite power-sharing in authoritarian regimes: (1) who's in charge, (2)
+ who do I work with, and (3) who are my friends.
+ We empirically assess the three questions by computing elites' total appearance
+s, dyadic coappearances, and their latent network distance using a latent
+ factor network analysis of about 10000 appearance records of over 200 top
+ CCP elites from 2013 to 2017.
+ We test how well these three indicators fare in predicting elites’ appointments
+ in the leading small groups (LSGs) of the CCP Central Committee and the
+ Central Government.
+\change_unchanged
+
+\end_layout
+
+\begin_layout Abstract
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushleft}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{spacing}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+clearpage
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+footnotesize}{
+\backslash
+normalsize}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+footnotelayout}{
+\backslash
+raggedright
+\backslash
+doublespacing} % set spacing in footnotes
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+newlength{
+\backslash
+myfootnotesep}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+setlength{
+\backslash
+myfootnotesep}{
+\backslash
+baselineskip}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addtolength{
+\backslash
+myfootnotesep}{-
+\backslash
+footnotesep}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+setlength{
+\backslash
+footnotesep}{
+\backslash
+myfootnotesep} % set spacing between footnotes 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushleft}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+parindent}{2em}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+parskip}{0pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Only one in ten autocrats are toppled down by popular uprisings.
+ Most authoritarian rulers are instead ousted by regime insiders 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Svolik2012"
+literal "true"
+
+\end_inset
+
+.
+ How the ruling elite arrange and maintain their power-sharing is thus key
+ to our understanding of authoritarian politics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "BDMetal2003,Acemoglu2008a,Svolik2012"
+literal "true"
+
+\end_inset
+
+.
+ A burgeoning literature turns to authoritarian institutions (e.g., national
+ legislatures) and explores how institutionalization of power-sharing contribute
+s to authoritarian resilience 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g,"
+key "Brownlee2007,Gandhi2008,Magaloni2008,Magaloni2010,Boix2013a"
+literal "true"
+
+\end_inset
+
+, as well as economic growth 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g.,"
+key "Bizzarro2018"
+literal "true"
+
+\end_inset
+
+, social welfare provision 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g,"
+key "Miller2015b"
+literal "true"
+
+\end_inset
+
+, and accountable foreign polices 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g.,"
+key "Weeks2012"
+literal "true"
+
+\end_inset
+
+.
+ However, as stressed by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pepinsky2014"
+literal "true"
+
+\end_inset
+
+, a fundamental dilemma confronting this 
+\begin_inset Quotes eld
+\end_inset
+
+institutional turn
+\begin_inset Quotes erd
+\end_inset
+
+ is that these institutions are inherently endogenous to strategic interactions
+ of the ruling elite (also see 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Brancati2014a"
+literal "true"
+
+\end_inset
+
+).
+ That is, de facto cooperation and contention of the authoritarian elite
+ still hide behind the facade of formal institutions.
+\end_layout
+
+\begin_layout Standard
+Another group of scholars have adopted an alternative and elite-oriented
+ approach to uncovering the inner workings of authoritarian regimes.
+ Relying on a wide range of data like anecdotes, interviews, media coverage,
+ and biographical archives, these studies try to identify key elites and
+ analyze their social backgrounds, career patterns, and patronage ties 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g.,"
+key "Li1989,Levitsky2001,Albrecht2004,Perthes2004,Shih2010,Opper2015,Buehler2017"
+literal "true"
+
+\end_inset
+
+.
+ However, partly due to data limitations, we find few attempts to synthesize
+ 
+\change_deleted -1949513326 1530130079
+these
+\change_inserted -1949513326 1530130081
+different
+\change_unchanged
+ aspects of elite dynamics, leaving us with only a fragmented perspective
+ on power-sharing in authoritarian regimes.
+ Unfortunately, it is this lack of a systematic approach that fundamentally
+ constrains our understanding of authoritarian politics.
+\end_layout
+
+\begin_layout Standard
+In this article, we propose a latent space framework to systematically map
+ and analyze the dynamics of elite power-sharing in authoritarian regimes.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+To clarify, here we use the term of latent space in a generic sense, i.e.,
+ some area where elites with similar preference are in proximity to each
+ other.
+ In our later analysis, we treat the space as a latent factor space and
+ use the the Latent Factor Model 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hoff2005,Minhas2016a"
+literal "true"
+
+\end_inset
+
+, which is different from the Latent Space Model proposed by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hoff2002"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ We also introduce a new type of data that has yet to come to attention
+ of scholars of authoritarian politics, that is, elite appearance and coappearan
+ce at political events.
+ Our new framework and data allow us to disentangle and synthesize three
+ key aspects of elite power-sharing in authoritarian regimes: (1) who's
+ in charge, (2) who do I work with, and (3) who are my friends.
+ The question of 
+\begin_inset Quotes eld
+\end_inset
+
+who's in charge
+\begin_inset Quotes erd
+\end_inset
+
+ focuses on the power and influence of 
+\emph on
+individual
+\emph default
+ elites.
+ The answer to this question is of critical importance in authoritarian
+ regimes where formal political institutions are vulnerable to elites' manipulat
+ion.
+ Moving beyond individual and monadic elites, the question of 
+\begin_inset Quotes eld
+\end_inset
+
+who do I work with
+\begin_inset Quotes erd
+\end_inset
+
+ points to the 
+\emph on
+dyadic
+\emph default
+ relationship between a given pair of elites (e.g., collegial ties and patronage
+ connections), which serves as the very basis of coalitions and factions.
+ However, a simple dyadic 
+\begin_inset Quotes eld
+\end_inset
+
+who do I work with
+\begin_inset Quotes erd
+\end_inset
+
+ approach will, we argue, overlook the indirect and latent relationships
+ between elites and forgo important information about latent coalitions.
+ For instance, without a direct collegial or patronage connection, two elites
+ could still form a latent coalition because of their ties to a common friend.
+ The question of 
+\begin_inset Quotes eld
+\end_inset
+
+who are my friends
+\begin_inset Quotes erd
+\end_inset
+
+ then captures such indirect 
+\emph on
+latent
+\emph default
+ connections between elites.
+ Together, by jointly considering the monadic, dyadic, and latent attributes,
+ the three 
+\begin_inset Quotes eld
+\end_inset
+
+who
+\begin_inset Quotes erd
+\end_inset
+
+ questions reveal systematic dynamics of elite power-sharing in authoritarian
+ regimes.
+\end_layout
+
+\begin_layout Standard
+Our empirical analyses and tests are focused on the Chinese Communist Party
+ (CCP) regime.
+ While the CCP regime has been commonly accepted as one of the most institutiona
+lized and 
+\begin_inset Quotes eld
+\end_inset
+
+machine-like
+\begin_inset Quotes erd
+\end_inset
+
+ authoritarian regimes, many China scholars emphasize that institutional
+ rules are epiphenomenal to elite politics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Nathan1973,Tsou1976,Shih2010"
+literal "true"
+
+\end_inset
+
+.
+ After Xi Jinping became the general secretary of CCP in 2012, the interest
+ in elite power-sharing has been rekindled and become even more heated.
+ Xi's first term was marked with major elite reshuffles, swift institutional
+ changes, and wide-ranging policy alterations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Miller2014b,Naughton2014,Lampton2015,Shirk2018"
+literal "true"
+
+\end_inset
+
+.
+ These dramatic changes not only urge us to reassess CCP's intra-elite relations
+, but also make it an ideal laboratory to explore the three 
+\begin_inset Quotes eld
+\end_inset
+
+who
+\begin_inset Quotes erd
+\end_inset
+
+ questions.
+ Specifically, we utilize a latent factor network model 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Minhas2016a"
+literal "true"
+
+\end_inset
+
+ and analyze a unique database that tracks about 10000 appearance records
+ of over 200 top CCP elites from 2013 to 2017.
+ We attempt to answer the three 
+\begin_inset Quotes eld
+\end_inset
+
+who
+\begin_inset Quotes erd
+\end_inset
+
+ questions by computing elites' total appearances (i.e., 
+\begin_inset Quotes eld
+\end_inset
+
+who's in charge
+\begin_inset Quotes erd
+\end_inset
+
+), dyadic coappearances (i.e., 
+\begin_inset Quotes eld
+\end_inset
+
+who do I work with
+\begin_inset Quotes erd
+\end_inset
+
+), and, finally, their latent network distance (i.e., 
+\begin_inset Quotes eld
+\end_inset
+
+who are my friends
+\begin_inset Quotes erd
+\end_inset
+
+).
+ Together, our latent factor analysis of the appearance data presents a
+ possible avenue to disentangle and synthesize key aspects of elite power-sharin
+g in authoritarian regimes.
+\end_layout
+
+\begin_layout Standard
+To probe the validity of this approach, we examine how well these three
+ indicators fare in generating out of sample predictions of elites' appointments
+ in the leading small groups (LSGs) of the CCP Central Committee and the
+ Central Government
+\change_inserted -1949513326 1527068966
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Batke2017,Huhe2018a"
+literal "true"
+
+\end_inset
+
+
+\change_unchanged
+.
+ LSGs are an informal institutional arrangement of CCP that has not been
+ incorporated into charts of party or government organs.
+ However, they play a pivotal role in formulating, coordinating, and implementin
+g of important decisions across different segments and levels of the CCP
+ regime 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hamrin1992,Lieberthal1992a"
+literal "true"
+
+\end_inset
+
+.
+ LSGs not only ameliorate the regime's prolonged problem of political fragmentat
+ion, they can also be an effective vehicle for overpassing formal institutions
+ and asserting personal influences as shown by the infamous Central Cultural
+ Revolution Group (1966-69).
+ Recently, it has been found that Xi relied heavily on LSGs to push forward
+ institutional reforms and policy changes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Miller2014a,Naughton2014,Johnson2017,Lee2017,Shirk2018"
+literal "true"
+
+\end_inset
+
+.
+ Our tests then show that while elites' total appearances are strongly associate
+d with their appointments in LSGs memberships, their dyadic coappearances
+ bear a much weaker association.
+ Most notably, the best predictor of LSG membership is our latent measure
+ of network proximity.
+\end_layout
+
+\begin_layout Standard
+Our study contributes to the extant studies of authoritarian politics in
+ many ways.
+ First, our latent space framework (i.e., the three 
+\begin_inset Quotes eld
+\end_inset
+
+who
+\begin_inset Quotes erd
+\end_inset
+
+ questions) provides a possible approach to bridge and synthesize the fragmented
+ studies of the ruling elite in authoritarian regimes.
+ This 
+\change_deleted -1949513326 1530130725
+in turn 
+\change_unchanged
+allows us to develop a systematic 
+\change_deleted -1949513326 1530130734
+view
+\change_inserted -1949513326 1530130735
+assessment
+\change_unchanged
+ of their power-sharing patterns and dynamics.
+ Second, our approach explicitly highlights and models the latent relationships
+ between elites, which so far has received only scant scholarly attention.
+ As revealed in our analysis of LSG appointments, the incorporation of such
+ latent distances could significantly improve our assessment about elite
+ power-sharing.
+ Finally, our study introduces a new source of data, i.e., public appearances
+ of the elite.
+ The appearance data not only complements our existing data like news coverage
+ and biographical archives, but, more importantly, allows 
+\change_inserted -1949513326 1530130803
+for 
+\change_unchanged
+a systematic exploration of the dynamic and relational changes in elite
+ power-sharing.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+[I have another point.
+ But a bit shaky.
+ How do you think?] Finally, our test of the latent space framework against
+ the CCP's personnel appointment in its LSGs has been one of few empirical
+ studies [better wording?] that depict how authoritarian institutions form
+ and change are corresponded to
+\change_inserted -1696835126 1526844553
+.
+ I'm not sure I buy this claim, since we're not looking at change, just
+ a snapshot of LSGs at one moment in time.
+ -MG
+\change_deleted -1696835126 1526844532
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Literature Review: The Elite and Their Relationships
+\end_layout
+
+\begin_layout Standard
+How to understand the elite and their relationships behind the facade of
+ formal institutions has been one enduring question in social science.
+ For instance, the 
+\begin_inset Quotes eld
+\end_inset
+
+power elite
+\begin_inset Quotes erd
+\end_inset
+
+ thesis emerged in 1950s stimulated a heated debate on whether power in
+ America was concentrated on a small cohesive group of quasi-hereditary
+ and well-positioned elites 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hunter1953,Mills2000,Dahl1961"
+literal "true"
+
+\end_inset
+
+.
+ The debate in turn has significantly advanced our understanding about the
+ nature of democracy 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g.,"
+key "Dahl1971"
+literal "true"
+
+\end_inset
+
+.
+ In studies of authoritarian politics, scholars have been increasingly confronte
+d by the same problem, particularly after the recent development in studies
+ of authoritarian institutions.
+ Although recent theoretical works like 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Svolik2012"
+literal "true"
+
+\end_inset
+
+ provide us valuable insights to link authoritarian institutions with elite
+ contention and cooperation, we still lack a systematic framework to conceptuali
+ze and analyze the actual power-sharing dynamics in authoritarian regimes.
+\end_layout
+
+\begin_layout Standard
+Our lack of a systematic framework has much to do with the highly secretive
+ nature of authoritarian politics.
+ It restricts researchers to employing methods
+\change_inserted -1949513326 1528707876
+ 
+\change_unchanged
+such as
+\change_inserted -1949513326 1528707876
+ Hunter's 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "Hunter1953"
+literal "true"
+
+\end_inset
+
+ sociometric interviews
+\change_unchanged
+ using 
+\begin_inset Quotes eld
+\end_inset
+
+power elite
+\begin_inset Quotes erd
+\end_inset
+
+ debates
+\change_deleted -1949513326 1528707873
+like Hunter's 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "Hunter1953"
+literal "true"
+
+\end_inset
+
+ sociometric interviews
+\change_unchanged
+.
+ Many studies of authoritarian elites, therefore, have 
+\begin_inset Quotes eld
+\end_inset
+
+been based on anecdotal and impressionistic `readings of the tea leaves'
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+after "p. 137"
+key "Ishiyama2014"
+literal "true"
+
+\end_inset
+
+.
+ Given these limitations, a number of scholars have introduced novel empirical
+ approaches to explore different aspects of elite politics.
+ Such studies are particularly developed in the studies of the CCP elite,
+ and they largely fall into two separate lines of inquiries: (1) identifying
+ key actors (i.e., the positional approach) and (2) exploring their relations
+ (i.e., the relational approach).
+\end_layout
+
+\begin_layout Standard
+First, the positional approach focuses on 
+\emph on
+individual
+\emph default
+ elites and aims to assess their de facto positions within the CCP regimes.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jaros2017"
+literal "true"
+
+\end_inset
+
+ exemplifies this approach as they explore Xi's actual power and influence
+ by examining CCP's official newspaper coverage.
+ It is argued that the ruling elite usually rely on official media to signal
+ their political presence and influence to the lower-level officials and
+ the general public 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Huang2015b"
+literal "true"
+
+\end_inset
+
+.
+ Their coverage in official newspapers, therefore, can be used to infer
+ their ability to dominate the party-state.
+ Based on their collection and analysis of province-level party newspapers
+ between 2011 and 2014, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jaros2017"
+literal "true"
+
+\end_inset
+
+ find that Xi has received disproportionately more coverage over time, indicatin
+g a consolidating grip on power.
+ Such large-scale quantitative analysis of texts
+\change_deleted -1949513326 1530216432
+, therefore,
+\change_unchanged
+ allow us 
+\change_inserted -1949513326 1529053576
+to 
+\change_unchanged
+reveal ups and downs of key elites in a dynamic way.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For similar studies, see the review of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Ban2018"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ However, due to its focus on individual elites, this approach falls short
+ in uncovering the relations between CCP elites.
+\end_layout
+
+\begin_layout Standard
+The relational approach, on the other hand, examines 
+\emph on
+dyadic
+\emph default
+ affinity and ties between elites.
+ This empirical approach is rested on the thesis of factional politics.
+ It postulates that the political struggle between competing factions is
+ the key to our understanding of CCP elite politics, and a faction usually
+ grows out of patron-client relationships that are cultivated by a patron
+ through the career path 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pye1981,Nathan1995,Huang2000,Shih2010,Shih2012"
+literal "true"
+
+\end_inset
+
+.
+ Empirically, scholars rely on biographical archives to uncover such patron-clie
+nt relationships.
+ Based an extensive review, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Meyer2016"
+literal "true"
+
+\end_inset
+
+ identify four different empirical indicators of factional ties, i.e., broad
+ ties, complete work ties, early work ties, and restrictive work ties
+\change_deleted -1949513326 1530131218
+ (for details see Table 1, p.
+ 47)
+\change_unchanged
+.
+ They further examine how CCP elites' varying ties with the party secretary
+ general predict their promotion into the Central Committee.
+ Their analysis shows that while work ties with the secretary general consistent
+ly matter, non-work ties (e.g., a common educational background) sometimes
+ could also help.
+ In light of this, by steering our attention to factional ties associated
+ with key patrons, this approach helps us to move beyond the power core
+ and probe links across ruling elites.
+\end_layout
+
+\begin_layout Standard
+While these two approaches provide us important insights about elite dynamics
+ of the CCP regime, we find that some critical problems remain unresolved.
+ First and foremost, we still lack a conceptual framework to synthesize
+ different insights from the existing studies (e.g., dynamic changes of personal
+ powers on the one hand and abiding factional ties between patrons and clients
+ on the other).
+ This in turn hinders our systematic understanding of elite power-sharing
+\change_deleted -1949513326 1530131291
+ in China
+\change_unchanged
+.
+ Second and more specifically, our emphasis on key patrons and their direct
+ clients tend to leave much valuable information neglected.
+ This is mainly due to the importance and prevalence of 
+\emph on
+indirect
+\emph default
+ and 
+\emph on
+non-dyadic
+\emph default
+ relationships.
+ A client of a factional leader, for instance, could also serve as the patron
+ for other elites, forming a three-party relationship.
+ The existence of such indirect relationships not only significantly increases
+ the scope of factions, but, more importantly, generates a complex interdependen
+t network of elites.
+ Without a systemic study of such indirect relationships, we are unable
+ to answer a series of 
+\change_deleted -1949513326 1530131338
+similar
+\change_inserted -1949513326 1530131339
+important
+\change_unchanged
+ questions like hierarchies within factions or nuanced distinctions between
+ apathetic and antagonistic relationships.
+ Thus by using extant approaches, we are limited to only looking at direct
+ relationships rather than being able to holistically study the complete
+ system of affinity, patronage, and antipathy.
+ 
+\change_deleted -1949513326 1529053764
+If we want t
+\change_inserted -1949513326 1529053764
+T
+\change_unchanged
+o understand elite dynamics, and thus authoritarian politics writ large,
+ 
+\change_deleted -1949513326 1529053771
+it 
+\change_unchanged
+requires both new conceptual exploration and empirical strategies.
+\end_layout
+
+\begin_layout Section
+Elite Power-Sharing as a Latent Space
+\end_layout
+
+\begin_layout Standard
+In this study, we conceptualize the elite power-sharing in authoritarian
+ regimes as a latent space.
+ This latent space not only encompasses a collection of individual elites,
+ it subsumes all the relationships between them, direct or indirect.
+ In light of this, a latent space understanding could allow us to synthesize
+ both 
+\emph on
+positional
+\emph default
+ and 
+\emph on
+relational
+\emph default
+ attributes of the ruling elite and thus develop a systematic view about
+ power-sharing in authoritarian regime.
+ Yet, despite its apparent conceptual advantages, a latent space understanding
+ requires us to answer two critical questions: (1) how to capture it and
+ (2) how to analyze it.
+\end_layout
+
+\begin_layout Subsection
+Political Events and Power 
+\emph on
+Foci
+\end_layout
+
+\begin_layout Standard
+How to capture the power elite and their relationship has been a key front
+ of the power elite debate 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Domhoff2005"
+literal "true"
+
+\end_inset
+
+.
+ In 
+\emph on
+Who Governs? Democracy and Power in an American City
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "Dahl1961"
+literal "true"
+
+\end_inset
+
+, Dahl argues that the problem has risen from the obscure distinction between
+ the legal theories of power and the realities of power: 
+\begin_inset Quotes eld
+\end_inset
+
+the American creed of democracy and equality prescribes many forms and procedure
+s from which the actual practices of leaders diverge.
+ Consequently, to gain legitimacy for their actions leaders frequently surround
+ their covert behavior with democratic rituals
+\begin_inset Quotes erd
+\end_inset
+
+ (p.
+ 89).
+ Recognizing this, Dahl proposes to focus on political events and meetings
+ where the actual processes of influence are at work.
+ For instance, after observing local political nominations, Dahl finds that
+ 
+\begin_inset Quotes eld
+\end_inset
+
+the number of persons who have participated in these decisive negotiations
+ and influenced the outcome seems never to have been more than a half dozen
+ in recent years
+\begin_inset Quotes erd
+\end_inset
+
+ (p.
+ 105).
+ 
+\end_layout
+
+\begin_layout Standard
+In this study, we follow Dahl's approach and turn to what we call power
+ 
+\emph on
+foci
+\emph default
+, i.e., important political events and meetings as well as elites' appearances
+ at them.
+ The concept of foci is originally introduced by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Feld1981"
+literal "true"
+
+\end_inset
+
+ to explore people's complex and embedded social circles in a community.
+ A focus is usually defined as a social entity or event around which joint
+ activities are organized (e.g., voluntary organizations, hangouts, and families).
+ Since it is around these foci that individuals organize their social relations,
+ we could learn essential features of their latent social space by studying
+ the observable foci.
+ Similarly, we argue that political events like ceremonies, policy meetings
+\change_inserted -1949513326 1528379460
+,
+\change_unchanged
+ and 
+\change_deleted -1949513326 1528379465
+foreign travels
+\change_inserted -1949513326 1528707044
+state visits
+\change_unchanged
+ can be treated as power foci, around which the ruling elite signal and
+ manage their power relationships.
+ For instance, an elite's presence in a policy meeting would suggest her
+ or his involvement in the decision-making activities and thus convey valuable
+ information about the actual processes of influence.
+ As the ruling elite coordinate with each other via numerous such events,
+ we could approximate their latent space of power-sharing by examining how
+ these foci are interconnected.
+\end_layout
+
+\begin_layout Standard
+The interlocking network of power foci reveals both positional and relational
+ attributes about the ruling elite.
+ It is positional in its ability to uncover individual elites' relative
+ activeness and prominence in events where the actual processes of influence
+ are at work.
+ Moreover, the particular patterning of an elite's appearance defines her
+ or his points of reference in the nebulous ruling group.
+ This 
+\change_deleted -1949513326 1530131597
+then 
+\change_unchanged
+is consistent with Dahl's 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "Dahl1961"
+literal "true"
+
+\end_inset
+
+ emphasis on observ
+\change_inserted -1949513326 1530131611
+ing
+\change_deleted -1949513326 1530131614
+ation of
+\change_unchanged
+ decision-making activities.
+ The interlocking foci network is also relational.
+ Beyond specific events or individual elites, it shows how elites are connected
+ via a variety of political events.
+ Political elites intersect with each other within different political events,
+ which are created based on shared policy problems or personal affinities.
+ These links are not only able to channel important resources like information,
+ but also can support mechanisms through which elites monitor and sanction
+ each other.
+\change_inserted -1949513326 1526895902
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -1949513326 1526895910
+Finally, the interlocking foci network allows for dynamic realignment of
+ the ruling elite, which is key to works like 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Acemoglu2008a,Svolik2012"
+literal "true"
+
+\end_inset
+
+.[Shall we add this]
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Subsection
+Three 
+\change_deleted -1949513326 1530216595
+'
+\change_inserted -1949513326 1530216599
+
+\begin_inset Quotes eld
+\end_inset
+
+
+\change_unchanged
+Who
+\change_deleted -1949513326 1530216601
+'
+\change_inserted -1949513326 1530216601
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\change_unchanged
+ Questions in a Latent Space
+\end_layout
+
+\begin_layout Standard
+So how can we approximate the latent space of power-sharing from the interlockin
+g foci network? In this study, we treat the foci network as a product of
+ both stochastic and strategic factors.
+ We further disaggregate the strategic factors into three questions — i.e.,
+ who's in charge, who do I work with, and who are my friends, which correspond
+ to the individual level characteristics, dyadic links, and latent affinities.
+ Generally speaking, our approach can be summarized as follows: after controllin
+g for random noise, powerful elites (i.e., who's in charge) are more likely
+ to make appearances; elites who are in the same and related policy domains
+ (i.e., who do I work with) are more likely to appear together; and finally
+ elites who share latent affinities (i.e., who are my friends) are more likely
+ to show up together.
+ Together, the 'three' who questions help us to approximate the latent space
+ of elite power-sharing.
+\end_layout
+
+\begin_layout Standard
+The first two who questions are quite consistent with the existing studies
+ of elite politics.
+ Similar to such positional studies as 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jaros2017"
+literal "true"
+
+\end_inset
+
+, the question of who's in charge is focused on network dynamics that are
+ stemmed from characteristics of individual elites.
+ For instance, certain type of actors tend to be more active in initiating
+ connections.
+ In our case of elite politics, this suggests that powerful elites are more
+ likely to preside and participate in important ceremonies and meetings.
+ From the network analysis perspective, this greater tendency of certain
+ actors to undertake certain behaviors is usually referred as the first-order
+ dependency 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hoff2005,Kenny2006"
+literal "true"
+
+\end_inset
+
+.
+ In light of this, we expect, for example, Xi Jinping is simply going to
+ make more appearances in aggregate than would a junior CCP elite.
+ That is, if we compare two possible elites, a third person is 
+\emph on
+ceteris paribus
+\emph default
+ more likely to make a coappearance with Xi than with the junior CCP elite.
+ On the other hand, the second who question examines if two elites attend
+ the same event.
+ Given its focus on the observable direct and dyadic links, this question
+ follows the similar approach like 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Shih2010"
+literal "true"
+
+\end_inset
+
+.
+ The question of 
+\begin_inset Quotes eld
+\end_inset
+
+who do I work with
+\begin_inset Quotes erd
+\end_inset
+
+ then highlights whether there is a direct coordination and collaboration
+ between a pair of elites.
+ 
+\end_layout
+
+\begin_layout Standard
+However, what we emphasize in this study is that we cannot equate 
+\begin_inset Quotes eld
+\end_inset
+
+who do I work with
+\begin_inset Quotes erd
+\end_inset
+
+ with 
+\begin_inset Quotes eld
+\end_inset
+
+who are my friends.
+\begin_inset Quotes erd
+\end_inset
+
+ Simply using direct and dyadic links as a proxy of the latent affinity
+ could lead to two types of errors, the incorrect rejection of a true friend
+ and the false acceptance of a real enemy.
+ A simply example of the first error is an indirect patronage relationship
+ which involves a patron, a client, and a sub-client.
+ If we rely solely on dyadic coappearance, we may end up in wrongly rejecting
+ the relationship between the patron and sub-client.
+ The second error could also occur in a three-party relationship when an
+ elite share links with two rival patrons.
+ In this case, we could run into either a false conclusion or no conclusion
+ at all.
+ Provided with these possible errors, some scholars have questioned the
+ validity of factional studies based on dyadic analyses.
+ For example, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Miller2015d"
+literal "true"
+
+\end_inset
+
+, a long-time observer of CCP elite politics, points to two problematic
+ cases (i.e., Liu Yunshan and Li Yuanzhao), both of whom share strong ties
+ with competing Jiang and Hu factions.
+ Without a consistent criterion, she argues that 
+\begin_inset Quotes eld
+\end_inset
+
+in the Xi era, faction-based analyses frequently rest on assertions of factional
+ association that are tenuous, arbitrary, and at times peculiarly fungible
+\begin_inset Quotes erd
+\end_inset
+
+ (p.
+ 7).
+\end_layout
+
+\begin_layout Standard
+In this study, we argue that the above problems stem from the prevalence
+ of indirect ties
+\change_inserted -1949513326 1526980819
+ in elite politics
+\change_unchanged
+, and one remedy is to examine the more complex and non-dyadic relationships
+\change_inserted -1949513326 1527063418
+ like the aforementioned three-party transitivity problems
+\change_unchanged
+.
+ We 
+\change_inserted -1949513326 1527063383
+thus turn to 
+\change_deleted -1949513326 1527062962
+treat 
+\change_unchanged
+the question of 
+\begin_inset Quotes eld
+\end_inset
+
+who are my friends
+\change_inserted -1949513326 1527063383
+,
+\change_unchanged
+
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\change_inserted -1949513326 1527063383
+which is commonly accepted 
+\change_unchanged
+as the third order dependency
+\change_deleted -1949513326 1527062989
+, which induce such non-dyadic dynamics lik
+\change_inserted -1949513326 1527063383
+ in network analysis
+\change_deleted -1949513326 1527062989
+e transitivity and clusters
+\change_unchanged
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -1949513326 1529054795
+The second-order dependency usually refers to reciprocity, which does not
+ apply to our case here.
+\end_layout
+
+\end_inset
+
+
+\change_deleted -1696835126 1526996398
+ 
+\change_deleted -1949513326 1526981134
+In particular we focus on two types of third order dependencies
+\change_deleted -1696835126 1526996398
+, i.e., 
+\change_deleted -1949513326 1527063025
+–
+\change_inserted -1949513326 1529054671
+ Unlike first-order dependencies that are associated with attributes of
+ individual actors, such high-dimensional dependencies usually arise from
+ mechanisms like 
+\change_unchanged
+homophily and stochastic equivalence.
+ Homophily is the tendency for actors who share unobserved characteristics,
+ for example their 
+\change_deleted -1949513326 1526981146
+preferences on corruption policy
+\change_inserted -1949513326 1527063383
+patron-client linkages
+\change_unchanged
+, are more likely to be linked and make coappearances than actors that do
+ not share those characteristics.
+ Stochastic equivalence is the idea that actors might have similar roles
+ in the network, and thus be more or less likely to make appearances with
+ common coalitions.
+ If two elites in China are both proteges of Xi Jinping, then they are both
+ more likely to make co-appearances with Xi and his other proteges, and
+ less likely to make co-appearances with Xi's rivals and his rival
+\change_inserted -1949513326 1527064594
+s
+\change_unchanged
+'
+\change_deleted -1949513326 1527064599
+s
+\change_unchanged
+ proteges.
+
+\change_inserted -1696835126 1526918953
+ 
+\change_inserted -1949513326 1527063383
+Therefore, a systematic study of such 
+\change_unchanged
+indirect ties
+\change_inserted -1949513326 1527063383
+ helps us 
+\change_unchanged
+to 
+\change_inserted -1949513326 1527063383
+understand the complex interdependencies between elites and thus provides
+ a more accurate answer to the question of 
+\begin_inset Quotes eld
+\end_inset
+
+who are my friends.
+\begin_inset Quotes erd
+\end_inset
+
+
+\change_deleted -1949513326 1526982273
+These are not the only types of third order dependencies, but they are particula
+rly useful for our purposes for two reasons: first they correspond well
+ to our understanding of factional politics, and second we have the ability
+ to estimate them.
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 24bp
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1949513326 1530132013
+To sum up, in this study we propose to conceptualize the elite power-sharing
+ as a latent space, which allows us to synthesize both of its positional
+ attributes and relational dynamics.
+ We further argue that we can approximate this latent space by examining
+ how power foci (i.e., political events and elites' appearance at them) are
+ interconnected.
+ Finally, we highlight the three who questions we need to answer in this
+ approximation.
+ In the following parts, we introduce our empirical strategies and discuss
+ how the approach could help shed light on the development of such informal
+ institutions as LSGs.
+\change_unchanged
+
+\end_layout
+
+\begin_layout Section
+Data
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1949513326 1530132116
+In this study, we rely on a unique database from the China Vitae project,
+ which tracks the public appearances of the CCP elites.
+ We focus on the time period between January 1 2013 and January 1 2017,
+ and there are about 10
+\change_unchanged
+,
+\change_inserted -1949513326 1530132116
+000 appearance records of over 200 elites.
+ This allows us to systematically examine the elite power-sharing in Xi's
+ first term.
+ Table 1 presents a small sample of our dataset and reports the date, the
+ event, and elites in attendance.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -1949513326 1529066516
+Further information about the event locations, topics raised, and sources
+ are also available.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ From Table 1, we can find our dataset captures how top CCP elites structured
+ their power relationships via a variety of political activities, ranging
+ from the civil-military unity meeting to the China-US summit.
+ As argued above, these power foci constitute an interlocking network of
+ events and elites, and Figure 1.a shows how the six sample events in Table
+ 1 could form a simple interlocking network.
+ Since our main focus is elite relationships, we then extract the elite
+ coappearance network as shown in Figure 1.b, and this coappearance network
+ serves as the starting point of our later analyses.
+\change_deleted -1949513326 1529062836
+In recently years, scholars have increasingly rely on relational data to
+ explore the complex interactions among political elites.
+ Most quantitative research of network analysis in political science relies
+ on carefully designed survey to collect relational data.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Huhe2017b"
+literal "true"
+
+\end_inset
+
+, for instance, conducted extensive survey of delegates of EU member states
+ and explore how their cooperation patterns evolve over time in the EU Council.
+ While techniques for network data collection have yielded fruitful relational
+ data sets thus far, besides the apparent access problem, two limitations
+ stand out in using survey approach to assemble relational data in non-democraci
+es.The first is respondent-induced measurement error.
+ Though measurement error occurs in all social network research, designs
+ that rely on self-reports are particularly vulnerable 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wasserman1994"
+literal "true"
+
+\end_inset
+
+.
+ The validity of self-reported social ties is threatened by respondent bias
+ in whom subjects choose to report as their friends, especially when dealing
+ with political elites.
+ Archival-based methods solve these problems by capturing behavioral rather
+ than reported ties.
+ Yet, these techniques require an identifiable and consistent corpus of
+ text to analyze that limits these techniques to studies of presidents,
+ legislators, party affiliates, and judges.
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\change_inserted -1949513326 1526975299
+
+\series bold
+[Table 1 is about here.]
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\change_inserted -1949513326 1529067812
+A s
+\change_unchanged
+elected 
+\change_inserted -1949513326 1529067819
+sample of 
+\change_unchanged
+political events
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+small
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{p{1in}p{3in}p{2in}}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+
+\backslash
+[-1.8ex]
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]
+\end_layout
+
+\begin_layout Plain Layout
+
+   Date & Event & Attendee 
+\backslash
+
+\backslash
+    
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+tt{2013-01-25}  & 
+\backslash
+tt{Vice-Chairman of the Central Military Commission calls for efforts to
+ promote unity among army, government and the people} & 
+\backslash
+tt{Zhang Gaoli, Xu Qiliang}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    &  &  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+tt{2013-02-07}  & 
+\backslash
+tt{Xi Jinping urges 
+\backslash
+#CPC to accept criticism and be receptive to the views of non-communists}
+ & 
+\backslash
+tt{Xi Jinping, Li Keqing, Yu Zhengsheng}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    &  &  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+tt{2013-03-18}  & 
+\backslash
+tt{Xi Jinping endorses work of Hong Kong 
+\backslash
+#HK, 
+\backslash
+#Macao governments 
+\backslash
+#China} & 
+\backslash
+tt{Xi Jinping, Zhang Dejiang, Li Yuanchao, Yang Jiechi}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    &  &  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+tt{2013-04-14}  & 
+\backslash
+tt{Premier stresses foresight in economic policymaking 
+\backslash
+#China} & 
+\backslash
+tt{Li Keqiang, Zhang Gaoli, Ma Kai, Liu Yandong}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    &  &  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+tt{2013-05-20}  & 
+\backslash
+tt{Chinese Premier visits memorial of Mahatma Gandhi in New Delhi 
+\backslash
+#India 
+\backslash
+#China} & 
+\backslash
+tt{Li Keqiang, Wang Yi}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    &  &  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+tt{2013-06-07}  & 
+\backslash
+tt{Xi, Obama meet for 1st summit 
+\backslash
+#China 
+\backslash
+#USA} & 
+\backslash
+tt{Xi Jinping, Wang Yi}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   ...
+ & ...
+  & ...
+ 
+\backslash
+
+\backslash
+ 
+\backslash
+
+\backslash
+[-1.8ex]     
+\backslash
+hline 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\change_inserted -1949513326 1529062544
+
+\series bold
+[Figure 1 is about here.]
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/data_fig1.pdf
+	width 2.5in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/data_fig2.pdf
+	width 2.5in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The interlocking networks of power foci
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+[Figure 
+\change_inserted -1949513326 1529068507
+2
+\change_unchanged
+ is about here.]
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/freq.pdf
+	width 5in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Total appearances (gray), Xi (red), and Li (blue)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1949513326 1529071004
+After constructing the complete coappearance network, we can answer the
+ questions of 
+\begin_inset Quotes eld
+\end_inset
+
+who's in change
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+who do I work with
+\begin_inset Quotes erd
+\end_inset
+
+ by calculating elites' total appearances and coappearances.
+ Figure 2 plots the total number of elite appearances (gray), as well as
+ those associated with Xi Jinping (red) and Li Keqiang (blue) respectively.
+ A quick examination shows a consistent annual pattern.
+ There are much fewer elite appearances in February and August, and their
+ activities peak in March and September.
+ While the low points in springs are mainly due to the Chinese new year,
+ those in August have a lot to do with the CCP's tradition of Beidaihe retreat
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Miller2014c"
+literal "true"
+
+\end_inset
+
+.
+ A comparison of Xi and Li's appearances points to some interesting changes.
+ In 2013 and 2014, we can find that their total appearances 
+\change_unchanged
+frequently intersected
+\change_inserted -1949513326 1529071004
+.
+ Yet starting from 2015 Xi has made markedly more appearances.
+ This corroborates with 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jaros2017"
+literal "true"
+
+\end_inset
+
+ that Xi has significantly consolidated his power in his first term.
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/Xi_Li.pdf
+	width 5in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Xi and Li
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/Xi_ZG.pdf
+	width 5in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Xi and Zhang
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Coappearance
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+[Figure 
+\change_inserted -1949513326 1529069110
+3
+\change_unchanged
+ is about here.]
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1949513326 1529071054
+In Figure 3, 
+\change_deleted -1949513326 1529071056
+We furt
+\change_inserted -1949513326 1529071463
+we 
+\change_deleted -1949513326 1529071056
+her 
+\change_unchanged
+plot 
+\change_inserted -1949513326 1529070838
+and contrast 
+\change_unchanged
+two pairs of coappearances
+\change_deleted -1949513326 1529071067
+ in Figure 2, that is
+\change_unchanged
+, Xi-Li and Xi-Zhang.
+\change_inserted -1949513326 1529071219
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1949513326 1530132354
+Zhang Gaoli was one of the seven members of the Politburo Standing Committee,
+ who also served as the first-ranked Vice Premier.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ In Fig
+\change_inserted -1949513326 1529071568
+ure
+\change_deleted -1949513326 1529071558
+.
+
+\change_unchanged
+ 
+\change_deleted -1949513326 1529071562
+2
+\change_inserted -1949513326 1529071562
+3
+\change_unchanged
+a, while the red line indicates the share of Xi-Li coappearance to Xi's
+ total appearance, and the dashed blue line denotes the share of their coappeara
+nce to Li
+\change_inserted -1949513326 1529071524
+'s
+\change_unchanged
+.
+ 
+\change_deleted -1949513326 1529071530
+A contrast of these two lines then reveals interesting changes over time
+\change_inserted -1949513326 1529071639
+From Figure 3.a, we can find
+\change_deleted -1949513326 1529071645
+.
+ First,
+\change_inserted -1949513326 1529071650
+ that 
+\change_deleted -1949513326 1529072126
+ 
+\change_unchanged
+the two lines intersected throughout the four year
+\change_inserted -1949513326 1529072601
+s
+\change_deleted -1949513326 1529072604
+ time window
+\change_inserted -1949513326 1529072272
+, 
+\change_deleted -1949513326 1529071701
+.
+ Yet, we can find that for both Xi and Li,
+\change_inserted -1949513326 1529072131
+and
+\change_unchanged
+ their shares of coappearances have declined 
+\change_deleted -1949513326 1530132411
+steadily 
+\change_unchanged
+over time.
+ 
+\change_inserted -1949513326 1529072948
+In other words, for both Xi and Li, their coappearances account for similar
+ weights in their total activities, though they were gradually departing
+ away from each other.
+ However, Xi-Zhang coappearances in Figure 2b show a different trend.
+ 
+\change_deleted -1949513326 1529072981
+Fig.
+ 2b plots the contrast between Xi and Zhang Gaoli.
+ Unlike Xi-Li coappearance, we can find
+\change_unchanged
+ Xi-Zhang coappearances 
+\change_deleted -1949513326 1529072988
+are
+\change_inserted -1949513326 1529072988
+were
+\change_unchanged
+ highly asymmetrical
+\change_inserted -1949513326 1529073016
+.
+ 
+\change_deleted -1949513326 1529073005
+.
+
+\change_unchanged
+ The share of their coappearance is markedly 
+\change_deleted -1949513326 1529073037
+higher
+\change_inserted -1949513326 1529073039
+more salient
+\change_unchanged
+ for Zhang.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1949513326 1529070903
+[Discussion of triadic dependence
+\change_unchanged
+: insert figures/dvViz.pdf here ...
+ feels like an appendix item
+\change_inserted -1949513326 1529070903
+]
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+Further in Figure 4, we visualize the CCP elite coappearance network for
+ the 18th and 19th Central Committees.
+ The nodes within the visualization are sized proportionately to the number
+ of ties they form.
+ What we can observe from this visualization is that the set of interactions
+ occurring in this network form a complex system.
+ While there are a few actors towards the right of the visualization that
+ only appear with one or two other actors, most fall into the broader interconne
+cted system at the left of Figure 4.
+ Further even within this broader interconnected system we see notable structure.
+ There are some actors that are highly central to the network and then groups
+ of actors that form around them.
+ If we were to simply study the direct ties, that actors share we would
+ not be able to account for this structure.
+ One way of calculating the level of higher order structure that exists
+ in this network is via a transitivity statistic.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A relation between a set of actors is transitive, if every time that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$i$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$j$
+\end_layout
+
+\end_inset
+
+ have a tie and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$j$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+ have a tie, then 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$i$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+ will have a tie.
+\end_layout
+
+\end_inset
+
+ Specifically, we utilize the clustering coefficient, which is a measure
+ of the degree to which nodes in a graph tend to cluster together.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The clustering coefficient is calculated as follows, where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$G$
+\end_layout
+
+\end_inset
+
+ represents the network being studied: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C= 
+\backslash
+frac{tr(G^3)}{
+\backslash
+sum_{i 
+\backslash
+neq j} (G^2)_{i,j}}$.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ If there is truly a significant amount of higher order structure that simply
+ using a direct ties approach would miss, then we would expect this clustering
+ coefficient to be quite high.
+ For the CCP elite coappearance network shown in Figure 4, we find that
+ this statistic is equal to 0.67 on a scale from 0 to 1, where 0 would indicate
+ little higher order clustering.
+ Thus if one were to simply utilize the number of direct ties as a measure
+ of how actors related to one another in this network they would be discarding
+ a great deal of useful information that may speak to latent coalitions
+ within the network.
+ In the following section, we discuss our approach to systematically estimate
+ the propensity for actors relate to one another in this network.
+ 
+\end_layout
+
+\begin_layout Section
+Latent 
+\change_inserted -1949513326 1526629944
+Factor
+\change_unchanged
+ Analysis
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1949513326 1529073178
+To answer the question of 
+\begin_inset Quotes eld
+\end_inset
+
+who are my friends,
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\change_deleted -1949513326 1529073183
+We rely on
+\change_inserted -1949513326 1529073189
+we 
+\change_unchanged
+utilize a latent factor model (LFM) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hoff2005,Minhas2016a"
+literal "true"
+
+\end_inset
+
+
+\change_inserted -1949513326 1529073336
+.
+
+\change_unchanged
+ 
+\change_deleted -1949513326 1529073740
+to uncover the latent elite patterns that determine coappearances for Chinese
+ elites.
+ In particular, we want a model that can successfully disaggregate the three
+ factors in a coappearance, overally activity and popularity (as a measure
+ of who's in charge), random noise, and most importantly for our purposes,
+ actors latent cliques and factions (as a measure of 
+\begin_inset Quotes eld
+\end_inset
+
+who are my friends
+\begin_inset Quotes erd
+\end_inset
+
+).
+ The LFM is the only model that allows us to account for both homophily
+ and stochastic equivalence which we use to infer these groupings 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hoff2005,Minhas2016a"
+literal "true"
+
+\end_inset
+
+
+\change_inserted -1949513326 1529074219
+LFM 
+\change_deleted -1949513326 1529073801
+What is particularly useful to us is that this latent factor model accounts
+ for these interdependencies by positioning
+\change_inserted -1949513326 1529073802
+positions
+\change_unchanged
+ actors in a 
+\begin_inset Formula $k$
+\end_inset
+
+ dimensional latent vector space based on third order dependence patterns
+\change_inserted -1949513326 1529073807
+.
+\change_deleted -1949513326 1529073809
+,
+\change_unchanged
+ 
+\change_deleted -1949513326 1529073811
+i
+\change_inserted -1949513326 1529073811
+I
+\change_unchanged
+n this space, actors 
+\change_deleted -1949513326 1529074074
+which have their
+\change_inserted -1949513326 1529074075
+whose
+\change_unchanged
+ vectors point
+\change_deleted -1949513326 1529074084
+ed
+\change_unchanged
+ in similar dimensions are more likely to 
+\change_deleted -1949513326 1529074092
+have
+\change_inserted -1949513326 1529074092
+share
+\change_unchanged
+ similar preferences and be members of the same latent coalitions
+\change_inserted -1949513326 1529074117
+.
+ 
+\change_deleted -1949513326 1529074123
+, and t
+\change_inserted -1949513326 1529074123
+T
+\change_unchanged
+he angle
+\change_inserted -1949513326 1529074127
+s
+\change_unchanged
+ between these vectors 
+\change_inserted -1949513326 1529074132
+then 
+\change_unchanged
+provides a measure of 
+\change_deleted -1949513326 1529074150
+how
+\change_inserted -1949513326 1529074154
+the extent to which
+\change_unchanged
+ 
+\change_deleted -1949513326 1529074165
+similar 
+\change_unchanged
+the preferences and factional links are
+\change_inserted -1949513326 1529074178
+ similar
+\change_unchanged
+.
+
+\change_inserted -1949513326 1529074342
+ Given its ability to capture latent affinities between interconnected actors,
+\change_deleted -1949513326 1529074231
+ This allows us not only to estimate the likelihood of coappearances, but
+ also to map actors positions in the space, which we can then use to predict
+ elite behavior.
+
+\change_inserted -1696835126 1526483790
+ 
+\change_deleted -1949513326 1529074353
+This model
+\change_inserted -1949513326 1529074355
+LFM
+\change_inserted -1696835126 1526483790
+ has been used to 
+\change_deleted -1949513326 1529074363
+similar ends to 
+\change_inserted -1696835126 1526483790
+infer state foreign policy preferences
+\change_inserted -1949513326 1529074177
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gallop:minhas:2018"
+literal "true"
+
+\end_inset
+
+
+\change_inserted -1696835126 1526483790
+.
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1949513326 1529074492
+More formally, we conduct 
+\change_unchanged
+the
+\change_inserted -1949513326 1529074492
+ analysis as follows.
+ 
+\change_unchanged
+We 
+\change_inserted -1949513326 1529074523
+treat our coappearance network as 
+\change_deleted -1949513326 1529074530
+generate this measure by constructing 
+\begin_inset Formula $T$
+\end_inset
+
+ different
+\change_inserted -1949513326 1529075229
+an
+\change_unchanged
+ 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ 
+\change_deleted -1949513326 1529074545
+matrices
+\change_inserted -1949513326 1529074545
+matrix
+\change_unchanged
+, where 
+\change_deleted -1949513326 1529074556
+
+\begin_inset Formula $T$
+\end_inset
+
+ is our number of time periods, and 
+\change_unchanged
+
+\begin_inset Formula $n$
+\end_inset
+
+
+\change_inserted -1949513326 1529074561
+ denotes the
+\change_unchanged
+ 
+\change_deleted -1949513326 1529074564
+our 
+\change_unchanged
+number of 
+\change_deleted -1949513326 1529074569
+actors
+\change_inserted -1949513326 1529074571
+elites
+\change_deleted -1949513326 1529074941
+.
+\change_inserted -1949513326 1529074941
+,
+\change_deleted -1949513326 1529074941
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The number of actors can vary by time period.
+\end_layout
+
+\end_inset
+
+
+\change_inserted -1949513326 1529074950
+ and
+\change_unchanged
+ 
+\change_deleted -1949513326 1529074954
+T
+\change_inserted -1949513326 1529074953
+t
+\change_unchanged
+he 
+\change_deleted -1949513326 1529074616
+network
+\change_inserted -1949513326 1529074625
+matrix
+\change_unchanged
+ cell 
+\begin_inset Formula $y_{ij}$
+\end_inset
+
+ 
+\change_deleted -1949513326 1529074985
+for time 
+\begin_inset Formula $T$
+\end_inset
+
+ 
+\change_unchanged
+represents the number of coappearances between 
+\change_deleted -1949513326 1529074687
+official
+\change_inserted -1949513326 1529074688
+elite
+\change_unchanged
+ 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\change_deleted -1949513326 1529074692
+official
+\change_inserted -1949513326 1529074693
+elite
+\change_unchanged
+ 
+\begin_inset Formula $j$
+\end_inset
+
+
+\change_deleted -1949513326 1529074700
+ in year 
+\begin_inset Formula $T$
+\end_inset
+
+
+\change_unchanged
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+It should be noted that the coappearance data is symmetric and so 
+\begin_inset Formula $y_{ij}=y_{ji}$
+\end_inset
+
+ for all 
+\begin_inset Formula $i,j$
+\end_inset
+
+.
+ The approach we describe below has already been generalized to the case
+ where 
+\begin_inset Formula $y_{ij}\neq y_{ji}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\change_inserted -1949513326 1529074726
+ To
+\change_deleted -1949513326 1529074730
+In order to
+\change_unchanged
+ obtain 
+\change_inserted -1949513326 1529074771
+the latent affinities between elites (i.e., 
+\change_unchanged
+a lower-dimension relational measure
+\change_deleted -1949513326 1529074778
+ of Chinese factions
+\change_inserted -1949513326 1529074778
+)
+\change_unchanged
+, we 
+\change_deleted -1949513326 1529074881
+use the LFM:
+\change_inserted -1949513326 1529075192
+then have an LFM as follows,
+\change_unchanged
+
+\begin_inset Formula 
+\begin{align}
+Y & =f(\theta)\\
+\theta & =\beta^{\top}\mathbf{X}+Z\\
+Z & =M+E\\
+M & =U\Lambda U^{\top}
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $u_{i}\in{\rm I\!R^{k}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ is 
+\begin_inset Formula $k\times k$
+\end_inset
+
+ diagonal matrix.
+ 
+\begin_inset Formula $f(.)$
+\end_inset
+
+ is a general link function corresponding to the distribution of 
+\begin_inset Formula $Y$
+\end_inset
+
+
+\change_inserted -1949513326 1529075054
+ 
+\change_unchanged
+(in 
+\change_deleted -1949513326 1529075060
+this case a count
+\change_inserted -1949513326 1529075069
+our case the coappearance count
+\change_unchanged
+)
+\change_inserted -1949513326 1529075088
+,
+\change_unchanged
+ and 
+\begin_inset Formula $\beta^{\top}\mathbf{X}$
+\end_inset
+
+ is the standard regression term for dyadic and nodal fixed effects.
+\change_inserted -1949513326 1529075291
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -1949513326 1529075343
+For the purpose of parsimony we abstain from using fixed effects in this
+ study.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ 
+\change_deleted -1949513326 1529075296
+In this application, for the sake of parsimony we abstain from using fixed
+ effects.
+ However, if one was interested in estimating a measure of factions that
+ accounted for, for example, seasonal variation in coappearances or institutiona
+lly mandated coappearances, we could have a model that parsed out these
+ effects magnitude of coappearances.
+
+\change_unchanged
+ 
+\end_layout
+
+\begin_layout Standard
+The 
+\change_inserted -1949513326 1529075366
+LFM 
+\change_deleted -1949513326 1529075370
+The way this model 
+\change_unchanged
+accounts for network interdependencies is 
+\change_deleted -1949513326 1529075377
+through decomposition of
+\change_inserted -1949513326 1529075380
+by decomposing
+\change_unchanged
+ the error term 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ 
+\change_inserted -1949513326 1530133113
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hoff2008"
+literal "true"
+
+\end_inset
+
+
+\change_unchanged
+ notes that we can write 
+\begin_inset Formula $Z=M+E$
+\end_inset
+
+
+\change_inserted -1949513326 1530133158
+, where
+\change_unchanged
+ 
+\change_deleted -1949513326 1530133163
+such that 
+\change_unchanged
+the matrix 
+\begin_inset Formula $E$
+\end_inset
+
+ represents noise, and 
+\begin_inset Formula $M$
+\end_inset
+
+ is systematic effects representing first and third order dependencies.
+ 
+\change_deleted -1949513326 1530133331
+By matrix theory, w
+\change_inserted -1949513326 1530133331
+W
+\change_unchanged
+e 
+\change_deleted -1949513326 1530133343
+can
+\change_unchanged
+ factorize the multiplicative effects into the product of two simpler matrices,
+ 
+\begin_inset Formula $U\Lambda U^{\top}$
+\end_inset
+
+
+\change_deleted -1949513326 1530133400
+, where 
+\begin_inset Formula $u_{i}\in{\rm I\!R^{k}}$
+\end_inset
+
+ is a latent vector associated to node 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ is a 
+\begin_inset Formula $k\times k$
+\end_inset
+
+ diagonal matrix
+\change_unchanged
+.
+ 
+\change_deleted -1949513326 1530133488
+Thus u
+\change_inserted -1949513326 1530133488
+U
+\change_unchanged
+nder this framework a vector of latent characteristics are
+\change_inserted -1949513326 1530133495
+ thus
+\change_unchanged
+ estimated for each actor, 
+\begin_inset Formula $u_{i}=\{u_{i,1},\ldots,u_{i,k}\}$
+\end_inset
+
+.
+ Similarity in the latent factors between two actors, 
+\begin_inset Formula $u_{i}\approx u_{j}$
+\end_inset
+
+, corresponds to how stochastically equivalent they are and the diagonal
+ entries in 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{k}>0$
+\end_inset
+
+ or 
+\begin_inset Formula $\lambda_{k}<0$
+\end_inset
+
+, determine the level of homophily (or anti-homophily) in the network 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Minhas2016a"
+literal "true"
+
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A Bayesian procedure to estimate the LFM is available in the amen 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sf{R}$
+\end_layout
+
+\end_inset
+
+ package.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/uViz.png
+	width 6in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Latent space network
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+[Figure 
+\change_deleted -1949513326 1530217019
+3
+\change_inserted -1949513326 1530217019
+4
+\change_unchanged
+ is about here.]
+\end_layout
+
+\begin_layout Standard
+For our 
+\change_deleted -1949513326 1530133550
+purposes
+\change_inserted -1949513326 1530133560
+interest in latent affinity
+\change_unchanged
+, the key output is 
+\begin_inset Formula $U\Lambda U^{\top}$
+\end_inset
+
+.
+ This matrix provides 
+\change_deleted -1949513326 1530133585
+us 
+\change_unchanged
+the effect of stochastic equivalence and homophily on official appearances.
+ We can look at the matrix 
+\begin_inset Formula $U$
+\end_inset
+
+, an 
+\begin_inset Formula $n\times k$
+\end_inset
+
+ matrix that represents each actors vector in the 
+\begin_inset Formula $k$
+\end_inset
+
+-dimensional latent network.
+ But 
+\change_inserted -1949513326 1530133653
+a caveat 
+\change_deleted -1949513326 1530133656
+key to
+\change_inserted -1949513326 1530133656
+in
+\change_unchanged
+ interpreting this space is that it is non-Euclidean, as the actor vectors
+ are embedded within a 
+\begin_inset Formula $k$
+\end_inset
+
+-dimensional hyper sphere, and so we cannot simply look at distances in
+ this space.
+ Rather, the important measure here is an actor's vector in this space,
+ and the similarity between the vector of one actor and another.
+ Comparing the similarity of preferences between two 
+\change_deleted -1949513326 1530133689
+states
+\change_inserted -1949513326 1530133690
+elites
+\change_unchanged
+, 
+\begin_inset Formula $\{i,j\}$
+\end_inset
+
+, can be accomplished by comparing the direction to which their respective
+ factor vectors point.
+ A commonly used metric for this sort of problem in the recommender system
+ literature from computer science is the cosine of the angle formed by the
+ latent vectors of both actors.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This can be calulated in the following way, where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$u$
+\end_layout
+
+\end_inset
+
+ represents the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$n 
+\backslash
+times k$
+\end_layout
+
+\end_inset
+
+ matrix of actor vectors: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+text{Latent angle distance}_{ij} = 
+\backslash
+frac{u_{i} 
+\backslash
+cdot u_{j}}{||u_{i}|| 
+\backslash
+cdot ||u_{j}||} * (-1)$
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+ We refer to this distance metric as latent angle distance.
+ Thus, if the estimated latent vectors of two actors are in the same direction,
+ they are apt to have made appearances with similar partners.
+ We measure this by looking at the absolute distance of the angles created
+ by each officials position and the center of the latent network in a given
+ year.
+
+\change_inserted -1696835126 1526483906
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1696835126 1523633691
+Need more discussion of the angle thing here.
+ Maybe a picture.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1696835126 1526483918
+Also include discussion of AME ability to capture network dynamics here.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_inserted -1949513326 1529955684
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/politSC18.pdf
+	width 3.25in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/politSC19.pdf
+	width 3.25in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Latent space network
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+[Figure 
+\change_deleted -1949513326 1530217011
+3
+\change_inserted -1949513326 1530217011
+5
+\change_unchanged
+ is about here.]
+\change_inserted -1949513326 1529955685
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1949513326 1527067151
+[Key elites stand out.
+ Some interesting pattern of power-sharing has emerged.
+ Yet, two surprising overlapping (Yu Zhengsheng and Liu Yunshan) and (Wang
+ Qishan and Zhang Dejiang) ]
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1949513326 1527065443
+[An interesting pattern, while Xi was distant from Li, the premier of Li
+ Keqiang, all four vice premiers (i.e., Zhang Gaoli, Liu Yandong, Wang Yang,
+ and Ma Kai).
+ While this peculiarity cannot be explained by institutional/legal explanations,
+ which would suggest vice premiers cooperate more the premiers, it is consistent
+ with studies like Jaros and Pan]
+\change_inserted -1696835126 1526483906
+
+\end_layout
+
+\begin_layout Section
+
+\change_inserted -1949513326 1530133747
+Appointments in
+\change_unchanged
+ Leading Small Groups
+\end_layout
+
+\begin_layout Standard
+To test the validity of our measures, we attempt to estimate 
+\change_inserted -1949513326 1530216561
+elite appointments in
+\change_deleted -1949513326 1530216567
+ on
+\change_unchanged
+ the Leading Small Groups (LSG) using measures of latent similarity we discuss
+ above.
+ 
+\change_deleted -1949513326 1530217227
+LSGs, though not incorporated into charts of Party or government organs,
+ play a pivotal role in communicating, coordinating, and implementing of
+ important decisions across different segments and various levels of the
+ governments.
+ LSGs, therefore, not only can serve as an institutional remedy to the regime's
+ prolonged problem of political fragmentation, but also, as shown by the
+ development of the infamous Central Cultural Revolution Group (1966-69),
+ LSGs could become an effective vehicle for expansion of personal power.
+\change_unchanged
+In this study we examine LSGs at the national level as well as their members,
+ and we further differentiate between 
+\change_inserted -1949513326 1530217241
+the 
+\change_unchanged
+Central Committee (
+\emph on
+zhongyang lingdao xiaozu
+\emph default
+, 
+\change_inserted -1949513326 1530217387
+hereafter 
+\change_deleted -1949513326 1530217390
+Party
+\change_inserted -1949513326 1530217392
+CC
+\change_unchanged
+ LSGs) and 
+\change_inserted -1949513326 1530217245
+the 
+\change_unchanged
+State Council Leading Small Groups (
+\emph on
+guojia
+\emph default
+, 
+\emph on
+quanguo
+\emph default
+, 
+\emph on
+guowuyan
+\emph default
+, or 
+\emph on
+zhongguo lingdao xiaozu
+\emph default
+, 
+\change_inserted -1949513326 1530217424
+hereafter 
+\change_deleted -1949513326 1530217428
+State
+\change_inserted -1949513326 1530217428
+SC
+\change_unchanged
+ LSGs).
+ All LSGs are involved in the collecting and providing policy intelligence,
+ and coordinate among different stakeholder interests.
+ However, only a small share of them have coordination (
+\emph on
+xietiaozu
+\emph default
+) in their name.
+ The ones that do, often include stakeholders that are strictly speaking
+ outside of the party-state bureaucracy, such as business associations.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/LSG_full.pdf
+	width 4in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Leading small group at the national level
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+[Figure 
+\change_deleted -1949513326 1530217002
+4
+\change_inserted -1949513326 1530217002
+6
+\change_unchanged
+ is about here.]
+\end_layout
+
+\begin_layout Standard
+[Max and i were confused about what figure is being referenced in the paragraph
+ below]
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 4a plots our data of Party LSGs.
+ It shows how 77 CCP elites (red circle points) are linked with 19 Party
+ LSGs (blue rectangle points) via 110 affiliation ties.
+ Given the duality nature of the bipartite network, we can further project
+ the bipartite network of Party LSGs into two one-mode networks, a LSG network
+ and a member network.
+ We then plot our data of State LSGs in Fig.
+ 4b.
+ The bipartite network of State LSGs encompasses 188 individuals, 16 State
+ LSGs, and 312 unique entries of affiliation relationship.
+\end_layout
+
+\begin_layout Standard
+[also since it looks like the degree distributions have been taken out the
+ paragraph below should probably be removed as well]
+\end_layout
+
+\begin_layout Standard
+In revealing the general pattern of how nodes are interconnected, degree
+ distribution perhaps is the most basic graph-level statistic.
+ Scholars have long relied on degree distribution to identify different
+ network typologies 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "e.g.,"
+key "Reka2002,Clauset2009"
+literal "true"
+
+\end_inset
+
+.
+ Yet, a bipartite graph complicates its calculation and interpretation since
+ two types of degree distributions are available, one for elites (i.e., 
+\begin_inset Quotes eld
+\end_inset
+
+how many LSGs an elite is appointed to
+\begin_inset Quotes erd
+\end_inset
+
+) and one for LSGs (i.e., 
+\begin_inset Quotes eld
+\end_inset
+
+how many members a LSG is consisted of
+\begin_inset Quotes erd
+\end_inset
+
+).
+ Here we are interested in the extent which elites are assigned to multiple
+ LSGs, and Fig.
+ 5 plots degree distributions respectively.
+ An examination of Fig.
+ 5a shows the Party LSG network differs significantly from a random network
+ in three ways.
+ First, there are much more nodes with low degrees in the Party LSG network.
+ Specifically, the Party LSG network deviates from a random one in its systemati
+c control over membership concurrency.
+ Most elites are assigned to a single LSG, and only a few are appointed
+ to multiple LSGs.
+ Second, while a random network lacks hub nodes with high degrees, the Party
+ LSG network has a few central nodes.
+ Finally, differing from random network, the Party LSG network has a much
+ smaller number of nodes with middle range degrees.
+ In contrast, the State LSG network deviates from random networks only in
+ its larger number of low-degree nodes.
+ Together, these findings suggest that compared to that of the State LSG
+ network, the degree distribution of Party LSG network is more like a fat-tail
+ one, which is usually the hallmark characteristic of the centralized scale
+ free network.
+\end_layout
+
+\begin_layout Standard
+[should some justification be provided here for why we are at looking lsgs
+ in total?]
+\end_layout
+
+\begin_layout Standard
+Given that Chinese elites can be members of multiple LSGs, and that we have
+ reason to believe that more powerful members of the party are in more of
+ these groups, we start by using a count model of membership, in particular
+ a negative-binomial regression.
+ We compare three main models.
+ Our null model looks simply at the individuals total level of appearances
+ in the Chinese Vitae data, this provides an approximate measure of popularity
+ at the individual level.
+ We also look at a measure that includes both total appearances and coappearance
+s with Xi Jinping, attempting to capture the direct dyadic relationship
+ with the Chairman of the party.
+ Finally, our main model includes overall appearances, and rather than looking
+ at appearances with Xi, we look at the latent angle distance an elite has
+ with Xi, which gets at not only their direct interactions, but also third
+ order effects like homophily and stochastic equivalence.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/betaEst.pdf
+	width 4in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Estimates of Negative Binomial Analysis of Number of Total LSGs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+[Figure 6 is about here.]
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/effects.pdf
+	width 5in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Estimated Effects of Latent Distance to Xi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+[Figure 7 is about here.]
+\end_layout
+
+\begin_layout Standard
+The results of the three models are reported in Figure 6.
+ Interestingly, while coappearances with Xi do not have a robust relationship
+ to placement on more LSGs, the latent distance measure is significant and
+ in the predicted direction — elites who are further from Xi in the latent
+ space are seated on more Leading Small Groups.
+ In Figure 7 we show the expected number of LSGs an elite with an average
+ number of total appearances would be appointed to based on their latent
+ distance from Xi, for that elite, moving from the closest angle distance
+ observed to the furthest is associated with a drop in LSG appointment of
+ about 1.5.
+ We also see that when we take into account latent proximity to Xi Jinping,
+ the first order characteristics cease to matter, whereas they have the
+ predicted positive effects (elites that make more appearances also sit
+ on more LSGs) in the other models.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+[Table 1 is about here.]
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Out-of-sample Performance on Scoring Rule Metrics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+small
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{tabular}{lccccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+
+\backslash
+[-1.8ex]
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]
+\end_layout
+
+\begin_layout Plain Layout
+
+  & & & & Dawid & 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  Model & Logarithmic & Brier & Spherical & Sebastiani & RMSE
+\backslash
+
+\backslash
+    
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]
+\end_layout
+
+\begin_layout Plain Layout
+
+  Total appearance model (1) & 1.77 & -0.36 & -0.64 & 2.70 & 1.89 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  Total appearance and coappearance model (2) & 1.77 & -0.38 & -0.66 & 2.65
+ & 1.84 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  Total appearance and latent distance model (3) & 1.67 & -0.51 & -1.04 & 2.41
+ & 1.72  
+\backslash
+
+\backslash
+ 
+\backslash
+
+\backslash
+[-1.8ex]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+While our measure of Chinese latent proximity conforms to our theoretical
+ expectations in terms of conventional statistical significance, an important
+ test is whether it improves our ability to predict behavior out of sample.
+ To do this, we divide Chinese elites into 20 groups at random, and in each
+ case predict how many LSGs an elite in that group will be appointed to
+ using a model fit on the other 19 groups.
+ We do this for each of our three main models.
+ As you can see in Table 2, the model using latent angle difference significantl
+y outperforms the models that only use total and coappearances, showing
+ that this measure of latent distance helps us to predict promotion to the
+ Leading Small Group.
+
+\change_inserted -1696835126 1526483873
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+Additionally, we attempt to look at models based on distance, not to Xi
+ Jinping, but to Li Keqiang, to see how well individuals closer to Xi's
+ rival perform in terms of appointment to these groups.
+ We find that latent distance from Li, as depicted in Figure 8, is similarly
+ associated with a lower probability of appointment to LSGs.
+ However, combining the two distance measures results in a model that has
+ ambiguous effects, and this is in part because for most members of the
+ party, distance from Xi and Li are highly collinear.
+ Importantly however, they differ for some individuals.
+ However, as depicted in Table 3, inclusion of latent distance to Li Keqiang
+ actually results in a 
+\emph on
+worse
+\emph default
+ performing model out of sample.
+ This implies that, for elites where their distance to Xi and Li diverge
+ (because they are between them in the latent angle space) adding information
+ about proximity to Li actually hurts the model's performance.
+ This might be because Xi has such a dominant hand in determining advancement
+ in the party.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+[Figure 8 is about here.]
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/XLcoefs.pdf
+	width 4in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Estimates of Negative Binomial Analysis: Comparing distances to Xi and Li
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+[Table 3 is about here.]
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Out-of-sample Performance on Scoring Rule Metrics: Comparing Xi and Li
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+small
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{tabular}{lccccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+
+\backslash
+[-1.8ex]
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]
+\end_layout
+
+\begin_layout Plain Layout
+
+   & & & & Dawid & 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   Model & Logarith & Brier & Spherical & Sebastiani & RMSE
+\backslash
+
+\backslash
+    
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]
+\end_layout
+
+\begin_layout Plain Layout
+
+   Total appearance with latent distance, Xi (3) & 1.67 & -0.51 & -1.04 & 2.41
+ & 1.72 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   Total appearance with latent distance, Li (8) & 1.73 & -0.52 & -1.09 & 2.58
+ & 1.86 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   Total appearance and latent distances, Xi and Li (9) & 1.74 & -0.51 & -1.07
+ & 2.62 & 1.85 
+\backslash
+
+\backslash
+ 
+\backslash
+
+\backslash
+[-1.8ex]     
+\backslash
+hline 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+section{Differentiating between Central and State LSGs}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[max and i thought that the separate analysis by lsg should come after the
+ additional analysis with li]
+\end_layout
+
+\begin_layout Standard
+Of course, not all LSGs are the same.
+ There are groups at the State level and at the Central level.
+ Based on institutional setup, while Xi has the final say on appointments
+ to the Federal LSGs, Premiere Li Keqiang is responsible for the state level
+ ones.
+ Thus, to account for these differences, we run a bivariate probit analysis,
+ which simultaneously estimates the likelihood that an elite will be appointed
+ to any Central or State LSGs.
+ Again in this analysis, latent distance from Xi has a consistent negative
+ effect for both types of LSGs.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+[Table 2 is about here.]
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bivariate Probit Analyses: LSGs of the Central Committee and the State Council
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+small
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{tabular}{@{
+\backslash
+extracolsep{0pt}} l D{.}{.}{2.3} D{.}{.}{2.3} D{.}{.}{2.3} D{.}{.}{2.3} D{.}{.}{2.3} D{.}{.}{2.3}
+ D{.}{.}{2.3} D{.}{.}{2.3}}
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+[-1.8ex]
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+[-1.8ex] & 
+\backslash
+multicolumn{2}{c}{Model 4} & 
+\backslash
+multicolumn{2}{c}{Model 5} & 
+\backslash
+multicolumn{2}{c}{Model 6} & 
+\backslash
+multicolumn{2}{c}{Model 7}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+[-1.8ex] & 
+\backslash
+multicolumn{1}{c}{CC} & 
+\backslash
+multicolumn{1}{c}{SG} & 
+\backslash
+multicolumn{1}{c}{CC} & 
+\backslash
+multicolumn{1}{c}{SG} & 
+\backslash
+multicolumn{1}{c}{CC} & 
+\backslash
+multicolumn{1}{c}{SG} & 
+\backslash
+multicolumn{1}{c}{CC} & 
+\backslash
+multicolumn{1}{c}{SG} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+  & & & & & & & & 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ Total appearances & 0.062^{***} & 0.002  &   &  &  &                    
+                         & 0.055^{***} & -0.0004 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+         &(0.017)        &(0.003) &   &  &  &                            
+                 &(0.017)       & (0.003) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ Coappearances with Xi  &               &        & 0.219^{***} & 0.016 & 
+ &                            &       &     
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+         &               &        &(0.072)        &(0.016)&  &           
+                 &       &     
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ Latent distance to Xi &               &        &               &      
+ &-1.134^{***} & -0.708^{***} & -0.541^{*}  & -0.727^{***}   
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+               &               &        &               &       &(0.278)
+        &(0.255)        &(0.302)       & (0.274)  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ & & & & & & & & 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ Intercept 1 & 
+\backslash
+multicolumn{2}{c}{$-1.082^{***}$} & 
+\backslash
+multicolumn{2}{c}{$-0.794^{***}$} & 
+\backslash
+multicolumn{2}{c}{$0.474^{*}$} & 
+\backslash
+multicolumn{2}{c}{$-0.534$} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+             & 
+\backslash
+multicolumn{2}{c}{(0.175)}        & 
+\backslash
+multicolumn{2}{c}{(0.145)}        & 
+\backslash
+multicolumn{2}{c}{(0.264)}     & 
+\backslash
+multicolumn{2}{c}{(0.354)}        
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ Intercept 2 & 
+\backslash
+multicolumn{2}{c}{$-0.646^{***}$} & 
+\backslash
+multicolumn{2}{c}{$-0.657^{***}$} & 
+\backslash
+multicolumn{2}{c}{$0.023$}     & 
+\backslash
+multicolumn{2}{c}{0.046} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+             & 
+\backslash
+multicolumn{2}{c}{(0.137)}        & 
+\backslash
+multicolumn{2}{c}{(0.134)}        & 
+\backslash
+multicolumn{2}{c}{(0.256)}     & 
+\backslash
+multicolumn{2}{c}{(0.294)}        
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ Intercept 3 & 
+\backslash
+multicolumn{2}{c}{$0.913^{**}$}   & 
+\backslash
+multicolumn{2}{c}{$0.920^{**}$}   & 
+\backslash
+multicolumn{2}{c}{$0.648^{*}$} & 
+\backslash
+multicolumn{2}{c}{$0.826^{**}$} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+             & 
+\backslash
+multicolumn{2}{c}{(0.398)}        & 
+\backslash
+multicolumn{2}{c}{(0.379)}        & 
+\backslash
+multicolumn{2}{c}{(0.365)}     & 
+\backslash
+multicolumn{2}{c}{(0.407)}        
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  & & & & & & & & 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+hline 
+\backslash
+
+\backslash
+[-1.8ex]
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+textit{Note:}  & 
+\backslash
+multicolumn{8}{r}{$^{*}p<$0.1; $^{**}p<$0.05; $^{***}p<$0.01} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+end{tabular}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusion and discussion
+\end_layout
+
+\begin_layout Standard
+[if we go ahead with including an entire section on central vs state we
+ should make sure to mention this in the conclusion]
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1696835126 1526484044
+Under Xi Jinping, Chinese politics has become less institutionalized and
+ more personalist.
+ The institutional limit on leadership terms has been elimitated, and Xi
+ has centered power in his hands, and the hands of his allies.
+ Given these developments, it is crucial to understand and measure factions
+ and affinity within Chinese elites.
+ 
+\change_unchanged
+In this study, we propose a latent network approach to explore the dynamic
+ interactions of the CCP elites.
+ We conceptualize public co-appearances as “foci,” around which various
+ political activities are organized.
+ Since elites’ engagement in these foci is highly selective, their co-appearance
+s signal important information about elites’ collusion and cooptation.
+ Based a unique dataset, we aim to answer three critical questions — 1)
+ who's in charge, (2) 
+\change_deleted -1696835126 1526484167
+who's who
+\change_inserted -1696835126 1526484169
+who do I work with
+\change_unchanged
+, and (3) who are my 
+\change_deleted -1696835126 1526484170
+allies
+\change_inserted -1696835126 1526484171
+friends
+\change_unchanged
+ — by examining elites’ total appearances, dyadic coappearances, and finally
+ their latent network distance.
+ 
+\change_deleted -1696835126 1526484063
+We further find that while elites’ total appearance and their latent network
+ distances are strongly associated with their LSG memberships, dyadic coappearan
+ce is much weaker in predicting LSG memberships
+\change_inserted -1696835126 1526484114
+We find that latent proximity to Xi corresponds to policy prominence for
+ Chinese elites
+\change_unchanged
+.
+
+\change_inserted -1696835126 1526484199
+ Most excitingly, we find that this latent measure significantly outperforms
+ measures that simply look at individual power (who's in charge) and dyadic
+ relationships (who do I work with).'
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1696835126 1526484347
+While we believe that this measure has aided us in our understanding and
+ measurement of the Chinese political system, we can further improve our
+ understanding in a few ways.
+ First, this data can not only be compared to biographically and media measures
+ of elite prominence, but in fact, the technique can incorporate these factors
+ to gain a more nuanced understanding of elite networks and relationships.
+ Secondly, we believe this technique can be expanded beyond China, to help
+ us understand factional politics in other, even more opaque autocracies,
+ such as North Korea or the Kingdom of Saudi Arabia.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1696835126 1526484161
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1696835126 1526845297
+Stronger conclusion needed, link not just to LSG stuff, but also to understandin
+g Chinese politics more broadly, and discuss the possibility of future compariso
+ns to biographical and news approaches.
+ Not sure about last paragraph, and whether it will lead reviewers to ask
+ why we dont do this already? -MG
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{spacing}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "narisbio"
+options "apsr"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{spacing}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushleft} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
