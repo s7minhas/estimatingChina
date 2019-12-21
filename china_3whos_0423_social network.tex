@@ -39,8 +39,21 @@
 \begin{document}
 \begin{spacing}{1}
 
+\author{
+  Huhe, Narisong\\
+  \texttt{naris.huhe@strathclyde.ac.uk}
+  \and
+  Gallop, Max\\
+  \texttt{narisong.huhe@ac.uk}
+  \and
+  Minhas, Shahryar\\
+  \texttt{minhassh@msu.edu}
+}
+
 \title{\textbf{Who Are in Charge, Who Do I Work With, and Who Are My Friends:
-A Latent Space Approach to Understanding Elite Coappearances in China}\thanks{The replication datasets and codes will be made available online.}}
+A Latent Space Approach to Understanding Elite Coappearances in China}\thanks{The replication datasets and codes will be made available online. Corresponding author: Shahryar Minhas (minhassh@msu.edu).}}
+
+
 \maketitle
 \begin{abstract}
 \begin{flushleft}
@@ -200,7 +213,7 @@ Finally, we plot the complete coappearance network in Figure~\ref{fig:fullCoappN
 \label{fig:fullCoappNet}
 \end{figure}
 
-Many such sub-groups like this appear in this visualization and this points to the fact that there is notable higher order structure within this system that may be missed by just examining direct dyadic ties. One way to quantify such higher order structures is a transitivity statistic.\footnote{A relation between a set of actors is transitive (i.e., a triangular relationship), if every time that $i$ and $j$ have a tie and $j$ and $k$ have a tie, then $i$ and $k$ will have a tie.} Here we utilize the clustering coefficient, which is a measure of the degree to which nodes in a network cluster together.\footnote{The clustering coefficient is calculated as follows, where $G$ represents the network being studied, $C=\frac{tr(G^{3})}{\sum_{i\neq j}(G^{2})_{i,j}}$.} A significant amount of higher order structures  leads to a high clustering coefficient. In our case of the CCP elite coappearance network, we find that the statistic is 0.67 on a scale from 0 to 1, indicating a large degree of higher order dependencies. In the following section, we discuss our approach to systematically estimate latent affinities between actors in a network with higher order dependencies. 
+Many such sub-groups like this appear in this visualization and this points to the fact that there is notable higher order structure within this system that may be missed by just examining direct dyadic ties. One way to quantify such higher order structures is a transitivity statistic.\footnote{A relation between a set of actors is transitive (i.e., a triangular relationship), if every time that $i$ and $j$ have a tie and $j$ and $k$ have a tie, then $i$ and $k$ will have a tie.} Here we utilize the clustering coefficient, which is a measure of the degree to which nodes in a network cluster together.\footnote{The clustering coefficient is calculated as follows, where $G$ represents the network being studied, $C=\frac{tr(G^{3})}{\sum_{i\neq j}(G^{2})_{i,j}}$.} A significant amount of higher order structures  leads to a high clustering coefficient. In our case of the CCP elite coappearance network, we find that the statistic is 0.67 on a scale from 0 to 1, indicating that a large proportion of potentially closable triads are actually closed. In the following section, we discuss our approach to systematically estimate latent affinities between actors in a network with higher order dependencies. 
 
 \section*{Latent Factor Analysis}
 
