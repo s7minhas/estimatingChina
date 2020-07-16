@@ -1,8 +1,18 @@
 #######################################################
+if(Sys.info()['user'] %in% c('Owner','herme', 'S7M')){
+  u = Sys.info()['user']
+  pathBase = paste0('C:/Users/', u, '/')
+  pathDrop = paste0(pathBase, 'Dropbox/Research/EstimatingChina/')
+  pathGit = paste0(pathBase, 'Research/EstimatingChina/')
+  pathGraphics = paste0(pathGit, 'figure/')
+  source(paste0(pathGit, 'analysis/functions.R'))
+  setwd(paste0(pathGit, 'analysis'))
+}
+
 if(Sys.info()['user'] %in% c('s7m','janus829')){
   setwd('~/Dropbox/Research/EstimatingChina/analysis')
   source('~/Dropbox/Research/EstimatingChina/analysis/functions.R')
-  pathGraphics = '~/Dropbox/Research/EstimatingChina/figure/'
+  pathGraphics = '~/Research/EstimatingChina/figure/'
 }
 
 # libs
@@ -27,7 +37,7 @@ pasteMult = function(x,y,sepZ){
 lowActivityDates = pasteMult(c(2013:2016),c('02','08'), '-') %>%
 	paste0(.,'-01') %>% as.Date() %>% data.frame(x=.)
 highActivityDates = pasteMult(c(2013:2016),c('03','09'), '-') %>%
-	paste0(.,'-01') %>% as.Date() %>% data.frame(x=.)	
+	paste0(.,'-01') %>% as.Date() %>% data.frame(x=.)
 
 g=ggplot(app.df) +
 	geom_vline(data=lowActivityDates, aes(xintercept=x), linetype='dashed', color='grey70') +
@@ -38,11 +48,11 @@ g=ggplot(app.df) +
 	geom_point(aes(x = mo, y = xi), color = "red", size = .7, shape = 16) +
 	geom_line(aes(x = mo, y = li), color = "blue", lty = "dashed") +
 	geom_point(aes(x = mo, y = li), color = "blue", size = .7, shape = 15) +
-	annotate('text', 
+	annotate('text',
 		x=lowActivityDates[c(1,5),1]-5, y=225, label=c('Feb.','Aug.'),
 		color='grey60', size=2.5, hjust=1
 		) +
-	annotate('text', 
+	annotate('text',
 		x=highActivityDates[c(4,8),1]+5, y=225, label=c('Mar.','Sept.'),
 		color='grey60', size=2.5, hjust=0
 		) +
@@ -92,5 +102,5 @@ g = ggplot(app.df) +
 		axis.ticks=element_blank(),
 		panel.border = element_blank()
 		)
-ggsave(g, file=paste0(pathGraphics, 'Xi_ZG.pdf'), width=7, height=3)	
+ggsave(g, file=paste0(pathGraphics, 'Xi_ZG.pdf'), width=7, height=3)
 #######################################################

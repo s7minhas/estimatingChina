@@ -1,14 +1,13 @@
 # WORKSPACE #######################################################################
 rm(list=ls())
-setwd("~/Dropbox/EstimatingChina/analysis")
-pathPaper = '~/Dropbox/EstimatingChina/'
-source('~/Dropbox/EstimatingChina/analysis/functions.R')
-
-if(Sys.info()['user'] %in% c('s7m','janus829')){
-  setwd('~/Dropbox/Research/EstimatingChina/analysis')
-  source('~/Dropbox/Research/EstimatingChina/analysis/functions.R')
-  pathGraphics = '~/Dropbox/Research/EstimatingChina/figure/'
-  pathPaper = '~/Dropbox/Research/EstimatingChina/'
+if(Sys.info()['user'] %in% c('Owner','herme', 'S7M')){
+  u = Sys.info()['user']
+  pathBase = paste0('C:/Users/', u, '/')
+  pathDrop = paste0(pathBase, 'Dropbox/Research/EstimatingChina/')
+  pathGit = paste0(pathBase, 'Research/EstimatingChina/')
+  pathGraphics = paste0(pathGit, 'figure/')
+  source(paste0(pathGit, 'analysis/functions.R'))
+  setwd(paste0(pathGit, 'analysis'))
 }
 
 # libraries
@@ -27,19 +26,19 @@ getCosSim = function(x,y){
 # loop over matrix of positions and calculate cos sim for every pair
 cosSimMat = function(x) {
   # org output object
-  m = matrix(NA, 
+  m = matrix(NA,
     nrow=ncol(x),ncol=ncol(x),
     dimnames=list(colnames(x),colnames(x)))
   cos = as.data.frame(m)
-  
+
   # loop through pairs and store in cos
   for(i in 1:ncol(x)) {
     for(j in i:ncol(x)) {
       co_rate_1 = x[which(x[,i] & x[,j]),i]
-      co_rate_2 = x[which(x[,i] & x[,j]),j]  
+      co_rate_2 = x[which(x[,i] & x[,j]),j]
       cos[i,j]= getCosSim(co_rate_1,co_rate_2)
       cos[j,i]=cos[i,j] } }
-  
+
   # return cos
   return(cos) }
 
@@ -88,16 +87,16 @@ test.data$pred.m3 = NA
 # loop through mods and get osamp preds
 for(i in 1:20){
   # total number of appearances
-  m1 = glm.nb(total ~ node.y, data = test.data[test.data$slice != i,]) 
+  m1 = glm.nb(total ~ node.y, data = test.data[test.data$slice != i,])
   # total app and total coapp with xi
   m2 = glm.nb(total ~ node.y +xi.c.y, data = test.data[test.data$slice != i,])
   # totalapp and lat dist with xi
   m3 = glm.nb(total ~ node.y +Xi.y, data = test.data[test.data$slice != i,])
 
-  # get preds  
-  test.data$pred.m1[test.data$slice == i] = predict(m1, test.data[test.data$slice == i,], type = "response") 
-  test.data$pred.m2[test.data$slice == i] = predict(m2, test.data[test.data$slice == i,], type = "response") 
-  test.data$pred.m3[test.data$slice == i] = predict(m3, test.data[test.data$slice == i,], type = "response") 
+  # get preds
+  test.data$pred.m1[test.data$slice == i] = predict(m1, test.data[test.data$slice == i,], type = "response")
+  test.data$pred.m2[test.data$slice == i] = predict(m2, test.data[test.data$slice == i,], type = "response")
+  test.data$pred.m3[test.data$slice == i] = predict(m3, test.data[test.data$slice == i,], type = "response")
   }
 
 # calc perf scores
@@ -106,18 +105,18 @@ poisPerf = lapply(1:3, function(f){
 }) %>% do.call('rbind', .) %>% signif(.,3)
 rownames(poisPerf) = paste0('m',1:nrow(poisPerf))
 rownames(poisPerf) = c(
-  "Total Appearance", "Total and Coappearance", 
+  "Total Appearance", "Total and Coappearance",
   "Total Appearance and Latent Distance to Xi")
 colnames(poisPerf) = c('Logarithmic', 'Brier', 'Spherical', 'Dawid-Sebastiani', 'RMSE')
 
 # save to paper directory
 print.xtable(
-  xtable(poisPerf, 
+  xtable(poisPerf,
     align='lccccc',
     caption='Out-of-sample performance on scoring rule metrics.',
     label='tab:outPerf'
-  ), 
-  include.rownames=TRUE, 
+  ),
+  include.rownames=TRUE,
   hline.after=c(0,0,1, nrow(poisPerf), nrow(poisPerf)),
   size='normalsize',
   file=paste0(pathPaper, 'outPerfTable.tex') )
@@ -132,8 +131,8 @@ for(i in 1:20){
   m2 = glm.nb(total ~ node.y + Li.y, data = test.data[test.data$slice != i,])
 
   # get preds
-  test.data$pred.m1[test.data$slice == i] = predict(m1, test.data[test.data$slice == i,], type = "response") 
-  test.data$pred.m2[test.data$slice == i] = predict(m2, test.data[test.data$slice == i,], type = "response") 
+  test.data$pred.m1[test.data$slice == i] = predict(m1, test.data[test.data$slice == i,], type = "response")
+  test.data$pred.m2[test.data$slice == i] = predict(m2, test.data[test.data$slice == i,], type = "response")
 }
 
 # calc perf scores
@@ -144,18 +143,18 @@ poisPerf = lapply(1:2, function(f){
 }) %>% do.call('rbind', .) %>% signif(.,3)
 rownames(poisPerf) = paste0('m',1:nrow(poisPerf))
 rownames(poisPerf) = c(
-  "Total Appearance and Latent Distance to Xi", 
+  "Total Appearance and Latent Distance to Xi",
   "Total Appearance and Latent Distance to Li")
 colnames(poisPerf) = c('Logarithmic', 'Brier', 'Spherical', 'Dawid-Sebastiani', 'RMSE')
 
 # save to paper directory
 print.xtable(
-  xtable(poisPerf, 
+  xtable(poisPerf,
     align='lccccc',
     caption='Out-of-sample performance on scoring rule metrics.',
     label='tab:outPerf2'
-  ), 
-  include.rownames=TRUE, 
+  ),
+  include.rownames=TRUE,
   hline.after=c(0,0,1, nrow(poisPerf), nrow(poisPerf)),
   size='normalsize',
   file=paste0(pathPaper, 'outPerfTable2.tex') )
@@ -177,10 +176,10 @@ apsrtable(m1, m2, m3,
 scen = cbind(1, mean(test.df$node.y), seq(-1,1,.1))
 beta = mvrnorm(1000, coef(m3), vcov(m3))
 z = beta %*% t(scen)
-y = exp(z)  
+y = exp(z)
 
 # summarize results from sims
-ggData = t(apply(y, 2, 
+ggData = t(apply(y, 2,
    function(x){ mean = mean(x) ;
      qlo95 = quantile(x, 0.025) ; qhi95 = quantile(x, 0.975) ;
      qlo90 = quantile(x, 0.05) ; qhi90 = quantile(x, 0.95) ;
@@ -211,7 +210,7 @@ m1 = glm.nb(total ~ node.y + Xi.y, data = test.data)#, family = "poisson") # tot
 m2 = glm.nb(total ~ node.y + Li.y, data = test.data)#, family = "poisson") # total app and lat dist with li
 m3 = glm.nb(total ~ node.y + Xi.y + Li.y, data = test.data)#, family = "poisson") # robustness check
 
-apsrtable(m1, m2, 
+apsrtable(m1, m2,
   model.names=c('Xi Only', 'Li Only'),
   coef.names=c('(Intercept)', 'Total Appearances', 'Latent Distance from Xi', 'Theta', 'Latent Distance from Li'),
   stars='default'
