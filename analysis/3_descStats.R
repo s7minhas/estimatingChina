@@ -58,21 +58,22 @@ dev.off()
 system(paste0('pdfcrop ', pathGraphics, 'dvViz.pdf ',  pathGraphics, 'dvViz.pdf') )
 
 set.seed(6886)
-pdf(file=paste0(pathGraphics, 'dvViz_names.pdf'), width=12, height=12)
+pdf(file=paste0(pathGraphics, 'dvViz_names2.pdf'), width=12, height=12)
 plot(g,
 	layout=layout_with_fr(g),
 	vertex.label.cex=rescale(degree(g), .8, .5),
 	vertex.color='grey40',
 	vertex.size=.0001,
 	edge.width=eWidth,
-	edge.color='grey90',
+	edge.color='grey80',
+  curved=TRUE,
 	asp=FALSE,
 	bg='transparent',
 	vertex.label=V(g)$name,
 	vertex.label.color='black'
 	)
 dev.off()
-system(paste0('pdfcrop ', pathGraphics, 'dvViz_names.pdf ',  pathGraphics, 'dvViz_names.pdf') )
+system(paste0('pdfcrop ', pathGraphics, 'dvViz_names2.pdf ',  pathGraphics, 'dvViz_names2.pdf') )
 #######################################################
 
 #######################################################
