@@ -39,26 +39,28 @@
 \begin{document}
 \begin{spacing}{1}
 
-\author{
-  Huhe, Narisong\\
-  \texttt{naris.huhe@strathclyde.ac.uk}
-  \and
-  Gallop, Max\\
-  \texttt{narisong.huhe@ac.uk}
-  \and
-  Minhas, Shahryar\\
-  \texttt{minhassh@msu.edu}
-}
+% \author{
+%   Huhe, Narisong\\
+%   \texttt{naris.huhe@strathclyde.ac.uk}
+%   \and
+%   Gallop, Max\\
+%   \texttt{narisong.huhe@ac.uk}
+%   \and
+%   Minhas, Shahryar\\
+%   \texttt{minhassh@msu.edu}
+% }
 
 \title{\textbf{Who Are in Charge, Who Do I Work With, and Who Are My Friends:
-A Latent Space Approach to Understanding Elite Coappearances in China}\thanks{The replication datasets and codes will be made available online. Corresponding author: Shahryar Minhas (minhassh@msu.edu).}}
+A Latent Space Approach to Understanding Elite Coappearances in China}\thanks{The replication datasets and codes will be made available online.
+% Corresponding author: Shahryar Minhas (minhassh@msu.edu).}}
+}}
 
 
 \maketitle
 \begin{abstract}
 \begin{flushleft}
 
-How ruling elite arrange and maintain their power-sharing is key to our understanding of authoritarian politics. We analyze the dynamics of elite power-sharing in authoritarian regimes using a network framework that embeds actors onto a low-dimensional space. We also introduce a novel dataset tracking appearances of elite Chinese Community Party (CCP) members at political events. Our framework and data allow us to disentangle three key aspects of CCP elite power-sharing: (1) who are in charge, (2) who do I work with, and (3) who are my friends. Using a latent factor network analysis of approximately 10,000 appearance records of over 200 top CCP elites from 2013 to 2017, we empirically assess these three questions by computing elites' total appearances, dyadic coappearances, and their distance in a latent social space. We test how well these three indicators fare at predicting elites' appointments to the leading small groups (LSGs) of the CCP Central Committee and the Central Government, and from that analysis are able to highlight the need to account for the indirect ties elites share. 
+How ruling elite arrange and maintain their power-sharing is key to our understanding of authoritarian politics. We analyze the dynamics of elite power-sharing in authoritarian regimes using a network framework that embeds actors onto a low-dimensional space. We also introduce a novel dataset tracking appearances of elite Chinese Community Party (CCP) members at political events. Our framework and data allow us to disentangle three key aspects of CCP elite power-sharing: (1) who are in charge, (2) who do I work with, and (3) who are my friends. Using a latent factor network analysis of approximately 10,000 appearance records of over 200 top CCP elites from 2013 to 2017, we empirically assess these three questions by computing elites' total appearances, dyadic coappearances, and their distance in a latent social space. We test how well these three indicators fare at predicting elites' appointments to the leading small groups (LSGs) of the CCP Central Committee and the Central Government, and from that analysis are able to highlight the need to account for the indirect ties elites share.
 
 \end{flushleft}
 \end{abstract}
@@ -73,20 +75,20 @@ How ruling elite arrange and maintain their power-sharing is key to our understa
     \newlength{\myfootnotesep}
     \setlength{\myfootnotesep}{\baselineskip}
     \addtolength{\myfootnotesep}{-\footnotesep}
-    \setlength{\footnotesep}{\myfootnotesep} % set spacing between footnotes 
+    \setlength{\footnotesep}{\myfootnotesep} % set spacing between footnotes
 \begin{flushleft}
 \setlength{\parindent}{2em}
 \setlength{\parskip}{0pt}
 
-Elite networks have been a central focus of scholars of political networks as well as social network analysis in general \citep[e.g.,][]{Knoke1993,Ward2011,Liu2015,Gross2017,Larsen2017}. Systematic exploration of these networks provides us with knowledge about complex interactions between elites (like legislators) and helps us to understand how such interactions evolve overtime \citep[e.g.,][]{Parigi2014b,Neal2018}. However, studies of elite networks in authoritarian contexts are scarce. Lacking strong and binding institutional rules, elite politics in authoritarian regimes tend to be opaque and volatile, thus limiting our ability to understand elite interactins and power sharing in these regimes. Relying on a wide range of data like anecdotes, interviews, media coverage, and biographical archives, extant studies focus mainly on identifying key elites and analyzing their social backgrounds, career patterns, and patronage ties \citep[e.g.,][]{Li1989, Levitsky2001, Albrecht2004, Perthes2004, Shih2010, Opper2015, Buehler2017}. We find few attempts to synthesize different aspects of elite dynamics, leaving us with only a fragmented perspective on elite networks in authoritarian regimes.
+Elite networks have been a central focus of scholars of political networks as well as social network analysis in general \citep[e.g.,][]{Knoke1993,Ward2011,Liu2015,Gross2017,Larsen2017}. Systematic exploration of these networks provides us with knowledge about complex interactions between elites (like legislators) and helps us to understand how such interactions evolve overtime \citep[e.g.,][]{Parigi2014b,Neal2018}. However, studies of elite networks in authoritarian contexts are scarce. Lacking strong and binding institutional rules, elite politics in authoritarian regimes tend to be opaque and volatile, thus limiting our ability to understand elite interactins and power sharing in these regimes. Relying on a wide range of data such as anecdotes, interviews, media coverage, and biographical archives extant studies focus mainly on identifying key elites and analyzing their social backgrounds, career patterns, and patronage ties \citep[e.g.,][]{Li1989, Levitsky2001, Albrecht2004, Perthes2004, Shih2010, Opper2015, Buehler2017}. We find few attempts to synthesize different aspects of elite dynamics, leaving us with only a fragmented perspective on elite networks in authoritarian regimes.
 
-In this article, we propose a latent factor framework to systematically map and analyze the dynamics of elite power-sharing in authoritarian regimes. We also introduce a new type of data that has yet to come to attention of scholars of authoritarian politics, that is, elite appearance and coappearance at political events. Our new framework and data allow us to disentangle and synthesize three key aspects of elite power-sharing in authoritarian regimes: (1) who are in charge, (2) who do I work with, and (3) who are my friends. The question of ``who are in charge'' focuses on the power and influence of \emph{individual} elites. The answer to this question is of critical importance in authoritarian regimes where formal political institutions are vulnerable to elites' manipulation. Moving beyond individual elites, the question of ``who do I work with'' points to the \emph{dyadic} relationship between a given pair of elites (e.g., collegial ties and patronage connections), which serves as the very basis of coalitions and factions. However, a simple dyadic ``who do I work with'' approach will, we argue, overlook indirect relationships between elites and ignore information about latent coalitions. For instance, without a direct collegial or patronage connection, two elites may still belong to an unobserved coalition because of ties to a common friend. The question of ``who are my friends'' then captures such indirect \emph{latent} connections between elites. Together, by jointly considering the individual, dyadic, and latent attributes, the three ``who'' questions reveal systematic dynamics of elite power-sharing in authoritarian regimes.
+In this article, we propose a latent factor framework to systematically map and analyze the dynamics of elite power-sharing in authoritarian regimes. To do this we utilize elite appearance and coappearance at political events.\footnote{\citet{mahdavi_2019} also uses this approach to study relations between political elites in North Korea.} Our framework and data allow us to disentangle and synthesize three key aspects of elite power-sharing in authoritarian regimes: (1) who are in charge, (2) who do I work with, and (3) who are my friends. The question of ``who are in charge'' focuses on the power and influence of \emph{individual} elites. The answer to this question is of critical importance in authoritarian regimes where formal political institutions are vulnerable to elites' manipulation. Moving beyond individual elites, the question of ``who do I work with'' points to the \emph{dyadic} relationship between a given pair of elites (e.g., collegial ties and patronage connections), which serves as the very basis of coalitions and factions. However, a simple dyadic ``who do I work with'' approach will, we argue, overlook indirect relationships between elites and ignore information about latent coalitions. For instance, without a direct collegial or patronage connection, two elites may still belong to an unobserved coalition because of ties to a common friend. The question of ``who are my friends'' then captures such indirect \emph{latent} connections between elites. Together, by jointly considering the individual, dyadic, and latent attributes, the three ``who'' questions reveal systematic dynamics of elite power-sharing in authoritarian regimes.
 
 Our empirical analyses and tests are focused on the Chinese Communist Party (CCP) regime. While the CCP regime has been commonly accepted as one of the most institutionalized and ``machine-like'' authoritarian regimes, many China scholars emphasize that institutional rules are epiphenomenal to elite politics \citep{Nathan1973,Tsou1976,Shih2010}. After Xi Jinping became the general secretary of CCP in 2012, the interest in elite power-sharing has been rekindled and become even more heated. Xi's first term was marked with major elite reshuffles, swift institutional changes, and wide-ranging policy alterations \citep{Miller2014b,Naughton2014,Lampton2015,Shirk2018}. These dramatic changes not only urge us to reassess CCP's intra-elite relations, but also make it an ideal laboratory to explore the three ``who'' questions. Specifically, we utilize a latent factor model \citep{Minhas2016a} to analyze a novel database that tracks approximately 10,000 appearance records of over 200 top CCP elites from 2013 to 2017. We attempt to answer the three ``who'' questions by computing elites' total appearances (i.e., ``who are in charge''), dyadic coappearances (i.e., ``who do I work with''), and, finally, their distance in a latent social space (i.e., ``who are my friends''). Our latent factor analysis of the appearance data presents a possible avenue to disentangle and synthesize key aspects of elite power-sharing in authoritarian regimes.
 
 To probe the validity of this approach, we examine how well these three indicators fare in generating out-of-sample predictions of elites' appointments to the leading small groups (LSGs) of the CCP Central Committee and the Central Government \citep{Batke2017,Huhe2018a}. LSGs are an informal institutional arrangement of the CCP that has not been incorporated into charts of party or government organs. However, they play a pivotal role in the formulation, coordination, and implementation of decisions across different segments and levels of the CCP regime \citep{Hamrin1992,Lieberthal1992a}. LSGs not only ameliorate the regime's prolonged problem of political fragmentation, they can also be an effective vehicle for overpassing formal institutions and asserting personal influences as shown by the infamous Central Cultural Revolution Group (1966-69). Further it has been recently noted that Xi relies heavily on LSGs to push forward institutional reforms and policy changes \citep{Miller2014a,Naughton2014,Johnson2017,Lee2017,Shirk2018}. Our empirical analysis shows that while elites' total appearances are strongly associated with their appointments in LSGs memberships, their dyadic coappearances bear a much weaker association. Most importantly, the best predictor of LSG membership is our latent measure of network proximity.
 
-Our study contributes to extant work on authoritarian politics in three important ways. First, our latent factor framework provides a possible approach to bridge and synthesize the fragmented studies of the ruling elite in authoritarian regimes. This allows us to develop a systematic assessment of their power-sharing patterns and dynamics. Second, our approach explicitly highlights and models the latent relationships between elites, which so far has received only scant scholarly attention. As revealed in our analysis of LSG appointments, the estimation of latent relations among elites may significantly improve our understanding about elite power-sharing. Finally, our study introduces a novel source of data -- public appearances of the elite. The appearance data not only complements our existing data like news coverage and biographical archives, but, more importantly, allows for a systematic exploration of the dynamic and relational changes in elite power-sharing.
+Our study contributes to extant work on authoritarian politics in three important ways. First, our latent factor framework provides a possible approach to bridge and synthesize the fragmented studies of the ruling elite in authoritarian regimes. This allows us to develop a systematic assessment of their power-sharing patterns and dynamics. Second, our approach explicitly highlights and models the latent relationships between elites, which so far has received only scant scholarly attention. As revealed in our analysis of LSG appointments, the estimation of latent relations among elites may significantly improve our understanding about elite power-sharing. Finally, our study introduces a novel source of data through which to understand relations between elites in China. The appearance data enables us to systematically explore the dynamic and relational changes in elite power-sharing.
 
 \section*{Literature Review: The Elite and Their Relationships}
 
@@ -106,7 +108,7 @@ In this study, we conceptualize the elite power-sharing in authoritarian regimes
 
 \subsection*{Political Events and Power \emph{Foci}}
 
-How to capture the power elite and their relationship has been a key front of the power elite debate \citep{Domhoff2005}. In \emph{Who Governs? Democracy and Power in an American City} \citeyearpar{Dahl1961}, Dahl argues that the problem has risen from the obscure distinction between the legal theories of power and the realities of power: ``the American creed of democracy and equality prescribes many forms and procedures from which the actual practices of leaders diverge. Consequently, to gain legitimacy for their actions leaders frequently surround their covert behavior with democratic rituals'' (p. 89). Recognizing this, Dahl proposes to focus on political events and meetings where the actual processes of influence are at work. For instance, after observing local political nominations, Dahl finds that ``the number of persons who have participated in these decisive negotiations and influenced the outcome seems never to have been more than a half dozen in recent years'' (p. 105). 
+How to capture the power elite and their relationship has been a key front of the power elite debate \citep{Domhoff2005}. In \emph{Who Governs? Democracy and Power in an American City} \citeyearpar{Dahl1961}, Dahl argues that the problem has risen from the obscure distinction between the legal theories of power and the realities of power: ``the American creed of democracy and equality prescribes many forms and procedures from which the actual practices of leaders diverge. Consequently, to gain legitimacy for their actions leaders frequently surround their covert behavior with democratic rituals'' (p. 89). Recognizing this, Dahl proposes to focus on political events and meetings where the actual processes of influence are at work. For instance, after observing local political nominations, Dahl finds that ``the number of persons who have participated in these decisive negotiations and influenced the outcome seems never to have been more than a half dozen in recent years'' (p. 105).
 
 In this study, we follow Dahl's approach and turn to what we call power \emph{foci}, i.e., important political events and meetings as well as elites' appearances at them. The concept of foci is originally introduced by \citet{Feld1981} to explore people's complex and embedded social circles in a community. A focus is usually defined as a social entity or event around which joint activities are organized (e.g., voluntary organizations, hangouts, and families). Since it is around these foci that individuals organize their social relations, we can learn essential features of their latent social space by studying the observable foci. Similarly, we argue that political events like ceremonies, policy meetings, and state visits can be treated as power foci, around which the ruling elite signal and manage their power relationships. For instance, an elite's presence in a policy meeting would suggest her or his involvement in the decision-making activities and thus convey valuable information about the actual processes of influence. As the ruling elite coordinate with each other via numerous such events, we can approximate their latent space of power-sharing by examining how these foci are interconnected.
 
@@ -116,7 +118,7 @@ The interlocking network of power foci reveals both positional and relational at
 
 How can we approximate the latent space of power-sharing from the interlocking foci network? In this study, we treat the foci network as a product of both stochastic and strategic factors. We further disaggregate the strategic factors into three questions: who are in charge, who do I work with, and who are my friends -- these correspond to the individual level characteristics, dyadic links, and latent affinities. Generally speaking, our approach can be summarized as follows: after controlling for random noise, powerful elites (i.e., who are in charge) are more likely to make appearances; elites who are in the same and related policy domains (i.e., who do I work with) are more likely to appear together; and finally elites who share latent affinities (i.e., who are my friends) are more likely to show up together. Together, the ``three'' who questions help us to approximate the latent space of elite power-sharing.
 
-The first two who questions are quite consistent with the existing studies of elite politics. Similar to such positional studies as \citet{Jaros2017}, the question of who are in charge is focused on network dynamics that are stemmed from characteristics of individual elites. For instance, certain type of actors tend to be more active in initiating connections. In our case of elite politics, this suggests that powerful elites are more likely to preside and participate in important ceremonies and meetings. From the network analysis perspective, this greater tendency of certain actors to undertake certain behaviors is usually referred as first-order dependencies \citep{Kenny2006}. For example, we expect that Xi Jinping is simply going to make more appearances in aggregate than would a junior CCP elite. That is, if we compare two possible elites, a third person is \emph{ceteris paribus} more likely to make a coappearance with Xi than with the junior CCP elite. On the other hand, the second who question examines if two elites attend the same event. Given its focus on the observable direct and dyadic links, this question follows an approach similar to that of \citet{Shih2010}. The question of ``who do I work with'' then highlights whether there is a direct coordination and collaboration between a pair of elites. 
+The first two who questions are quite consistent with the existing studies of elite politics. Similar to such positional studies as \citet{Jaros2017}, the question of who are in charge is focused on network dynamics that are stemmed from characteristics of individual elites. For instance, certain type of actors tend to be more active in initiating connections. In our case of elite politics, this suggests that powerful elites are more likely to preside and participate in important ceremonies and meetings. From the network analysis perspective, this greater tendency of certain actors to undertake certain behaviors is usually referred as first-order dependencies \citep{Kenny2006}. For example, we expect that Xi Jinping is simply going to make more appearances in aggregate than would a junior CCP elite. That is, if we compare two possible elites, a third person is \emph{ceteris paribus} more likely to make a coappearance with Xi than with the junior CCP elite. On the other hand, the second who question examines if two elites attend the same event. Given its focus on the observable direct and dyadic links, this question follows an approach similar to that of \citet{Shih2010}. The question of ``who do I work with'' then highlights whether there is a direct coordination and collaboration between a pair of elites.
 
 However, what we emphasize in this study is that we cannot equate ``who do I work with'' with ``who are my friends.'' Simply using direct and dyadic links as a proxy of the latent affinity could lead to two types of errors, the incorrect rejection of a true friend and the false acceptance of a real enemy. A straightforward example of the first error is an indirect patronage relationship that involves a patron, a client, and a sub-client. If we rely solely on dyadic coappearance, we may end up wrongly rejecting the relationship between the patron and sub-client. The second error could also occur in a three-party relationship when an elite share links with two rival patrons. In this case, we could run into either a false conclusion or no conclusion at all. Provided with these possible errors, some scholars have questioned the validity of factional studies based on dyadic analyses. For example, \citet{Miller2015d}, a long-time observer of CCP elite politics, points to two problematic cases, Liu Yunshan and Li Yuanzhao, both of whom share strong ties with the competing Jiang and Hu factions. Without a consistent criterion, she argues ``in the Xi era, faction-based analyses frequently rest on assertions of factional association that are tenuous, arbitrary, and at times peculiarly fungible'' (p. 7).
 
@@ -150,9 +152,9 @@ In this study, we rely on a unique database from the China Vitae project, which 
    \tt{2013-05-20}  & \tt{Chinese Premier visits memorial of Mahatma Gandhi in New Delhi \#India \#China} & \tt{Li Keqiang, Wang Yi}\\
     &  &  \\
    \tt{2013-06-07}  & \tt{Xi, Obama meet for 1st summit \#China \#USA} & \tt{Xi Jinping, Wang Yi}\\
-   ... & ...  & ... \\ \\[-1.8ex]     \hline 
+   ... & ...  & ... \\ \\[-1.8ex]     \hline
  \hline \\[-1.8ex]
-\end{tabular} 
+\end{tabular}
 \end{table}
 \par\end{center}
 
@@ -204,20 +206,20 @@ In Figure~\ref{fig:coappFreqs}, we contrast two pairs of coappearances, Xi-Li an
 \end{figure}
 \par\end{center}
 
-Finally, we plot the complete coappearance network in Figure~\ref{fig:fullCoappNet}. It shows that the set of interactions captured in the coappearance network form  a complex system. While there are a few actors towards the right that only appear with one or two other actors, most fall into the broader interconnected system at the left of Figure~\ref{fig:fullCoappNet}. Moreover, within the broader interconnected component, we can find a number of patterns. First, not surprisingly, Xi Jinping and Li Keqiang are positioned towards the center of the network because of their institutional importance. However, around that central system we can see a number of sub-groups. For example, Wu Shengli, Zhao Keshi, Wei Fenghe, Ma Xiaotian, Zhang Yang, and Fang Fenghui were each high ranking military officers and their proximate positioning in the visualization indicates that they coappear with one another frequently.%\footnote{Actors are positioned in this visualization using the Fruchterman-Reingold algorithm \citep{fruchterman:reingold:1991}. These types of algorithms use information contained within the structure of the network itself to construct depictions of graphs. A straightforward way to understand how they work is to think of nodes connected by edges as particles that are attracted to each other, and nodes that are unconnected as particles that repulse each other. These types of algorithms simulate a system in which nodes pull and push upon each other until they reach an equilibrium position.}  
+Finally, we plot the complete coappearance network in Figure~\ref{fig:fullCoappNet}. It shows that the set of interactions captured in the coappearance network form  a complex system. While there are a few actors towards the right that only appear with one or two other actors, most fall into the broader interconnected system at the left of Figure~\ref{fig:fullCoappNet}. Moreover, within the broader interconnected component, we can find a number of patterns. First, not surprisingly, Xi Jinping and Li Keqiang are positioned towards the center of the network because of their institutional importance. However, around that central system we can see a number of sub-groups. For example, Wu Shengli, Zhao Keshi, Wei Fenghe, Ma Xiaotian, Zhang Yang, and Fang Fenghui were each high ranking military officers and their proximate positioning in the visualization indicates that they coappear with one another frequently.%\footnote{Actors are positioned in this visualization using the Fruchterman-Reingold algorithm \citep{fruchterman:reingold:1991}. These types of algorithms use information contained within the structure of the network itself to construct depictions of graphs. A straightforward way to understand how they work is to think of nodes connected by edges as particles that are attracted to each other, and nodes that are unconnected as particles that repulse each other. These types of algorithms simulate a system in which nodes pull and push upon each other until they reach an equilibrium position.}
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=.9\textwidth]{figure/dvViz_names}
+\includegraphics[width=.9\textwidth]{figure/dvViz_names2}
 \caption{The complete coappearance network. Names of elites depicted in the network are scaled by their number of appearances and edges between actors indicate that they appeared together at an event.}
 \label{fig:fullCoappNet}
 \end{figure}
 
-Many such sub-groups like this appear in this visualization and this points to the fact that there is notable higher order structure within this system that may be missed by just examining direct dyadic ties. One way to quantify such higher order structures is a transitivity statistic.\footnote{A relation between a set of actors is transitive (i.e., a triangular relationship), if every time that $i$ and $j$ have a tie and $j$ and $k$ have a tie, then $i$ and $k$ will have a tie.} Here we utilize the clustering coefficient, which is a measure of the degree to which nodes in a network cluster together.\footnote{The clustering coefficient is calculated as follows, where $G$ represents the network being studied, $C=\frac{tr(G^{3})}{\sum_{i\neq j}(G^{2})_{i,j}}$.} A significant amount of higher order structures  leads to a high clustering coefficient. In our case of the CCP elite coappearance network, we find that the statistic is 0.67 on a scale from 0 to 1, indicating that a large proportion of potentially closable triads are actually closed. In the following section, we discuss our approach to systematically estimate latent affinities between actors in a network with higher order dependencies. 
+Many such sub-groups like this appear in this visualization and this points to the fact that there is notable higher order structure within this system that may be missed by just examining direct dyadic ties. One way to quantify such higher order structures is a transitivity statistic.\footnote{A relation between a set of actors is transitive (i.e., a triangular relationship), if every time that $i$ and $j$ have a tie and $j$ and $k$ have a tie, then $i$ and $k$ will have a tie.} Here we utilize the clustering coefficient, which is a measure of the degree to which nodes in a network cluster together.\footnote{The clustering coefficient is calculated as follows, where $G$ represents the network being studied, $C=\frac{tr(G^{3})}{\sum_{i\neq j}(G^{2})_{i,j}}$.} A significant amount of higher order structures  leads to a high clustering coefficient. In our case of the CCP elite coappearance network, we find that the statistic is 0.67 on a scale from 0 to 1, indicating that a large proportion of potentially closable triads are actually closed. In the following section, we discuss our approach to systematically estimate latent affinities between actors in a network with higher order dependencies.
 
 \section*{Latent Factor Analysis}
 
-To answer the question of ``who are my friends,'' we utilize a latent factor model (LFM) \citep{Hoff2005,Minhas2016a}. The LFM positions actors in a $k$ dimensional latent vector space based on third order dependence patterns. In this space, actors whose vectors point in similar dimensions are more likely to share similar preferences and be members of the same latent coalitions. The angles between these vectors then provides a measure of the extent to which the preferences and factional links are similar. %Given its ability to capture latent affinities between interconnected actors, LFM has been used to infer state foreign policy preferences \citep{gallop:minhas:2018}.
+To answer the question of ``who are my friends,'' we utilize a latent factor model (LFM) \citep{Hoff2002,Hoff2005,Minhas2016a}. The LFM positions actors in a $k$ dimensional latent vector space based on third order dependence patterns. In this space, actors whose vectors point in similar dimensions are more likely to share similar preferences and be members of the same latent coalitions. The angles between these vectors then provides a measure of the extent to which the preferences and factional links are similar. %Given its ability to capture latent affinities between interconnected actors, LFM has been used to infer state foreign policy preferences \citep{gallop:minhas:2018}.
 
 More formally, we conduct the analysis as follows. We treat our coappearance network as an $n\times n$ matrix, where $n$ denotes the number of elites, and the matrix cell $y_{ij}$ represents the number of coappearances between elite $i$ and elite $j$.\footnote{It should be noted that the coappearance data is symmetric and so $y_{ij}=y_{ji}$ for all $i,j$. The approach we describe below has already been generalized to the case where $y_{ij}\neq y_{ji}$.} To obtain the latent affinities between elites (i.e., a lower-dimension relational measure), we then have an LFM as follows,
 \begin{align}
@@ -226,11 +228,11 @@ Y & =f(\theta)\\
 Z & =M+E\\
 M & =U\Lambda U^{\top}
 \end{align}
-where $u_{i}\in{\rm I\!R^{k}}$ and $\Lambda$ is $k\times k$ diagonal matrix. $f(.)$ is a general link function corresponding to the distribution of $Y$ (in our case the coappearance count), and $\beta^{\top}\mathbf{X}$ is the standard regression term for dyadic and nodal fixed effects.\footnote{For the purpose of parsimony we abstain from using fixed effects in this study.} 
+where $u_{i}\in{\rm I\!R^{k}}$ and $\Lambda$ is $k\times k$ diagonal matrix. $f(.)$ is a general link function corresponding to the distribution of $Y$ (in our case the coappearance count), and $\beta^{\top}\mathbf{X}$ is the standard regression term for dyadic and nodal fixed effects.\footnote{For the purpose of parsimony we abstain from using fixed effects in this study.}
 
 The LFM accounts for network interdependencies is by decomposing the error term $Z$. \citet{Hoff2008} notes that we can write $Z=M+E$, where the matrix $E$ represents noise, and $M$ is systematic effects representing first and third order dependencies. We factorize the multiplicative effects into the product of two simpler matrices, $U\Lambda U^{\top}$. Under this framework a vector of latent characteristics are thus estimated for each actor, $u_{i}=\{u_{i,1},\ldots,u_{i,k}\}$. Similarity in the latent factors between two actors, $u_{i}\approx u_{j}$, corresponds to how stochastically equivalent they are and the diagonal entries in $\Lambda$, $\lambda_{k}>0$ or $\lambda_{k}<0$, determine the level of homophily (or heterophily) in the network \citep{Minhas2016a}.
 
-For our interest in latent affinity, the key output is $U\Lambda U^{\top}$, where $U$ is an $n\times k$ matrix that represents each actors vector in the $k$-dimensional latent network. It captures the effect of stochastic equivalence and homophily on official appearances. But a caveat in interpreting this space is that it is non-Euclidean, as the actor vectors are embedded within a $k$-dimensional hyper sphere. We thus cannot simply use distances in this space as a measure of latent affinities. Rather, the important measure here is an actor's vector in this space, and the similarity between the vector of one actor and another. 
+For our interest in latent affinity, the key output is $U\Lambda U^{\top}$, where $U$ is an $n\times k$ matrix that represents each actors vector in the $k$-dimensional latent network. It captures the effect of stochastic equivalence and homophily on official appearances. But a caveat in interpreting this space is that it is non-Euclidean, as the actor vectors are embedded within a $k$-dimensional hyper sphere. We thus cannot simply use distances in this space as a measure of latent affinities. Rather, the important measure here is an actor's vector in this space, and the similarity between the vector of one actor and another.
 
 \noindent \begin{center}
 \begin{figure}[H]
@@ -282,32 +284,32 @@ Since more powerful CCP elites are more likely to be affiliated with more LSGs, 
 \begin{table}[!ht]
 \centering
 \caption{Negative binomial regressions on appointment to LSGs.}
-\label{tab:xiMods} 
-\begin{tabular}{ l D{.}{.}{2}D{.}{.}{2}D{.}{.}{2} } 
-\hline\hline 
+\label{tab:xiMods}
+\begin{tabular}{ l D{.}{.}{2}D{.}{.}{2}D{.}{.}{2} }
+\hline\hline
   & \multicolumn{ 1 }{ c }{ Total Appearances } & \multicolumn{ 1 }{ c }{ Total Appearances } & \multicolumn{ 1 }{ c }{ Total Appearances } \\
-  & \multicolumn{ 1 }{ c }{  } & \multicolumn{ 1 }{ c }{ \& Coappearances } & \multicolumn{ 1 }{ c }{ \& Latent Distance } \\ \hline  
-(Intercept)               & -0.02                     & -0.07                     & -0.23                    \\ 
-                          & (0.16)                    & (0.17)                    & (0.18)                   \\ 
-Total Appearances         & 0.01 ^{***}                & 0.02 ^{*}            & 0.01 ^{**}                  \\ 
-                          & (0.00)                    & (0.01)                    & (0.00)                   \\ 
-% Theta                     & 0.61 ^{***}               & 0.64 ^{***}               & 0.69 ^{***}              \\ 
-%                           & (0.18)                    & (0.19)                    & (0.20)                   \\ 
-Coappearances with Xi     &                           & -0.08                     &                          \\ 
-                          &                           & (0.07)                    &                          \\ 
-Latent Distance from Xi   &                           &                           & -0.80 ^{***}              \\ 
+  & \multicolumn{ 1 }{ c }{  } & \multicolumn{ 1 }{ c }{ \& Coappearances } & \multicolumn{ 1 }{ c }{ \& Latent Distance } \\ \hline
+(Intercept)               & -0.02                     & -0.07                     & -0.23                    \\
+                          & (0.16)                    & (0.17)                    & (0.18)                   \\
+Total Appearances         & 0.01 ^{***}                & 0.02 ^{*}            & 0.01 ^{**}                  \\
+                          & (0.00)                    & (0.01)                    & (0.00)                   \\
+% Theta                     & 0.61 ^{***}               & 0.64 ^{***}               & 0.69 ^{***}              \\
+%                           & (0.18)                    & (0.19)                    & (0.20)                   \\
+Coappearances with Xi     &                           & -0.08                     &                          \\
+                          &                           & (0.07)                    &                          \\
+Latent Distance from Xi   &                           &                           & -0.80 ^{***}              \\
                           &                           &                           & (0.28)                    \\
-%  $N$                       & 111                       & 111                       & 111                      \\ 
-% AIC                       & 335.98                    & 336.57                    & 331.58                   \\ 
-% BIC                       & 368.49                    & 379.92                    & 374.93                   \\ 
+%  $N$                       & 111                       & 111                       & 111                      \\
+% AIC                       & 335.98                    & 336.57                    & 331.58                   \\
+% BIC                       & 368.49                    & 379.92                    & 374.93                   \\
 % $\log L$                 & -155.99                   & -152.28                   & -149.79                   \\
 \hline\hline
  % \multicolumn{4}{l}{\footnotesize{Standard errors in parentheses}}\\
-\textit{Note:} & \multicolumn{3}{r}{\footnotesize{$^*$ significant at $p<.10$; $^{**} p<.05$; $^{***} p<.01$}} 
-\end{tabular} 
+\textit{Note:} & \multicolumn{3}{r}{\footnotesize{$^*$ significant at $p<.10$; $^{**} p<.05$; $^{***} p<.01$}}
+\end{tabular}
  \end{table}
 
-The results of our first three models are reported in Table~\ref{tab:xiMods}. First, our baseline model suggests that elites' total appearances matter in LSG appointments. Those ``who are in change'' do attend more LSGs. Second, as shown in the coappearance model, simply joining Xi in same political events (i.e., those ``who work with Xi'') does not significantly matter in terms of LSG appointments. In fact, this relationship weakly points in the \emph{opposite} direction. This supports our earlier contention that simply focusing on ``who do I work with'' could mask latent relations between elites. Finally, in contrast to coappearances, the latent distance measure is significant and in the predicted direction. Elites who are closer to Xi in the latent space (i.e., those ``who are Xi's friends'') are seated on more LSGs. 
+The results of our first three models are reported in Table~\ref{tab:xiMods}. First, our baseline model suggests that elites' total appearances matter in LSG appointments. Those ``who are in change'' do attend more LSGs. Second, as shown in the coappearance model, simply joining Xi in same political events (i.e., those ``who work with Xi'') does not significantly matter in terms of LSG appointments. In fact, this relationship weakly points in the \emph{opposite} direction. This supports our earlier contention that simply focusing on ``who do I work with'' could mask latent relations between elites. Finally, in contrast to coappearances, the latent distance measure is significant and in the predicted direction. Elites who are closer to Xi in the latent space (i.e., those ``who are Xi's friends'') are seated on more LSGs.
 
 In Figure~\ref{fig:effects}, we show the expected number of LSGs an elite with an average number of total appearances would be appointed to based on their latent distance from Xi, for that elite, moving from the closest angle distance observed to the furthest is associated with a drop in LSG appointment of about 1.5.
 
@@ -321,7 +323,7 @@ In Figure~\ref{fig:effects}, we show the expected number of LSGs an elite with a
 \end{figure}
 \par\end{center}
 
-While our measure of Chinese latent proximity conforms to our theoretical expectations in terms of conventional statistical significance, an important test is whether it improves our ability to predict appointments in an out-of-sample context. To do this, we divide Chinese elites into 20 groups at random, and in each case predict how many LSGs an elite in that group will be appointed to using a model fit on the other 19 groups. We do this for each of our three main models and report performance metrics in Table~\ref{tab:xiModsPerf}. To evaluate performance we use the root-mean-square error (RMSE) and proper scoring rules. Scoring rules evaluate forecasts through the assignment of a numerical score based on the predictive distribution and on the actual value of the dependent variable. \citet{czado:etal:2009} discuss a number of such rules that can be used for count data: Brier, Logarithmic, and Spherical scores. For each of these rules, lower values on the metric indicate better performance. We find the model using latent angle difference notably outperforms the models that only use total and coappearances across each of these metrics. This highlights that by accounting for indirect ties using the coappearance data we are able to better predict promotion to the Leading Small Groups than by looking at direct dyadic ties alone. 
+While our measure of Chinese latent proximity conforms to our theoretical expectations in terms of conventional statistical significance, an important test is whether it improves our ability to predict appointments in an out-of-sample context. To do this, we divide Chinese elites into 20 groups at random, and in each case predict how many LSGs an elite in that group will be appointed to using a model fit on the other 19 groups. We do this for each of our three main models and report performance metrics in Table~\ref{tab:xiModsPerf}. To evaluate performance we use the root-mean-square error (RMSE) and proper scoring rules. Scoring rules evaluate forecasts through the assignment of a numerical score based on the predictive distribution and on the actual value of the dependent variable. \citet{czado:etal:2009} discuss a number of such rules that can be used for count data: Brier, Logarithmic, and Spherical scores. For each of these rules, lower values on the metric indicate better performance. We find the model using latent angle difference notably outperforms the models that only use total and coappearances across each of these metrics. This highlights that by accounting for indirect ties using the coappearance data we are able to better predict promotion to the Leading Small Groups than by looking at direct dyadic ties alone.
 
 \begin{table}[ht]
 \centering
@@ -332,17 +334,17 @@ While our measure of Chinese latent proximity conforms to our theoretical expect
   \\[-1.8ex]\hline
   \hline \\[-1.8ex]
   Model & Logarithmic & Brier & Spherical & RMSE\\    \hline \\[-1.8ex]
-Total Appearance & 1.77 & -0.36 & -0.64 & 1.89 \\ 
-Total and Coappearance & 1.77 & -0.38 & -0.66 & 1.84 \\ 
-Total Appearance and  & \multirow{2}{*}{1.73} & \multirow{2}{*}{-0.46} & \multirow{2}{*}{-0.86} & \multirow{2}{*}{1.74} \\ 
-  \;\;\; Latent Distance to Xi &  &  &  &  \\ 
+Total Appearance & 1.77 & -0.36 & -0.64 & 1.89 \\
+Total and Coappearance & 1.77 & -0.38 & -0.66 & 1.84 \\
+Total Appearance and  & \multirow{2}{*}{1.73} & \multirow{2}{*}{-0.46} & \multirow{2}{*}{-0.86} & \multirow{2}{*}{1.74} \\
+  \;\;\; Latent Distance to Xi &  &  &  &  \\
     \hline
  \hline \\[-1.8ex]
 \end{tabular}
 \end{small}
 \end{table}
 
-Finally, as emphasized by \citet{Huhe2018a}, there are marked structural differences between CC LSGs and SC LSGs. While CC LSGs are highly centralized, reflecting Xi's power grip the party, SC LSGs are far more decentralized and driven more by specific needs of policy collaboration. It is thus reasonable to expect while distances from Xi better predict CCP elites appointment in CC LSGs, distances from Li are more pronounced in SC ones. To probe these differences, we run a bivariate probit analysis, which estimates the likelihood that an elite will be appointed to any CC or SC LSGs jointly. 
+Finally, as emphasized by \citet{Huhe2018a}, there are marked structural differences between CC LSGs and SC LSGs. While CC LSGs are highly centralized, reflecting Xi's power grip the party, SC LSGs are far more decentralized and driven more by specific needs of policy collaboration. It is thus reasonable to expect while distances from Xi better predict CCP elites appointment in CC LSGs, distances from Li are more pronounced in SC ones. To probe these differences, we run a bivariate probit analysis, which estimates the likelihood that an elite will be appointed to any CC or SC LSGs jointly.
 
 From Table~\ref{tab:bivarProbit}, we see that latent distance from Xi has a negative effect on the likelihood of appointment to CC LSGs, but being proximate to Xi in this latent social space has no clear effect on appointment to SC LSGs. Conversely, distance from Li is associated with a lowered likelihood of appointment to SC LSGs, but not the CC ones. These findings point to some interesting power-sharing patterns in the CCP regime. While Xi dominates the more important CC LSGs, Li preserves substantial influences over implementing key polices. The ability to distinguish between promotion to CC and SC LSGs renders more support for our approach to approximating the latent affinities between CCP elites.
 
@@ -387,7 +389,7 @@ In this study, we propose a latent factor framework to exploring elite networks.
 
 By introducing this framework, our study presents a possible avenue to synthesize different aspects of elite power-sharing in authoritarian regimes. It not only encompasses positional status of individual elites, but also incorporates how they are interrelated. This allows us to develop a systematic view about the inherent and uneasy tensions among authoritarian elites. As long noted by \citet{Pye1995}, ``Chinese politics operated in an atmosphere of tension in which everyone sensed the need always to be careful and calculating about what was done or said'' (p. 36). The three who questions proposed in this study then help highlight their key heuristics. Particularly, our emphasis on the question of ``who are our friends'' suggests that we need to move beyond just examining the direct ties actors share.
 
-Last, studies of elite politics in authoritarian regimes have also been long plagued with data paucity. Our study points to an alternative data source, appearance data, that could complement existing data like media coverage and biographical archives. Such data not only is dynamic, it also sheds light on the actual realization of power relationship as emphasized by \citet{Dahl1961}. As a preliminary exploration, our study is inevitably limited, and more systematic are called for to improve collection and analysis of such data. 
+Last, studies of elite politics in authoritarian regimes have also been long plagued with data paucity. Our study points to an alternative data source, appearance data, that could complement existing data like media coverage and biographical archives. Such data not only is dynamic, it also sheds light on the actual realization of power relationship as emphasized by \citet{Dahl1961}. As a preliminary exploration, our study is inevitably limited, and more systematic are called for to improve collection and analysis of such data.
 
 \newpage{}
 
@@ -407,29 +409,29 @@ Last, studies of elite politics in authoritarian regimes have also been long pla
 % \begin{table}[!ht]
 % \centering
 % \caption{Negative binomial regressions on appointment to LSGs by relationship to Xi and Li}
-% \label{tab:xiliMods} 
-% \begin{tabular}{ l D{.}{.}{2}D{.}{.}{2} } 
+% \label{tab:xiliMods}
+% \begin{tabular}{ l D{.}{.}{2}D{.}{.}{2} }
 % \hline \hline
 %   & \multicolumn{ 1 }{ c }{ Xi Only } & \multicolumn{ 1 }{ c }{ Li Only } \\ \hline
-%  %                       & Xi Only      & Li Only     \\ 
-% (Intercept)             & -0.23        & -0.59 ^{***} \\ 
-%                         & (0.18)       & (0.21)      \\ 
-% Total Appearances       & 0.01 ^{**}      & 0.01 ^{***}  \\ 
-%                         & (0.00)       & (0.00)      \\ 
-% Latent Distance from Xi & -0.80 ^{***}  &             \\ 
-%                         & (0.28)       &             \\ 
-% % Theta                   & 0.69 ^{***}  & 0.93 ^{**}  \\ 
-% %                         & (0.20)       & (0.32)      \\ 
-% Latent Distance from Li &              & -1.42 ^{***}\\ 
+%  %                       & Xi Only      & Li Only     \\
+% (Intercept)             & -0.23        & -0.59 ^{***} \\
+%                         & (0.18)       & (0.21)      \\
+% Total Appearances       & 0.01 ^{**}      & 0.01 ^{***}  \\
+%                         & (0.00)       & (0.00)      \\
+% Latent Distance from Xi & -0.80 ^{***}  &             \\
+%                         & (0.28)       &             \\
+% % Theta                   & 0.69 ^{***}  & 0.93 ^{**}  \\
+% %                         & (0.20)       & (0.32)      \\
+% Latent Distance from Li &              & -1.42 ^{***}\\
 %                         &              & (0.37)       \\
-% %  $N$                     & 111          & 111         \\ 
-% % AIC                     & 331.58       & 323.30      \\ 
-% % BIC                     & 374.93       & 366.66      \\ 
-% % $\log L$               & -149.79      & -145.65      \\ 
+% %  $N$                     & 111          & 111         \\
+% % AIC                     & 331.58       & 323.30      \\
+% % BIC                     & 374.93       & 366.66      \\
+% % $\log L$               & -149.79      & -145.65      \\
 % \hline\hline
 %  % \multicolumn{3}{l}{\footnotesize{Standard errors in parentheses}}\\
-%  \multicolumn{3}{r}{\textit{Note: } \footnotesize{$^*$ significant at $p<.10$; $^{**} p<.05$; $^{***} p<.01$}} 
-% \end{tabular} 
+%  \multicolumn{3}{r}{\textit{Note: } \footnotesize{$^*$ significant at $p<.10$; $^{**} p<.05$; $^{***} p<.01$}}
+% \end{tabular}
 %  \end{table}
 
 % \noindent \begin{center}
@@ -443,10 +445,10 @@ Last, studies of elite politics in authoritarian regimes have also been long pla
 %   \hline \\[-1.8ex]
 %    & & & & Dawid & \\
 %    Model & Logarith & Brier & Spherical & Sebastiani & RMSE\\    \hline \\[-1.8ex]
-% Total Appearance and Latent Distance to Xi & 1.73 & -0.46 & -0.86 & 2.66 & 1.74 \\ 
-% Total Appearance and Latent Distance to Li & 1.64 & -0.51 & -0.96 & 2.41 & 1.90 \\ 
+% Total Appearance and Latent Distance to Xi & 1.73 & -0.46 & -0.86 & 2.66 & 1.74 \\
+% Total Appearance and Latent Distance to Li & 1.64 & -0.51 & -0.96 & 2.41 & 1.90 \\
 %  \hline \\[-1.8ex]
-% \end{tabular} 
+% \end{tabular}
 % \noindent \begin{raggedright}
 % \emph{Note}: For each of the metrics, lower values indicate better
 % performance. For more details about scoring rules, see the Appendix.
