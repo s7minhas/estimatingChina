@@ -1,8 +1,10 @@
+library(extrafont)
+
 # calc CI ranges, beta df must have mean and sd cols
 getCIVecs = function(beta){
   beta$lo95 = beta$mean - qnorm(.975)*beta$sd
   beta$hi95 = beta$mean + qnorm(.975)*beta$sd
-  beta$lo90 = beta$mean - qnorm(.95)*beta$sd  
+  beta$lo90 = beta$mean - qnorm(.95)*beta$sd
   beta$hi90 = beta$mean + qnorm(.95)*beta$sd
   return(beta)
 }
@@ -33,7 +35,7 @@ getPosInSpace = function(latObject, symmetric = TRUE){
     eULU = eigen(ULUPM)
     eR<- which( rank(-abs(eULU$val),ties.method="first") <= 2 )
     U<-eULU$vec[,seq(1,2,length=2),drop=FALSE] %*% sqrt(diag(eULU$val[1:2]))
-    L<-eULU$val[eR]   
+    L<-eULU$val[eR]
     rownames(U)<-dimnames(ULUPM)[[1]]
     return(U)
   }
@@ -56,7 +58,7 @@ getLatAngle = function(x){
   rownames(u) = rownames(U)
   angles = matrix(acos(u[,1]), nrow(u), 1)
   rownames(angles) = rownames(U)
-  
+
   dists = expand.grid(rownames(angles), rownames(angles))
   dists = dists[dists$Var1 != dists$Var2,]
   dists$ang1 = angles[dists$Var1] ; dists$ang2 = angles[dists$Var2]
@@ -66,7 +68,7 @@ getLatAngle = function(x){
 
 
 ################
-# lat fac plot 
+# lat fac plot
 
 ################
 library(ggrepel)
@@ -74,7 +76,7 @@ library(ggplot2)
 theme_set(theme_bw())
 
 getDataForCirc = function(
-  Y, U=NULL, V=NULL, row.names=rownames(Y), 
+  Y, U=NULL, V=NULL, row.names=rownames(Y),
   col.names=colnames(Y), vscale=.8, removeIsolates=TRUE,
   uLabel='U', vLabel='V'
   ){
@@ -121,14 +123,14 @@ getDataForCirc = function(
   rsum <- apply(abs(Y), 1, sum, na.rm = TRUE)
   csum <- apply(abs(Y), 2, sum, na.rm = TRUE)
   links <- which(Y != 0, arr.ind = TRUE)
-  
+
   # org df for gg
   uG = data.frame(u*1.2)
   uG$actor = rownames(Y)
   uG$tPch = 0 ; uG$tPch[rsum>0] = (mu[rsum>0])^3
   if(removeIsolates){ uG = uG[uG$tPch>0,] }
   uG$tPch = uG$tPch
-  
+
   # add v if supplied
   if(!vLogic){
     vG = data.frame(v*1.2)
@@ -136,9 +138,9 @@ getDataForCirc = function(
     vG$tPch = 0 ; vG$tPch[csum>0] = (mv[csum>0])^3
     if(removeIsolates){ vG = vG[vG$tPch>0,] }
     vG$tPch = vG$tPch
-    
+
     uG$eff = uLabel ; vG$eff = vLabel
-    uG = rbind(uG, vG)    
+    uG = rbind(uG, vG)
     uG$eff = factor(uG$eff, levels=c(uLabel,vLabel)) }
 
   #
@@ -147,7 +149,7 @@ getDataForCirc = function(
 }
 
 circSlice = function(
-  Y, U, sliceLabel, 
+  Y, U, sliceLabel,
   ptColor='gray48', labelSizeRange=c(2,6)){
   ggU = getDataForCirc(Y=Y, U=U)$uG
   ggU$lab = ggU$actor
@@ -175,7 +177,7 @@ ggCirc = function(
   ptColor='gray48', ptAlpha=.9,
   showActLinks=TRUE, geomLabel=TRUE, geomText=FALSE, geomPoint=TRUE, ...
   ){
-  
+
   #
   vLogic = is.null(V) ; uLogic = is.null(U)
 
@@ -218,14 +220,14 @@ ggCirc = function(
   rsum <- apply(abs(Y), 1, sum, na.rm = TRUE)
   csum <- apply(abs(Y), 2, sum, na.rm = TRUE)
   links <- which(Y != 0, arr.ind = TRUE)
-  
+
   # org df for gg
   uG = data.frame(u*1.2)
   uG$actor = rownames(Y)
   uG$tPch = 0 ; uG$tPch[rsum>0] = (mu[rsum>0])^3
   if(removeIsolates){ uG = uG[uG$tPch>0,] }
   uG$tPch = uG$tPch
-  
+
   # add v if supplied
   if(!vLogic){
     vG = data.frame(v*1.2)
@@ -233,16 +235,16 @@ ggCirc = function(
     vG$tPch = 0 ; vG$tPch[csum>0] = (mv[csum>0])^3
     if(removeIsolates){ vG = vG[vG$tPch>0,] }
     vG$tPch = vG$tPch
-    
+
     uG$eff = uLabel ; vG$eff = vLabel
-    uG = rbind(uG, vG)    
+    uG = rbind(uG, vG)
     uG$eff = factor(uG$eff, levels=c(uLabel,vLabel))
     ggCirc = ggplot(uG, aes(x=X1, y=X2,color=eff))
   }
   if(vLogic){
     ggCirc = ggplot(uG, aes(x=X1, y=X2))
   }
-  
+
   # add segments
   if(showActLinks){
     for(i in 1:nrow(links)){
