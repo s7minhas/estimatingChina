@@ -1,5 +1,6 @@
 # WORKSPACE #######################################################################
 rm(list=ls())
+
 if(Sys.info()['user'] %in% c('Owner','herme', 'S7M')){
   u = Sys.info()['user']
   pathBase = paste0('C:/Users/', u, '/')
@@ -11,6 +12,8 @@ if(Sys.info()['user'] %in% c('Owner','herme', 'S7M')){
 }
 
 # libraries
+# install.packages('Zelig', repos='https://cloud.r-project.org')
+# devtools::install_version('ZeligChoice', '0.9-6', 'https://cloud.r-project.org')
 library(reshape2)
 library(MASS)
 library(ggplot2) ; theme_set(theme_bw())
