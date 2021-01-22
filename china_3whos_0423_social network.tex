@@ -84,7 +84,7 @@ Elite networks have been a central focus of scholars of political networks as we
 
 In this article, we propose a latent factor framework to systematically map and analyze the dynamics of elite power-sharing in authoritarian regimes. To do this we utilize elite appearance and coappearance at political events.\footnote{\citet{mahdavi_2019} also uses this approach to study relations between political elites in North Korea.} Our framework and data allow us to disentangle and synthesize three key aspects of elite power-sharing in authoritarian regimes: (1) who are in charge, (2) who do I work with, and (3) who are my friends. The question of ``who are in charge'' focuses on the power and influence of \emph{individual} elites. The answer to this question is of critical importance in authoritarian regimes where formal political institutions are vulnerable to elites' manipulation. Moving beyond individual elites, the question of ``who do I work with'' points to the \emph{dyadic} relationship between a given pair of elites (e.g., collegial ties and patronage connections), which serves as the very basis of coalitions and factions. However, a simple dyadic ``who do I work with'' approach will, we argue, overlook indirect relationships between elites and ignore information about latent coalitions. For instance, without a direct collegial or patronage connection, two elites may still belong to an unobserved coalition because of ties to a common friend. The question of ``who are my friends'' then captures such indirect \emph{latent} connections between elites. Together, by jointly considering the individual, dyadic, and latent attributes, the three ``who'' questions reveal systematic dynamics of elite power-sharing in authoritarian regimes.
 
-Our empirical analyses and tests are focused on the Chinese Communist Party (CCP) regime. While the CCP regime has been commonly accepted as one of the most institutionalized and ``machine-like'' authoritarian regimes, many China scholars emphasize that institutional rules are epiphenomenal to elite politics \citep{Nathan1973,Tsou1976,Shih2010}. After Xi Jinping became the general secretary of CCP in 2012, the interest in elite power-sharing has been rekindled and become even more heated. Xi's first term was marked with major elite reshuffles, swift institutional changes, and wide-ranging policy alterations \citep{Miller2014b,Naughton2014,Lampton2015,Shirk2018}. These dramatic changes not only urge us to reassess CCP's intra-elite relations, but also make it an ideal laboratory to explore the three ``who'' questions. Specifically, we utilize a latent factor model \citep{hoff2018additive} to analyze a novel database that tracks approximately 10,000 appearance records of over 200 top CCP elites from 2013 to 2017. We attempt to answer the three ``who'' questions by computing elites' total appearances (i.e., ``who are in charge''), dyadic coappearances (i.e., ``who do I work with''), and, finally, their distance in a latent social space (i.e., ``who are my friends''). Our latent factor analysis of the appearance data presents a possible avenue to disentangle and synthesize key aspects of elite power-sharing in authoritarian regimes.
+Our empirical analyses and tests are focused on the Chinese Communist Party (CCP) regime. While the CCP regime has been commonly accepted as one of the most institutionalized and ``machine-like'' authoritarian regimes, many China scholars emphasize that institutional rules are epiphenomenal to elite politics \citep{Nathan1973,Tsou1976,Shih2010}. After Xi Jinping became the general secretary of CCP in 2012, the interest in elite power-sharing has been rekindled and become even more heated. Xi's first term was marked with major elite reshuffles, swift institutional changes, and wide-ranging policy alterations \citep{Miller2014b,Naughton2014,Lampton2015,Shirk2018}. These dramatic changes not only urge us to reassess CCP's intra-elite relations, but also make it an ideal laboratory to explore the three ``who'' questions. Specifically, we utilize a latent factor model \citep{Minhas2016a} to analyze a novel database that tracks approximately 10,000 appearance records of over 200 top CCP elites from 2013 to 2017. We attempt to answer the three ``who'' questions by computing elites' total appearances (i.e., ``who are in charge''), dyadic coappearances (i.e., ``who do I work with''), and, finally, their distance in a latent social space (i.e., ``who are my friends''). Our latent factor analysis of the appearance data presents a possible avenue to disentangle and synthesize key aspects of elite power-sharing in authoritarian regimes.
 
 To probe the validity of this approach, we examine how well these three indicators fare in generating out-of-sample predictions of elites' appointments to the leading small groups (LSGs) of the CCP Central Committee and the Central Government \citep{Batke2017,Huhe2018a}. LSGs are an informal institutional arrangement of the CCP that has not been incorporated into charts of party or government organs. However, they play a pivotal role in the formulation, coordination, and implementation of decisions across different segments and levels of the CCP regime \citep{Hamrin1992,Lieberthal1992a}. LSGs not only ameliorate the regime's prolonged problem of political fragmentation, they can also be an effective vehicle for overpassing formal institutions and asserting personal influences as shown by the infamous Central Cultural Revolution Group (1966-69). Further it has been recently noted that Xi relies heavily on LSGs to push forward institutional reforms and policy changes \citep{Miller2014a,Naughton2014,Johnson2017,Lee2017,Shirk2018}. Our empirical analysis shows that while elites' total appearances are strongly associated with their appointments in LSGs memberships, their dyadic coappearances bear a much weaker association. Most importantly, the best predictor of LSG membership is our latent measure of network proximity.
 
@@ -128,7 +128,13 @@ In this study, we argue that the problems listed above stem from the prevalence 
 
 \section*{Data}
 
-In this study, we rely on a unique database from the China Vitae project, which traces the public appearances of CCP elites. We focus on the time period between January 1 2013 and January 1 2017, which provides us with approximately 10,000 appearance records for over 200 elites. This allows us to systematically examine the elite power-sharing in Xi's first term. Table~\ref{tab:eventDesc} presents a small sample of our dataset and reports the date, the event, and elites in attendance.\footnote{Further information about the event locations, topics raised, and sources are also available.} From Table~\ref{tab:eventDesc}, we show that our dataset captures how top CCP elites structured their power relationships via a variety of political activities, ranging from the civil-military unity meeting to the China-US summit. As argued above, these power foci constitute an interlocking network of events and elites, and Figure~\ref{fig:focinet} shows how the six events in Table~\ref{tab:eventDesc} could form a simple interlocking network. Since our main focus are relationships among elites, we then extract the elite coappearance network as shown in Figure~\ref{fig:appnet}, and such coappearance networks serve as the starting point of our later analyses.
+In this study, we rely on a unique database from the China Vitae project, which traces the public appearances of CCP elites. We focus on the time period between January 1 2013 and January 1 2017, which provides us with approximately 10,000 appearance records for over 200 elites. This allows us to systematically examine the elite power-sharing in Xi's first term. It should be noted that public appearances can provide important signals to both the general public and the regime insiders.  On the one hand, CCP elites are propelled to project an image of solidarity to the general public.  This is of critical importance to the overall regime stability as the party split in late 1980s led to the regime-challenging Tiananmen movement.  On the other hand, for the regime insiders, especially lower level officials peripheral to the power center, the public appearances of top elites serve to signal important policy and political changes, which in turn are key to factional struggles and policy implementations.   In other words, public appearances of CCP needs not only to be uniform enough to show the party unity, but also to be sufficiently differentiating so as to reveal underlying elite affinities and policy priorities.
+
+Given these competing incentives, two kinds of organizing protocols emerged, that is, “by-rank-only” and “by-invitation-only.”  Most regular and ceremonial appearances like plenary sessions of the Central Committee (CC) follow the protocol of “by-rank-only.”  The attendance in these events are determined by formal party ranks (e.g., members of the CC Standing Committee, full CC members, and alternate CC members), and the extensive media coverage on these events help to present a unitary voice of the party.  In our following analysis, we did not include events based on the protocol of “by-rank-only” for two reasons.  First, our data has been collected in Xi’s first term, and there was no reshuffle in CC.  The attendance in these events, therefore, is largely uniform, conveying little information other than party ranks.  Second, despite their extensive media coverage, the number of these regular appearances is disproportionately small compared to events of “by-invitation-only.”  For instance, the CC plenary sessions run on annual basis, and there were only four occurrences in our dataset.
+
+Our study focuses on the events based on the protocol of “by-invitation-only,” which constitutes the large majority of public appearances of CCP elites but receives little public attention.  In sharp contrast to events of “by-rank-only,” there is no formal rules to organize these events, and the attendance is largely determined by key elites who are in charge of the specific policy domains.  For this reason, these events reflect critical political and policy changes in CCP.  To illustrate this, we can turn to two policy domains, Xinjiang and Tibet, which have 66 and 46 related entries respectively.  A closer look at these entries point to important policies differences and potential personnel changes.  Specifically, while Guo Shengkun, as the police chief, has attended multiple meetings and events related to Xinjiang, he was not invited to any meetings related to Tibet.  Similarly, Wang Yang, the Vice Premier overseeing rural affairs and poverty reduction, appeared in the Xinjiang meetings but not the Tibet ones.  On the other hand, we find Wang Yi, the Minister of Foreign Affairs, and Liu Qibao, the head of the CC Propaganda Department joined meetings related to Tibet but not Xinjiang.  Taking together, we can find these appearances help to revealing CCP’s striking policy differences in two seemingly similar domains.  While in Xinjiang CCP took an inward looking approach by focusing on public security and local economy, an outward looking approach is carried out in Tibet with the aim of winning international support.  Moreover, we find elites who were actively engaged in Xinjiang policies have gained important promotions.  In the reshuffle of the 19th CC in October 2017, Guo Shengkun was promoted to the full CC member, and Wang Yang to one of the seven members of the Politburo Standing Committee.
+
+Table~\ref{tab:eventDesc} presents a small sample of our dataset and reports the date, the event, and elites in attendance.\footnote{Further information about the event locations, topics raised, and sources are also available.} From Table~\ref{tab:eventDesc}, we show that our dataset captures how top CCP elites structured their power relationships via a variety of political activities, ranging from the civil-military unity meeting to the China-US summit. As argued above, these power foci constitute an interlocking network of events and elites, and Figure~\ref{fig:focinet} shows how the six events in Table~\ref{tab:eventDesc} could form a simple interlocking network. Since our main focus are relationships among elites, we then extract the elite coappearance network as shown in Figure~\ref{fig:appnet}, and such coappearance networks serve as the starting point of our later analyses.
 
 \noindent \begin{center}
 \begin{table}[H]
@@ -162,10 +168,10 @@ In this study, we rely on a unique database from the China Vitae project, which 
 \begin{figure}[H]
 \noindent \begin{centering}
 \subfloat[Foci network\label{fig:focinet}]{\noindent \begin{centering}
-\includegraphics[width=2.5in]{figure/data_fig1}
+\includegraphics[width=2.5in]{data_fig1}
 \par\end{centering}
 }\subfloat[Appearance network\label{fig:appnet}]{\noindent \begin{centering}
-\includegraphics[width=2.5in]{figure/data_fig2}
+\includegraphics[width=2.5in]{data_fig2}
 \par\end{centering}
 }
 \par\end{centering}
@@ -176,7 +182,7 @@ In this study, we rely on a unique database from the China Vitae project, which 
 \noindent \begin{center}
 \begin{figure}[H]
 \noindent \begin{centering}
-\includegraphics[width=1\textwidth]{figure/freq}
+\includegraphics[width=1\textwidth]{freq}
 \par\end{centering}
 \caption{Total appearances (gray), Xi (red), and Li (blue). Dashed vertical lines denote the months of February and August and the dotted lines denote March and September.}
 \label{fig:freq}
@@ -191,13 +197,13 @@ In Figure~\ref{fig:coappFreqs}, we contrast two pairs of coappearances, Xi-Li an
 \begin{figure}[H]
 \noindent \begin{centering}
 \subfloat[Xi and Li\label{fig:Xi_Li}]{\noindent \begin{centering}
-\includegraphics[width=.8\textwidth]{figure/Xi_Li}
+\includegraphics[width=.8\textwidth]{Xi_Li}
 \par\end{centering}
 }
 \par\end{centering}
 \noindent \begin{centering}
 \subfloat[Xi and Zhang\label{fig:Xi_ZG}]{\noindent \begin{centering}
-\includegraphics[width=.8\textwidth]{figure/Xi_ZG}
+\includegraphics[width=.8\textwidth]{Xi_ZG}
 \par\end{centering}
 }
 \par\end{centering}
@@ -210,7 +216,7 @@ Finally, we plot the complete coappearance network in Figure~\ref{fig:fullCoappN
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=.9\textwidth]{figure/dvViz_names2}
+\includegraphics[width=.9\textwidth]{dvViz_names2}
 \caption{The complete coappearance network. Names of elites depicted in the network are scaled by their number of appearances and edges between actors indicate that they appeared together at an event.}
 \label{fig:fullCoappNet}
 \end{figure}
@@ -219,7 +225,7 @@ Many such sub-groups like this appear in this visualization and this points to t
 
 \section*{Latent Factor Analysis}
 
-To answer the question of ``who are my friends,'' we utilize a latent factor model (LFM) \citep{Hoff2002,Hoff2005,Minhas2016a,hoff2018additive}. The LFM positions actors in a $k$ dimensional latent vector space based on third order dependence patterns. In this space, actors whose vectors point in similar dimensions are more likely to share similar preferences and be members of the same latent coalitions. The angles between these vectors then provides a measure of the extent to which the preferences and factional links are similar. %Given its ability to capture latent affinities between interconnected actors, LFM has been used to infer state foreign policy preferences \citep{gallop:minhas:2018}.
+To answer the question of ``who are my friends,'' we utilize a latent factor model (LFM) \citep{Hoff2005,Minhas2016a}. The LFM positions actors in a $k$ dimensional latent vector space based on third order dependence patterns. In this space, actors whose vectors point in similar dimensions are more likely to share similar preferences and be members of the same latent coalitions. The angles between these vectors then provides a measure of the extent to which the preferences and factional links are similar. Given its ability to capture latent affinities between interconnected actors, LFM has been used to infer state foreign policy preferences \citep{gallop:minhas:2018}.
 
 More formally, we conduct the analysis as follows. We treat our coappearance network as an $n\times n$ matrix, where $n$ denotes the number of elites, and the matrix cell $y_{ij}$ represents the number of coappearances between elite $i$ and elite $j$.\footnote{It should be noted that the coappearance data is symmetric and so $y_{ij}=y_{ji}$ for all $i,j$. The approach we describe below has already been generalized to the case where $y_{ij}\neq y_{ji}$.} To obtain the latent affinities between elites (i.e., a lower-dimension relational measure), we then have an LFM as follows,
 \begin{align}
@@ -232,12 +238,12 @@ where $u_{i}\in{\rm I\!R^{k}}$ and $\Lambda$ is $k\times k$ diagonal matrix. $f(
 
 The LFM accounts for network interdependencies is by decomposing the error term $Z$. \citet{Hoff2008} notes that we can write $Z=M+E$, where the matrix $E$ represents noise, and $M$ is systematic effects representing first and third order dependencies. We factorize the multiplicative effects into the product of two simpler matrices, $U\Lambda U^{\top}$. Under this framework a vector of latent characteristics are thus estimated for each actor, $u_{i}=\{u_{i,1},\ldots,u_{i,k}\}$. Similarity in the latent factors between two actors, $u_{i}\approx u_{j}$, corresponds to how stochastically equivalent they are and the diagonal entries in $\Lambda$, $\lambda_{k}>0$ or $\lambda_{k}<0$, determine the level of homophily (or heterophily) in the network \citep{Minhas2016a}.
 
-For our interest in latent affinity, the key output is $U\Lambda U^{\top}$, where $U$ is an $n\times k$ matrix that represents each actors vector in the $k$-dimensional latent network. It captures the effect of stochastic equivalence and homophily on official appearances. But a caveat in interpreting this space is that it is non-Euclidean, as the actor vectors are embedded within a $k$-dimensional hyper sphere. We thus cannot simply use distances in this space as a measure of latent affinities. Rather, the important measure here is an actor's vector in this space, and the similarity between the vector of one actor and another.
+For our interest in latent affinity, the key output is $U\Lambda U^{\top}$, where $U$ is an $n\times k$ matrix that represents each actors vector in the $k$-dimensional latent network.\footnote{We estimate a 2-dimensional latent factor space for our application.} It captures the effect of stochastic equivalence and homophily on official appearances. But a caveat in interpreting this space is that it is non-Euclidean, as the actor vectors are embedded within a $k$-dimensional hyper sphere. We thus cannot simply use distances in this space as a measure of latent affinities. Rather, the important measure here is an actor's vector in this space, and the similarity between the vector of one actor and another.
 
 \noindent \begin{center}
 \begin{figure}[H]
 \noindent \begin{centering}
-\includegraphics[width=5in]{figure/uViz}
+\includegraphics[width=5in]{uViz}
 \par\end{centering}
 \caption{Visualization of the AME latent factor space. Actors that cluster together in this space are more likely
 to interact with one another.}
@@ -245,16 +251,16 @@ to interact with one another.}
 \end{figure}
 \par\end{center}
 
-Comparing the similarity between two elites, $\{i,j\}$, can be accomplished by comparing the direction to which their respective factor vectors point. A commonly used metric for this sort of problem is the cosine of the angle formed by the latent vectors of both actors.\footnote{The method is well developed in the recommender system literature of computer science. It is calculated in the following way, where $u$ represents the $n\times k$ matrix of actor vectors, $\text{Latent angle distance}_{ij}=\frac{u_{i}\cdot u_{j}}{||u_{i}||\cdot||u_{j}||}*(-1)$. } We refer to this distance metric as latent angle distance. More concretely, if the estimated latent vectors of two actors are in the same direction, they are apt to have made appearances with similar partners. We measure this by looking at the absolute distance of the angles created by each officials position and the center of the latent network, and the results are plotted in Figure~\ref{fig:uv}.
+Comparing the similarity between two elites, $\{i,j\}$, can be accomplished by comparing the direction to which their respective factor vectors point. A commonly used metric for this sort of problem is the cosine of the angle formed by the latent vectors of both actors.\footnote{The method is well developed in the recommender system literature of computer science. It is calculated in the following way, where $u$ represents the $n\times k$ matrix of actor vectors, $\text{Latent angle distance}_{ij}=\frac{u_{i}\cdot u_{j}}{||u_{i}||\cdot||u_{j}||}*(-1)$. } We refer to this distance metric as latent angle distance. More concretely, if the estimated latent vectors of two actors are in the same direction, they are apt to have made appearances with similar partners. We measure this by looking at the absolute distance of the angles created by each officials position and the center of the latent network, and the results are plotted in Figure~\ref{fig:uv}. Our latent angle distance measure is bounded between -1 and 1, where higher values point towards greater dissimilarity in appearance patterns. 
 
 \noindent \begin{center}
 \begin{figure}[H]
 \noindent \begin{centering}
 \subfloat[18th Poliburo (2012-17)\label{fig:uv18}]{\noindent \begin{centering}
-\includegraphics[width=3.25in]{figure/politSC18}
+\includegraphics[width=3.25in]{politSC18}
 \par\end{centering}
 }\subfloat[19th Poliburo (2017-)\label{fig:uv19}]{\noindent \begin{centering}
-\includegraphics[width=3.25in]{figure/politSC19}
+\includegraphics[width=3.25in]{politSC19}
 \par\end{centering}
 }
 \par\end{centering}
@@ -272,7 +278,7 @@ To provide a more robust test of the validity of our approach, we examine elite 
 \noindent \begin{center}
 \begin{figure}[H]
 \noindent \begin{centering}
-\includegraphics[width=3.5in]{figure/LSG_full}
+\includegraphics[width=3.5in]{LSG_full}
 \par\end{centering}
 \caption{The Central Committee (CC) and the State Council (SC) LSGs.}
 \label{fig:lsgNet}
@@ -316,7 +322,7 @@ In Figure~\ref{fig:effects}, we show the expected number of LSGs an elite with a
 \noindent \begin{center}
 \begin{figure}[H]
 \noindent \begin{centering}
-\includegraphics[width=1\textwidth]{figure/effects}
+\includegraphics[width=1\textwidth]{effects}
 \par\end{centering}
 \caption{Estimated effect on number of LSG appointments based on latent distance to Xi.}
 \label{fig:effects}
@@ -389,7 +395,7 @@ In this study, we propose a latent factor framework to exploring elite networks.
 
 By introducing this framework, our study presents a possible avenue to synthesize different aspects of elite power-sharing in authoritarian regimes. It not only encompasses positional status of individual elites, but also incorporates how they are interrelated. This allows us to develop a systematic view about the inherent and uneasy tensions among authoritarian elites. As long noted by \citet{Pye1995}, ``Chinese politics operated in an atmosphere of tension in which everyone sensed the need always to be careful and calculating about what was done or said'' (p. 36). The three who questions proposed in this study then help highlight their key heuristics. Particularly, our emphasis on the question of ``who are our friends'' suggests that we need to move beyond just examining the direct ties actors share.
 
-Last, studies of elite politics in authoritarian regimes have also been long plagued with data paucity. Our study points to an alternative data source, appearance data, that could complement existing data like media coverage and biographical archives. Such data not only is dynamic, it also sheds light on the actual realization of power relationship as emphasized by \citet{Dahl1961}. As a preliminary exploration, our study is inevitably limited, and more systematic are called for to improve collection and analysis of such data.
+Last, studies of elite politics in authoritarian regimes have also been long plagued with data paucity. Our study points to an alternative data source, appearance data, that could complement existing data like media coverage and biographical archives. Such data not only is dynamic, it also sheds light on the actual realization of power relationship as emphasized by \citet{Dahl1961}. As a preliminary exploration, our study is inevitably limited, and more systematic are called for to improve collection and analysis of such data.  First, in approximating the latent affinities among CCP elites, we treat their appearances between 2013 and 2017 as cross-sectional, which in turn could mask important temporal changes.  With more systematic data collection, future studies can benefit from longitudinal explorations of the evolution of the CCP elite network.  Second, we focus mainly on the latent relationship between the CCP elites.  This leaves certain questions for future research:  For example, is attendance at some events more important than others?  Is attendance at some events conducive to a future promotion?  Future studies can also benefit from adopting a bipartite framework, simultaneously looking at the characteristics and latent positions of both events and elites.  Finally, future research could better reveal elite politics by disentangling the relationship between elites' public appearances and their biographical data (e.g., school graduation, home provinces, and work experiences). 
 
 \newpage{}
 
