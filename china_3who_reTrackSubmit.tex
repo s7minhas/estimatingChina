@@ -31,7 +31,7 @@
 \usepackage{booktabs}
 \date{}
 \usepackage[ragged, bottom, multiple]{footmisc}
-\usepackage[colorlinks, urlcolor=blue, citecolor=blue, linkcolor=blue]{hyperref}
+\usepackage[colorlinks, urlcolor=black, citecolor=black, linkcolor=black]{hyperref}
 
 \@ifundefined{showcaptionsetup}{}{%
  \PassOptionsToPackage{caption=false}{subfig}}
@@ -335,15 +335,11 @@ Many such sub-groups like this appear in this visualization and this points to t
 
 \section*{Latent Factor Analysis}
 
-To answer the question of ``who are my friends,'' we utilize a latent factor model (LFM) \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
-\citep{Hoff2002,Hoff2005,Minhas2016a}}\hspace{0pt}%DIFAUXCMD
-}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
-\citep{Hoff2005,Minhas2016a}}\hspace{0pt}%DIFAUXCMD
-}\DIFaddend . The LFM positions actors in a $k$ dimensional latent vector space based on third order dependence patterns. In this space, actors whose vectors point in similar dimensions are more likely to share similar preferences and be members of the same latent coalitions. The angles between these vectors then provides a measure of the extent to which the preferences and factional links are similar. %DIF < Given its ability to capture latent affinities between interconnected actors, LFM has been used to infer state foreign policy preferences \citep{gallop:minhas:2018}.
+To answer the question of ``who are my friends,'' we utilize a latent factor model (LFM) \citep{Hoff2005,Minhas2016a}. The LFM positions actors in a $k$ dimensional latent vector space based on third order dependence patterns. In this space, actors whose vectors point in similar dimensions are more likely to share similar preferences and be members of the same latent coalitions. The angles between these vectors then provides a measure of the extent to which the preferences and factional links are similar. %DIF < Given its ability to capture latent affinities between interconnected actors, LFM has been used to infer state foreign policy preferences \citep{gallop:minhas:2018}.
 \DIFaddbegin \DIFadd{Given its ability to capture latent affinities between interconnected actors, LFM has been used to infer state foreign policy preferences \mbox{%DIFAUXCMD
 \citep{gallop:minhas:2018}}\hspace{0pt}%DIFAUXCMD
 .
-}\DIFaddend 
+}\DIFaddend
 
 More formally, we conduct the analysis as follows. We treat our coappearance network as an $n\times n$ matrix, where $n$ denotes the number of elites, and the matrix cell $y_{ij}$ represents the number of coappearances between elite $i$ and elite $j$.\footnote{It should be noted that the coappearance data is symmetric and so $y_{ij}=y_{ji}$ for all $i,j$. The approach we describe below has already been generalized to the case where $y_{ij}\neq y_{ji}$.} To obtain the latent affinities between elites (i.e., a lower-dimension relational measure), we then have an LFM as follows,
 \begin{align}
@@ -372,7 +368,7 @@ to interact with one another.}
 \par\end{center}
 
 Comparing the similarity between two elites, $\{i,j\}$, can be accomplished by comparing the direction to which their respective factor vectors point. A commonly used metric for this sort of problem is the cosine of the angle formed by the latent vectors of both actors.\footnote{The method is well developed in the recommender system literature of computer science. It is calculated in the following way, where $u$ represents the $n\times k$ matrix of actor vectors, $\text{Latent angle distance}_{ij}=\frac{u_{i}\cdot u_{j}}{||u_{i}||\cdot||u_{j}||}*(-1)$. } We refer to this distance metric as latent angle distance. More concretely, if the estimated latent vectors of two actors are in the same direction, they are apt to have made appearances with similar partners. We measure this by looking at the absolute distance of the angles created by each officials position and the center of the latent network, and the results are plotted in Figure~\ref{fig:uv}. \DIFaddbegin \DIFadd{Our latent angle distance measure is bounded between -1 and 1, where higher values point towards greater dissimilarity in appearance patterns.
-}\DIFaddend 
+}\DIFaddend
 
 \noindent \begin{center}
 \begin{figure}[H]

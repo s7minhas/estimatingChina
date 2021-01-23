@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.27)  23 JAN 2021 11:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.27)  23 JAN 2021 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -469,7 +469,7 @@ LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 LaTeX Warning: Unused global option(s):
     [onesided,fullpage].
 
-No file revisionLetter.aux.
+(./revisionLetter.aux (./rev1.aux) (./rev2.aux))
 \openout1 = `revisionLetter.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -487,6 +487,7 @@ LaTeX Font Info:    ... okay on input line 40.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
+
 
 (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -574,6 +575,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 40.
 LaTeX Info: Redefining \pageref on input line 40.
 LaTeX Info: Redefining \nameref on input line 40.
+
+(./revisionLetter.out) (./revisionLetter.out)
 \@outlinefile=\write4
 \openout4 = `revisionLetter.out'.
 
@@ -624,35 +627,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 [4]) [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
- (./revisionLetter.aux (./rev1.aux) (./rev2.aux)
-
-Package mparhack Warning: Marginpars may have changed.
-(mparhack)                Rerun to get them right.
-
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 62.
-
-
-Package rerunfilecheck Warning: File `revisionLetter.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `revisionLetter.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  39173BCC118F5194B1FB12F28D751B88;221.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 62.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
+ (./revisionLetter.aux (./rev1.aux) (./rev2.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
+Package rerunfilecheck Info: File `revisionLetter.out' has not changed.
+(rerunfilecheck)             Checksum: 39173BCC118F5194B1FB12F28D751B88;221.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
  ) 
 Here is how much of TeX's memory you used:
- 8727 strings out of 492162
- 121461 string characters out of 6129062
- 225007 words of memory out of 5000000
- 12721 multiletter control sequences out of 15000+600000
+ 8744 strings out of 492162
+ 121675 string characters out of 6129062
+ 225944 words of memory out of 5000000
+ 12728 multiletter control sequences out of 15000+600000
  13160 words of font info for 52 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  40i,11n,45p,1259b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -664,10 +652,10 @@ ype1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmsl12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on revisionLetter.pdf (5 pages, 120667 bytes).
+Output written on revisionLetter.pdf (5 pages, 119849 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  18 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
