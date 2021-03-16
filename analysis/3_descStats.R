@@ -26,6 +26,8 @@ summStats = function(x,label){
 #######################################################
 # load original network
 load("cv_matrix.rda")
+
+#
 #######################################################
 
 #######################################################
@@ -42,30 +44,34 @@ vColor = rep('grey40', nrow(cv.mx2))
 vColor[rownames(cv.mx2)=='Xi Jinping'] = 'blue'
 vColor[rownames(cv.mx2)=='Li Keqiang'] = 'red'
 par(bg='transparent')
+
 # pdf(file=paste0(pathGraphics, 'dvViz.pdf'), width=12, height=12)
-pdf(file=paste0(pathGraphics, 'dvViz_names.pdf'), width=12, height=12)
-plot(g,
-	layout=layout_with_fr(g),
-	vertex.label.cex=.0001,
-	vertex.color='grey40',
-	vertex.size=vSize,
-	edge.width=eWidth,
-	edge.color='grey80',
-	asp=FALSE,
-	bg='transparent'
-	)
-dev.off()
-system(paste0('pdfcrop ', pathGraphics, 'dvViz.pdf ',  pathGraphics, 'dvViz.pdf') )
+# pdf(file=paste0(pathGraphics, 'dvViz_names.pdf'), width=12, height=12)
+# plot(g,
+# 	layout=layout_with_fr(g),
+# 	vertex.label.cex=.0001,
+# 	vertex.color='grey40',
+# 	vertex.size=vSize,
+# 	edge.width=eWidth,
+# 	edge.color='grey80',
+# 	asp=FALSE,
+# 	bg='transparent'
+# 	)
+# dev.off()
+# system(paste0('pdfcrop ', pathGraphics, 'dvViz.pdf ',  pathGraphics, 'dvViz.pdf') )
+
+pathGraphics = 'C:/Users/Owner/Dropbox/Research/EstimatingChina/prez/'
 
 set.seed(6886)
-pdf(file=paste0(pathGraphics, 'dvViz_names2.pdf'), width=12, height=12)
+pdf(file=paste0(pathGraphics, 'netForPreeze.pdf'), width=14, height=10)
 plot(g,
-	layout=layout_with_fr(g),
+	# layout=layout_with_fr(g),
+	layout=layout_nicely(g),
 	vertex.label.cex=rescale(degree(g), .8, .5),
-	vertex.color='grey40',
+	vertex.color='grey60',
 	vertex.size=.0001,
 	edge.width=eWidth,
-	edge.color='grey80',
+	edge.color='grey90',
   curved=TRUE,
 	asp=FALSE,
 	bg='transparent',
@@ -73,7 +79,8 @@ plot(g,
 	vertex.label.color='black'
 	)
 dev.off()
-system(paste0('pdfcrop ', pathGraphics, 'dvViz_names2.pdf ',  pathGraphics, 'dvViz_names2.pdf') )
+# system(paste0('pdfcrop ', pathGraphics, 'dvViz_names2.pdf ',  pathGraphics, 'dvViz_names2.pdf') )
+system(paste0('pdfcrop ', pathGraphics, 'netForPreeze.pdf ',  pathGraphics, 'netForPreeze.pdf') )
 #######################################################
 
 #######################################################
