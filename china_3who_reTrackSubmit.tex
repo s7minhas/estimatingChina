@@ -1,4 +1,7 @@
 \documentclass[11pt,english]{article}
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL china_3who_initSubmit.tex   Sat Jan 23 11:49:35 2021
+%DIF ADD china_3who_reSubmit.tex     Sat Jan 23 11:49:35 2021
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
 \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
@@ -28,7 +31,7 @@
 \usepackage{booktabs}
 \date{}
 \usepackage[ragged, bottom, multiple]{footmisc}
-\usepackage[colorlinks, urlcolor=blue, citecolor=blue, linkcolor=blue]{hyperref}
+\usepackage[colorlinks, urlcolor=black, citecolor=black, linkcolor=black]{hyperref}
 
 \@ifundefined{showcaptionsetup}{}{%
  \PassOptionsToPackage{caption=false}{subfig}}
@@ -36,6 +39,88 @@
 \makeatother
 
 \usepackage{babel}
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFaddtex}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdeltex}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+\providecommand{\DIFmodbegin}{} %DIF PREAMBLE
+\providecommand{\DIFmodend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF HYPERREF PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{\texorpdfstring{\DIFaddtex{#1}}{#1}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{\texorpdfstring{\DIFdeltex{#1}}{}} %DIF PREAMBLE
+\newcommand{\DIFscaledelfig}{0.5}
+%DIF HIGHLIGHTGRAPHICS PREAMBLE %DIF PREAMBLE
+\RequirePackage{settobox} %DIF PREAMBLE
+\RequirePackage{letltxmacro} %DIF PREAMBLE
+\newsavebox{\DIFdelgraphicsbox} %DIF PREAMBLE
+\newlength{\DIFdelgraphicswidth} %DIF PREAMBLE
+\newlength{\DIFdelgraphicsheight} %DIF PREAMBLE
+% store original definition of \includegraphics %DIF PREAMBLE
+\LetLtxMacro{\DIFOincludegraphics}{\includegraphics} %DIF PREAMBLE
+\newcommand{\DIFaddincludegraphics}[2][]{{\color{blue}\fbox{\DIFOincludegraphics[#1]{#2}}}} %DIF PREAMBLE
+\newcommand{\DIFdelincludegraphics}[2][]{% %DIF PREAMBLE
+\sbox{\DIFdelgraphicsbox}{\DIFOincludegraphics[#1]{#2}}% %DIF PREAMBLE
+\settoboxwidth{\DIFdelgraphicswidth}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\settoboxtotalheight{\DIFdelgraphicsheight}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\scalebox{\DIFscaledelfig}{% %DIF PREAMBLE
+\parbox[b]{\DIFdelgraphicswidth}{\usebox{\DIFdelgraphicsbox}\\[-\baselineskip] \rule{\DIFdelgraphicswidth}{0em}}\llap{\resizebox{\DIFdelgraphicswidth}{\DIFdelgraphicsheight}{% %DIF PREAMBLE
+\setlength{\unitlength}{\DIFdelgraphicswidth}% %DIF PREAMBLE
+\begin{picture}(1,1)% %DIF PREAMBLE
+\thicklines\linethickness{2pt} %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\framebox(1,1){}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\line( 1,1){1}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,1){\line(1,-1){1}}}% %DIF PREAMBLE
+\end{picture}% %DIF PREAMBLE
+}\hspace*{3pt}}} %DIF PREAMBLE
+} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbegin}{\DIFaddbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddend}{\DIFaddend} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbegin}{\DIFdelbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelend}{\DIFdelend} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbegin}{\DIFOaddbegin \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbegin}{\DIFOdelbegin \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbeginFL}{\DIFaddbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddendFL}{\DIFaddendFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbeginFL}{\DIFdelbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelendFL}{\DIFdelendFL} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbeginFL}{\DIFOaddbeginFL \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbeginFL}{\DIFOdelbeginFL \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+%DIF LISTINGS PREAMBLE %DIF PREAMBLE
+\RequirePackage{listings} %DIF PREAMBLE
+\RequirePackage{color} %DIF PREAMBLE
+\lstdefinelanguage{DIFcode}{ %DIF PREAMBLE
+%DIF DIFCODE_UNDERLINE %DIF PREAMBLE
+  moredelim=[il][\color{red}\sout]{\%DIF\ <\ }, %DIF PREAMBLE
+  moredelim=[il][\color{blue}\uwave]{\%DIF\ >\ } %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstdefinestyle{DIFverbatimstyle}{ %DIF PREAMBLE
+	language=DIFcode, %DIF PREAMBLE
+	basicstyle=\ttfamily, %DIF PREAMBLE
+	columns=fullflexible, %DIF PREAMBLE
+	keepspaces=true %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim}{\lstset{style=DIFverbatimstyle}}{} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim*}{\lstset{style=DIFverbatimstyle,showspaces=true}}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
 \begin{document}
 \begin{spacing}{1}
 
@@ -128,13 +213,16 @@ In this study, we argue that the problems listed above stem from the prevalence 
 
 \section*{Data}
 
-In this study, we rely on a unique database from the China Vitae project, which traces the public appearances of CCP elites. We focus on the time period between January 1 2013 and January 1 2017, which provides us with approximately 10,000 appearance records for over 200 elites. This allows us to systematically examine the elite power-sharing in Xi's first term. It should be noted that public appearances can provide important signals to both the general public and the regime insiders.  On the one hand, CCP elites are propelled to project an image of solidarity to the general public.  This is of critical importance to the overall regime stability as the party split in late 1980s led to the regime-challenging Tiananmen movement.  On the other hand, for the regime insiders, especially lower level officials peripheral to the power center, the public appearances of top elites serve to signal important policy and political changes, which in turn are key to factional struggles and policy implementations.   In other words, public appearances of CCP needs not only to be uniform enough to show the party unity, but also to be sufficiently differentiating so as to reveal underlying elite affinities and policy priorities.
+In this study, we rely on a unique database from the China Vitae project, which traces the public appearances of CCP elites. We focus on the time period between January 1 2013 and January 1 2017, which provides us with approximately 10,000 appearance records for over 200 elites. This allows us to systematically examine the elite power-sharing in Xi's first term. \DIFaddbegin \DIFadd{It should be noted that public appearances can provide important signals to both the general public and the regime insiders.  On the one hand, CCP elites are propelled to project an image of solidarity to the general public.  This is of critical importance to the overall regime stability as the party split in late 1980s led to the regime-challenging Tiananmen movement.  On the other hand, for the regime insiders, especially lower level officials peripheral to the power center, the public appearances of top elites serve to signal important policy and political changes, which in turn are key to factional struggles and policy implementations.   In other words, public appearances of CCP needs not only to be uniform enough to show the party unity, but also to be sufficiently differentiating so as to reveal underlying elite affinities and policy priorities.
+}
 
-Given these competing incentives, two kinds of organizing protocols emerged, that is, “by-rank-only” and “by-invitation-only.”  Most regular and ceremonial appearances like plenary sessions of the Central Committee (CC) follow the protocol of “by-rank-only.”  The attendance in these events are determined by formal party ranks (e.g., members of the CC Standing Committee, full CC members, and alternate CC members), and the extensive media coverage on these events help to present a unitary voice of the party.  In our following analysis, we did not include events based on the protocol of “by-rank-only” for two reasons.  First, our data has been collected in Xi’s first term, and there was no reshuffle in CC.  The attendance in these events, therefore, is largely uniform, conveying little information other than party ranks.  Second, despite their extensive media coverage, the number of these regular appearances is disproportionately small compared to events of “by-invitation-only.”  For instance, the CC plenary sessions run on annual basis, and there were only four occurrences in our dataset.
+\DIFadd{Given these competing incentives, two kinds of organizing protocols emerged, that is, “by-rank-only” and “by-invitation-only.”  Most regular and ceremonial appearances like plenary sessions of the Central Committee (CC) follow the protocol of “by-rank-only.”  The attendance in these events are determined by formal party ranks (e.g., members of the CC Standing Committee, full CC members, and alternate CC members), and the extensive media coverage on these events help to present a unitary voice of the party.  In our following analysis, we did not include events based on the protocol of “by-rank-only” for two reasons.  First, our data has been collected in Xi’s first term, and there was no reshuffle in CC.  The attendance in these events, therefore, is largely uniform, conveying little information other than party ranks.  Second, despite their extensive media coverage, the number of these regular appearances is disproportionately small compared to events of “by-invitation-only.”  For instance, the CC plenary sessions run on annual basis, and there were only four occurrences in our dataset.
+}
 
-Our study focuses on the events based on the protocol of “by-invitation-only,” which constitutes the large majority of public appearances of CCP elites but receives little public attention.  In sharp contrast to events of “by-rank-only,” there is no formal rules to organize these events, and the attendance is largely determined by key elites who are in charge of the specific policy domains.  For this reason, these events reflect critical political and policy changes in CCP.  To illustrate this, we can turn to two policy domains, Xinjiang and Tibet, which have 66 and 46 related entries respectively.  A closer look at these entries point to important policies differences and potential personnel changes.  Specifically, while Guo Shengkun, as the police chief, has attended multiple meetings and events related to Xinjiang, neither were invited to any meetings related to Tibet.  Similarly, Wang Yang, the Vice Premier overseeing rural affairs and poverty reduction, appeared in the Xinjiang meetings but not the Tibet ones.  On the other hand, we find Wang Yi, the Minister of Foreign Affairs, and Liu Qibao, the head of the CC Propaganda Department joined meetings related to Tibet but not Xinjiang.  Taking together, we can find these appearances help to revealing CCP’s striking policy differences in two seemingly similar domains.  While in Xinjiang CCP took an inward looking approach by focusing on public security and local economy, an outward looking approach is carried out in Tibet with the aim of winning international support.  Moreover, we find elites who were actively engaged in Xinjiang policies have gained important promotions.  In the reshuffle of the 19th CC in October 2017, Guo Shengkun was promoted to the full CC member, and Wang Yang to one of the seven members of the Politburo Standing Committee.
+\DIFadd{Our study focuses on the events based on the protocol of “by-invitation-only,” which constitutes the large majority of public appearances of CCP elites but receives little public attention.  In sharp contrast to events of “by-rank-only,” there is no formal rules to organize these events, and the attendance is largely determined by key elites who are in charge of the specific policy domains.  For this reason, these events reflect critical political and policy changes in CCP.  To illustrate this, we can turn to two policy domains, Xinjiang and Tibet, which have 66 and 46 related entries respectively.  A closer look at these entries point to important policies differences and potential personnel changes.  Specifically, while Guo Shengkun, as the police chief, has attended multiple meetings and events related to Xinjiang, neither were invited to any meetings related to Tibet.  Similarly, Wang Yang, the Vice Premier overseeing rural affairs and poverty reduction, appeared in the Xinjiang meetings but not the Tibet ones.  On the other hand, we find Wang Yi, the Minister of Foreign Affairs, and Liu Qibao, the head of the CC Propaganda Department joined meetings related to Tibet but not Xinjiang.  Taking together, we can find these appearances help to revealing CCP’s striking policy differences in two seemingly similar domains.  While in Xinjiang CCP took an inward looking approach by focusing on public security and local economy, an outward looking approach is carried out in Tibet with the aim of winning international support.  Moreover, we find elites who were actively engaged in Xinjiang policies have gained important promotions.  In the reshuffle of the 19th CC in October 2017, Guo Shengkun was promoted to the full CC member, and Wang Yang to one of the seven members of the Politburo Standing Committee.
+}
 
-Table~\ref{tab:eventDesc} presents a small sample of our dataset and reports the date, the event, and elites in attendance.\footnote{Further information about the event locations, topics raised, and sources are also available.} From Table~\ref{tab:eventDesc}, we show that our dataset captures how top CCP elites structured their power relationships via a variety of political activities, ranging from the civil-military unity meeting to the China-US summit. As argued above, these power foci constitute an interlocking network of events and elites, and Figure~\ref{fig:focinet} shows how the six events in Table~\ref{tab:eventDesc} could form a simple interlocking network. Since our main focus are relationships among elites, we then extract the elite coappearance network as shown in Figure~\ref{fig:appnet}, and such coappearance networks serve as the starting point of our later analyses.
+\DIFaddend Table~\ref{tab:eventDesc} presents a small sample of our dataset and reports the date, the event, and elites in attendance.\footnote{Further information about the event locations, topics raised, and sources are also available.} From Table~\ref{tab:eventDesc}, we show that our dataset captures how top CCP elites structured their power relationships via a variety of political activities, ranging from the civil-military unity meeting to the China-US summit. As argued above, these power foci constitute an interlocking network of events and elites, and Figure~\ref{fig:focinet} shows how the six events in Table~\ref{tab:eventDesc} could form a simple interlocking network. Since our main focus are relationships among elites, we then extract the elite coappearance network as shown in Figure~\ref{fig:appnet}, and such coappearance networks serve as the starting point of our later analyses.
 
 \noindent \begin{center}
 \begin{table}[H]
@@ -167,14 +255,22 @@ Table~\ref{tab:eventDesc} presents a small sample of our dataset and reports the
 \noindent \begin{center}
 \begin{figure}[H]
 \noindent \begin{centering}
-\subfloat[Foci network\label{fig:focinet}]{\noindent \begin{centering}
+\DIFdelbeginFL %DIFDELCMD < \subfloat[Foci network\label{fig:focinet}]{\noindent \begin{centering}
+%DIFDELCMD < \includegraphics[width=2.5in]{figure/data_fig1}
+%DIFDELCMD < \par\end{centering}
+%DIFDELCMD < }\subfloat[Appearance network\label{fig:appnet}]{\noindent \begin{centering}
+%DIFDELCMD < \includegraphics[width=2.5in]{figure/data_fig2}
+%DIFDELCMD < \par\end{centering}
+%DIFDELCMD < }
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \subfloat[Foci network\label{fig:focinet}]{\noindent \begin{centering}
 \includegraphics[width=2.5in]{data_fig1}
 \par\end{centering}
 }\subfloat[Appearance network\label{fig:appnet}]{\noindent \begin{centering}
 \includegraphics[width=2.5in]{data_fig2}
 \par\end{centering}
 }
-\par\end{centering}
+\DIFaddendFL \par\end{centering}
 \caption{The interlocking networks of power foci. In the right panel, nodes are scaled by the number of total appearances.}
 \end{figure}
 \par\end{center}
@@ -182,8 +278,10 @@ Table~\ref{tab:eventDesc} presents a small sample of our dataset and reports the
 \noindent \begin{center}
 \begin{figure}[H]
 \noindent \begin{centering}
-\includegraphics[width=1\textwidth]{freq}
-\par\end{centering}
+\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=1\textwidth]{figure/freq}
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=1\textwidth]{freq}
+\DIFaddendFL \par\end{centering}
 \caption{Total appearances (gray), Xi (red), and Li (blue). Dashed vertical lines denote the months of February and August and the dotted lines denote March and September.}
 \label{fig:freq}
 \end{figure}
@@ -196,17 +294,27 @@ In Figure~\ref{fig:coappFreqs}, we contrast two pairs of coappearances, Xi-Li an
 \noindent \begin{center}
 \begin{figure}[H]
 \noindent \begin{centering}
-\subfloat[Xi and Li\label{fig:Xi_Li}]{\noindent \begin{centering}
+\DIFdelbeginFL %DIFDELCMD < \subfloat[Xi and Li\label{fig:Xi_Li}]{\noindent \begin{centering}
+%DIFDELCMD < \includegraphics[width=.8\textwidth]{figure/Xi_Li}
+%DIFDELCMD < \par\end{centering}
+%DIFDELCMD < }
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \subfloat[Xi and Li\label{fig:Xi_Li}]{\noindent \begin{centering}
 \includegraphics[width=.8\textwidth]{Xi_Li}
 \par\end{centering}
 }
-\par\end{centering}
+\DIFaddendFL \par\end{centering}
 \noindent \begin{centering}
-\subfloat[Xi and Zhang\label{fig:Xi_ZG}]{\noindent \begin{centering}
+\DIFdelbeginFL %DIFDELCMD < \subfloat[Xi and Zhang\label{fig:Xi_ZG}]{\noindent \begin{centering}
+%DIFDELCMD < \includegraphics[width=.8\textwidth]{figure/Xi_ZG}
+%DIFDELCMD < \par\end{centering}
+%DIFDELCMD < }
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \subfloat[Xi and Zhang\label{fig:Xi_ZG}]{\noindent \begin{centering}
 \includegraphics[width=.8\textwidth]{Xi_ZG}
 \par\end{centering}
 }
-\par\end{centering}
+\DIFaddendFL \par\end{centering}
 \caption{Share of coappearances among total appearances for Xi (red) and Li and Zhang (blue).}
 \label{fig:coappFreqs}
 \end{figure}
@@ -216,8 +324,10 @@ Finally, we plot the complete coappearance network in Figure~\ref{fig:fullCoappN
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=.9\textwidth]{dvViz_names2}
-\caption{The complete coappearance network. Names of elites depicted in the network are scaled by their number of appearances and edges between actors indicate that they appeared together at an event.}
+\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=.9\textwidth]{figure/dvViz_names2}
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=.9\textwidth]{dvViz_names2}
+\DIFaddendFL \caption{The complete coappearance network. Names of elites depicted in the network are scaled by their number of appearances and edges between actors indicate that they appeared together at an event.}
 \label{fig:fullCoappNet}
 \end{figure}
 
@@ -225,7 +335,11 @@ Many such sub-groups like this appear in this visualization and this points to t
 
 \section*{Latent Factor Analysis}
 
-To answer the question of ``who are my friends,'' we utilize a latent factor model (LFM) \citep{Hoff2005,Minhas2016a}. The LFM positions actors in a $k$ dimensional latent vector space based on third order dependence patterns. In this space, actors whose vectors point in similar dimensions are more likely to share similar preferences and be members of the same latent coalitions. The angles between these vectors then provides a measure of the extent to which the preferences and factional links are similar. Given its ability to capture latent affinities between interconnected actors, LFM has been used to infer state foreign policy preferences \citep{gallop:minhas:2018}.
+To answer the question of ``who are my friends,'' we utilize a latent factor model (LFM) \citep{Hoff2005,Minhas2016a}. The LFM positions actors in a $k$ dimensional latent vector space based on third order dependence patterns. In this space, actors whose vectors point in similar dimensions are more likely to share similar preferences and be members of the same latent coalitions. The angles between these vectors then provides a measure of the extent to which the preferences and factional links are similar. %DIF < Given its ability to capture latent affinities between interconnected actors, LFM has been used to infer state foreign policy preferences \citep{gallop:minhas:2018}.
+\DIFaddbegin \DIFadd{Given its ability to capture latent affinities between interconnected actors, LFM has been used to infer state foreign policy preferences \mbox{%DIFAUXCMD
+\citep{gallop:minhas:2018}}\hspace{0pt}%DIFAUXCMD
+.
+}\DIFaddend
 
 More formally, we conduct the analysis as follows. We treat our coappearance network as an $n\times n$ matrix, where $n$ denotes the number of elites, and the matrix cell $y_{ij}$ represents the number of coappearances between elite $i$ and elite $j$.\footnote{It should be noted that the coappearance data is symmetric and so $y_{ij}=y_{ji}$ for all $i,j$. The approach we describe below has already been generalized to the case where $y_{ij}\neq y_{ji}$.} To obtain the latent affinities between elites (i.e., a lower-dimension relational measure), we then have an LFM as follows,
 \begin{align}
@@ -238,32 +352,43 @@ where $u_{i}\in{\rm I\!R^{k}}$ and $\Lambda$ is $k\times k$ diagonal matrix. $f(
 
 The LFM accounts for network interdependencies is by decomposing the error term $Z$. \citet{Hoff2008} notes that we can write $Z=M+E$, where the matrix $E$ represents noise, and $M$ is systematic effects representing first and third order dependencies. We factorize the multiplicative effects into the product of two simpler matrices, $U\Lambda U^{\top}$. Under this framework a vector of latent characteristics are thus estimated for each actor, $u_{i}=\{u_{i,1},\ldots,u_{i,k}\}$. Similarity in the latent factors between two actors, $u_{i}\approx u_{j}$, corresponds to how stochastically equivalent they are and the diagonal entries in $\Lambda$, $\lambda_{k}>0$ or $\lambda_{k}<0$, determine the level of homophily (or heterophily) in the network \citep{Minhas2016a}.
 
-For our interest in latent affinity, the key output is $U\Lambda U^{\top}$, where $U$ is an $n\times k$ matrix that represents each actors vector in the $k$-dimensional latent network.\footnote{We estimate a 2-dimensional latent factor space for our application.} It captures the effect of stochastic equivalence and homophily on official appearances. But a caveat in interpreting this space is that it is non-Euclidean, as the actor vectors are embedded within a $k$-dimensional hyper sphere. We thus cannot simply use distances in this space as a measure of latent affinities. Rather, the important measure here is an actor's vector in this space, and the similarity between the vector of one actor and another.
+For our interest in latent affinity, the key output is $U\Lambda U^{\top}$, where $U$ is an $n\times k$ matrix that represents each actors vector in the $k$-dimensional latent network.\DIFaddbegin \footnote{\DIFadd{We estimate a 2-dimensional latent factor space for our application.}} \DIFaddend It captures the effect of stochastic equivalence and homophily on official appearances. But a caveat in interpreting this space is that it is non-Euclidean, as the actor vectors are embedded within a $k$-dimensional hyper sphere. We thus cannot simply use distances in this space as a measure of latent affinities. Rather, the important measure here is an actor's vector in this space, and the similarity between the vector of one actor and another.
 
 \noindent \begin{center}
 \begin{figure}[H]
 \noindent \begin{centering}
-\includegraphics[width=5in]{uViz}
-\par\end{centering}
+\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=5in]{figure/uViz}
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=5in]{uViz}
+\DIFaddendFL \par\end{centering}
 \caption{Visualization of the AME latent factor space. Actors that cluster together in this space are more likely
 to interact with one another.}
 \label{fig:uv}
 \end{figure}
 \par\end{center}
 
-Comparing the similarity between two elites, $\{i,j\}$, can be accomplished by comparing the direction to which their respective factor vectors point. A commonly used metric for this sort of problem is the cosine of the angle formed by the latent vectors of both actors.\footnote{The method is well developed in the recommender system literature of computer science. It is calculated in the following way, where $u$ represents the $n\times k$ matrix of actor vectors, $\text{Latent angle distance}_{ij}=\frac{u_{i}\cdot u_{j}}{||u_{i}||\cdot||u_{j}||}*(-1)$. } We refer to this distance metric as latent angle distance. More concretely, if the estimated latent vectors of two actors are in the same direction, they are apt to have made appearances with similar partners. We measure this by looking at the absolute distance of the angles created by each officials position and the center of the latent network, and the results are plotted in Figure~\ref{fig:uv}. Our latent angle distance measure is bounded between -1 and 1, where higher values point towards greater dissimilarity in appearance patterns.
+Comparing the similarity between two elites, $\{i,j\}$, can be accomplished by comparing the direction to which their respective factor vectors point. A commonly used metric for this sort of problem is the cosine of the angle formed by the latent vectors of both actors.\footnote{The method is well developed in the recommender system literature of computer science. It is calculated in the following way, where $u$ represents the $n\times k$ matrix of actor vectors, $\text{Latent angle distance}_{ij}=\frac{u_{i}\cdot u_{j}}{||u_{i}||\cdot||u_{j}||}*(-1)$. } We refer to this distance metric as latent angle distance. More concretely, if the estimated latent vectors of two actors are in the same direction, they are apt to have made appearances with similar partners. We measure this by looking at the absolute distance of the angles created by each officials position and the center of the latent network, and the results are plotted in Figure~\ref{fig:uv}. \DIFaddbegin \DIFadd{Our latent angle distance measure is bounded between -1 and 1, where higher values point towards greater dissimilarity in appearance patterns.
+}\DIFaddend
 
 \noindent \begin{center}
 \begin{figure}[H]
 \noindent \begin{centering}
-\subfloat[18th Poliburo (2012-17)\label{fig:uv18}]{\noindent \begin{centering}
+\DIFdelbeginFL %DIFDELCMD < \subfloat[18th Poliburo (2012-17)\label{fig:uv18}]{\noindent \begin{centering}
+%DIFDELCMD < \includegraphics[width=3.25in]{figure/politSC18}
+%DIFDELCMD < \par\end{centering}
+%DIFDELCMD < }\subfloat[19th Poliburo (2017-)\label{fig:uv19}]{\noindent \begin{centering}
+%DIFDELCMD < \includegraphics[width=3.25in]{figure/politSC19}
+%DIFDELCMD < \par\end{centering}
+%DIFDELCMD < }
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \subfloat[18th Poliburo (2012-17)\label{fig:uv18}]{\noindent \begin{centering}
 \includegraphics[width=3.25in]{politSC18}
 \par\end{centering}
 }\subfloat[19th Poliburo (2017-)\label{fig:uv19}]{\noindent \begin{centering}
 \includegraphics[width=3.25in]{politSC19}
 \par\end{centering}
 }
-\par\end{centering}
+\DIFaddendFL \par\end{centering}
 \caption{Slices of the latent factor network with key actors highlighted from the 18th and 19th Politburo.}
 \label{fig:uvSlices}
 \end{figure}
@@ -278,8 +403,10 @@ To provide a more robust test of the validity of our approach, we examine elite 
 \noindent \begin{center}
 \begin{figure}[H]
 \noindent \begin{centering}
-\includegraphics[width=3.5in]{LSG_full}
-\par\end{centering}
+\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=3.5in]{figure/LSG_full}
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=3.5in]{LSG_full}
+\DIFaddendFL \par\end{centering}
 \caption{The Central Committee (CC) and the State Council (SC) LSGs.}
 \label{fig:lsgNet}
 \end{figure}
@@ -322,8 +449,10 @@ In Figure~\ref{fig:effects}, we show the expected number of LSGs an elite with a
 \noindent \begin{center}
 \begin{figure}[H]
 \noindent \begin{centering}
-\includegraphics[width=1\textwidth]{effects}
-\par\end{centering}
+\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=1\textwidth]{figure/effects}
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=1\textwidth]{effects}
+\DIFaddendFL \par\end{centering}
 \caption{Estimated effect on number of LSG appointments based on latent distance to Xi.}
 \label{fig:effects}
 \end{figure}
@@ -395,7 +524,7 @@ In this study, we propose a latent factor framework to exploring elite networks.
 
 By introducing this framework, our study presents a possible avenue to synthesize different aspects of elite power-sharing in authoritarian regimes. It not only encompasses positional status of individual elites, but also incorporates how they are interrelated. This allows us to develop a systematic view about the inherent and uneasy tensions among authoritarian elites. As long noted by \citet{Pye1995}, ``Chinese politics operated in an atmosphere of tension in which everyone sensed the need always to be careful and calculating about what was done or said'' (p. 36). The three who questions proposed in this study then help highlight their key heuristics. Particularly, our emphasis on the question of ``who are our friends'' suggests that we need to move beyond just examining the direct ties actors share.
 
-Last, studies of elite politics in authoritarian regimes have also been long plagued with data paucity. Our study points to an alternative data source, appearance data, that could complement existing data like media coverage and biographical archives. Such data not only is dynamic, it also sheds light on the actual realization of power relationship as emphasized by \citet{Dahl1961}. As a preliminary exploration, our study is inevitably limited, and more systematic are called for to improve collection and analysis of such data.  First, in approximating the latent affinities among CCP elites, we treat their appearances between 2013 and 2017 as cross-sectional, which could mask temporal shifts.  With more systematic data collection, future studies can benefit from longitudinal explorations of the evolution of the CCP elite network.  Second, we focus mainly on the latent relationship between the CCP elites.  This leaves a number of avenues for future research:  For example, is attendance at some events more important than others?  Is attendance at some events conducive to a future promotion?  Future studies can also benefit from adopting a bipartite framework, simultaneously looking at the characteristics and latent positions of both events and elites.  Finally, we could also develop a better understanding of elite politics by disentangling the relationship between elites' public appearances and nodal characteristics such as home province, educational institutions, and previous work experience.
+Last, studies of elite politics in authoritarian regimes have also been long plagued with data paucity. Our study points to an alternative data source, appearance data, that could complement existing data like media coverage and biographical archives. Such data not only is dynamic, it also sheds light on the actual realization of power relationship as emphasized by \citet{Dahl1961}. As a preliminary exploration, our study is inevitably limited, and more systematic are called for to improve collection and analysis of such data\DIFaddbegin \DIFadd{.  First, in approximating the latent affinities among CCP elites, we treat their appearances between 2013 and 2017 as cross-sectional, which could mask temporal shifts.  With more systematic data collection, future studies can benefit from longitudinal explorations of the evolution of the CCP elite network.  Second, we focus mainly on the latent relationship between the CCP elites.  This leaves a number of avenues for future research:  For example, is attendance at some events more important than others?  Is attendance at some events conducive to a future promotion?  Future studies can also benefit from adopting a bipartite framework, simultaneously looking at the characteristics and latent positions of both events and elites.  Finally, we could also develop a better understanding of elite politics by disentangling the relationship between elites' public appearances and nodal characteristics such as home province, educational institutions, and previous work experience}\DIFaddend .
 
 \newpage{}
 
