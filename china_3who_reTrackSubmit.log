@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.27)  23 JAN 2021 11:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.27)  23 JAN 2021 11:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"china_3whos_0423_social network.tex"
-(./china_3whos_0423_social network.tex
+**china_3who_reTrackSubmit.tex
+(./china_3who_reTrackSubmit.tex
 LaTeX2e <2019-10-01> patch level 3
 (c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/10/25 v1.4k Standard LaTeX document class
@@ -423,23 +423,84 @@ Package babel Info: \l@australian = using hyphenrules for ukenglish
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (babel)             (\language21) on input line 108.
 ))
-(./china_3whos_0423_social network.aux)
-\openout1 = `"china_3whos_0423_social network.aux"'.
+(c:/texlive/2019/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box33
+\UL@hyphenbox=\box34
+\UL@skip=\skip58
+\UL@hook=\toks27
+\UL@height=\dimen152
+\UL@pe=\count134
+\UL@pixel=\dimen153
+\ULC@box=\box35
+Package: ulem 2019/11/18
+\ULdepth=\dimen154
+)
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+(c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/settobox.sty
+Package: settobox 2016/05/16 v1.5 Assign box dimensions to length registers (HO
+)
+)
+\DIFdelgraphicsbox=\box36
+\DIFdelgraphicswidth=\skip59
+\DIFdelgraphicsheight=\skip60
+LaTeX Info: Redefining \DIFaddbegin on input line 94.
+LaTeX Info: Redefining \DIFaddend on input line 95.
+LaTeX Info: Redefining \DIFdelbegin on input line 96.
+LaTeX Info: Redefining \DIFdelend on input line 97.
+LaTeX Info: Redefining \DIFaddbeginFL on input line 102.
+LaTeX Info: Redefining \DIFaddendFL on input line 103.
+LaTeX Info: Redefining \DIFdelbeginFL on input line 104.
+LaTeX Info: Redefining \DIFdelendFL on input line 105.
+
+(c:/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count135
+\lst@gtempboxa=\box37
+\lst@token=\toks28
+\lst@length=\count136
+\lst@currlwidth=\dimen155
+\lst@column=\count137
+\lst@pos=\count138
+\lst@lostspace=\dimen156
+\lst@width=\dimen157
+\lst@newlines=\count139
+\lst@lineno=\count140
+\lst@maxwidth=\dimen158
+
+(c:/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count141
+\lst@skipnumbers=\count142
+\lst@framebox=\box38
+)
+(c:/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
+(./china_3who_reTrackSubmit.aux)
+\openout1 = `china_3who_reTrackSubmit.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -477,17 +538,17 @@ LaTeX Font Info:    ... okay on input line 39.
 
 (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count134
-\scratchdimen=\dimen152
-\scratchbox=\box33
-\nofMPsegments=\count135
-\nofMParguments=\count136
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count137
-\MPscratchDim=\dimen153
-\MPnumerator=\count138
-\makeMPintoPDFobject=\count139
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count143
+\scratchdimen=\dimen159
+\scratchbox=\box39
+\nofMPsegments=\count144
+\nofMParguments=\count145
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count146
+\MPscratchDim=\dimen160
+\MPnumerator=\count147
+\makeMPintoPDFobject=\count148
+\everyMPtoPDFconversion=\toks30
 ) (c:/texlive/2019/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -497,17 +558,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box34
-
-(c:/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
-
-(c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 147.
-)
-Package hyperref Info: Link coloring ON on input line 39.
+\AtBeginShipoutBox=\box40
+Package hyperref Info: Link coloring ON on input line 124.
 
 (c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -518,155 +570,158 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (c:/texlive/2019/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count140
+\c@section@level=\count149
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
-LaTeX Info: Redefining \nameref on input line 39.
+LaTeX Info: Redefining \ref on input line 124.
+LaTeX Info: Redefining \pageref on input line 124.
+LaTeX Info: Redefining \nameref on input line 124.
 
-(./china_3whos_0423_social network.out) (./china_3whos_0423_social network.out)
+(./china_3who_reTrackSubmit.out) (./china_3who_reTrackSubmit.out)
 \@outlinefile=\write3
-\openout3 = `"china_3whos_0423_social network.out"'.
+\openout3 = `china_3who_reTrackSubmit.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for OMS+aer on input line 6
-0.
+\c@lstlisting=\count150
+LaTeX Font Info:    Trying to load font information for OMS+aer on input line 1
+45.
+
 (c:/texlive/2019/texmf-dist/tex/latex/ae/omsaer.fd
 File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 145.
 
 
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 145.
 [1
 
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-\myfootnotesep=\skip58
+\myfootnotesep=\skip61
  [2] [3]
 [4] [5] [6] [7] [8] [9] [10] [11]
-LaTeX Font Info:    Trying to load font information for T1+aett on input line 1
-50.
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 2
+38.
 
 (c:/texlive/2019/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []|\T1/aett/m/n/10 Vice-Chairman of the Cen-tral Mil-i-tary
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 \T1/aett/m/n/10 Com-mis-sion calls for ef-forts to pro-mote
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 \T1/aett/m/n/10 unity among army, gov-ern-ment and the peo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 240--240
 []|\T1/aett/m/n/10 Xi Jin-ping urges #CPC to ac-cept crit-i-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 240--240
 \T1/aett/m/n/10 cism and be re-cep-tive to the views of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 []|\T1/aett/m/n/10 Xi Jin-ping, Li Ke-qing, Yu
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 242--242
 []|\T1/aett/m/n/10 Xi Jin-ping en-dorses work of Hong Kong
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 []|\T1/aett/m/n/10 Xi Jin-ping, Zhang De-jiang,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--156
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []|\T1/aett/m/n/10 Premier stresses fore-sight in eco-nomic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 []|\T1/aett/m/n/10 Li Ke-qiang, Zhang Gaoli, Ma
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--158
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
 []|\T1/aett/m/n/10 Chinese Pre-mier vis-its memo-rial of Ma-
  []
 
-<data_fig1.pdf, id=242, 346.29375pt x 317.84099pt>
+<data_fig1.pdf, id=243, 346.29375pt x 317.84099pt>
 File: data_fig1.pdf Graphic file (type pdf)
 <use data_fig1.pdf>
-Package pdftex.def Info: data_fig1.pdf  used on input line 173.
+Package pdftex.def Info: data_fig1.pdf  used on input line 269.
 (pdftex.def)             Requested size: 180.67499pt x 165.83113pt.
-<data_fig2.pdf, id=243, 346.29375pt x 317.84099pt>
+<data_fig2.pdf, id=244, 346.29375pt x 317.84099pt>
 File: data_fig2.pdf Graphic file (type pdf)
 <use data_fig2.pdf>
-Package pdftex.def Info: data_fig2.pdf  used on input line 176.
+Package pdftex.def Info: data_fig2.pdf  used on input line 272.
 (pdftex.def)             Requested size: 180.67499pt x 165.83113pt.
 [12 <./data_fig1.pdf> <./data_fig2.pdf>]
-<freq.pdf, id=262, 505.89pt x 216.81pt>
+<freq.pdf, id=263, 505.89pt x 216.81pt>
 File: freq.pdf Graphic file (type pdf)
 <use freq.pdf>
-Package pdftex.def Info: freq.pdf  used on input line 185.
+Package pdftex.def Info: freq.pdf  used on input line 283.
 (pdftex.def)             Requested size: 469.75502pt x 201.32684pt.
 
-Overfull \hbox (2.43086pt too wide) in paragraph at lines 184--186
-  [] 
+Overfull \hbox (9.23085pt too wide) in paragraph at lines 280--284
+  [][][] 
  []
 
 [13 <./freq.pdf>]
-<Xi_Li.pdf, id=290, 505.89pt x 216.81pt>
+<Xi_Li.pdf, id=291, 505.89pt x 216.81pt>
 File: Xi_Li.pdf Graphic file (type pdf)
 <use Xi_Li.pdf>
-Package pdftex.def Info: Xi_Li.pdf  used on input line 202.
+Package pdftex.def Info: Xi_Li.pdf  used on input line 305.
 (pdftex.def)             Requested size: 375.80544pt x 161.06213pt.
-<Xi_ZG.pdf, id=291, 505.89pt x 216.81pt>
+<Xi_ZG.pdf, id=292, 505.89pt x 216.81pt>
 File: Xi_ZG.pdf Graphic file (type pdf)
 <use Xi_ZG.pdf>
-Package pdftex.def Info: Xi_ZG.pdf  used on input line 208.
+Package pdftex.def Info: Xi_ZG.pdf  used on input line 316.
 (pdftex.def)             Requested size: 375.80544pt x 161.06213pt.
  [14 <./Xi_Li.pdf> <./Xi_ZG.pdf>]
-<dvViz_names2.pdf, id=311, 753.81625pt x 686.565pt>
+<dvViz_names2.pdf, id=312, 753.81625pt x 686.565pt>
 File: dvViz_names2.pdf Graphic file (type pdf)
 <use dvViz_names2.pdf>
-Package pdftex.def Info: dvViz_names2.pdf  used on input line 219.
+Package pdftex.def Info: dvViz_names2.pdf  used on input line 329.
 (pdftex.def)             Requested size: 422.77664pt x 385.04996pt.
  [15] [16 <./dvViz_names2.pdf>]
 <uViz.pdf, id=355, 578.16pt x 578.16pt>
 File: uViz.pdf Graphic file (type pdf)
 <use uViz.pdf>
-Package pdftex.def Info: uViz.pdf  used on input line 246.
+Package pdftex.def Info: uViz.pdf  used on input line 362.
 (pdftex.def)             Requested size: 361.34999pt x 361.3491pt.
  [17] [18 <./uViz.pdf>]
 <politSC18.pdf, id=385, 433.62pt x 433.62pt>
 File: politSC18.pdf Graphic file (type pdf)
 <use politSC18.pdf>
-Package pdftex.def Info: politSC18.pdf  used on input line 262.
+Package pdftex.def Info: politSC18.pdf  used on input line 387.
 (pdftex.def)             Requested size: 234.87749pt x 234.87912pt.
 <politSC19.pdf, id=386, 433.62pt x 433.62pt>
 File: politSC19.pdf Graphic file (type pdf)
 <use politSC19.pdf>
-Package pdftex.def Info: politSC19.pdf  used on input line 265.
+Package pdftex.def Info: politSC19.pdf  used on input line 390.
 (pdftex.def)             Requested size: 234.87749pt x 234.87912pt.
 
-Overfull \hbox (24.30862pt too wide) in paragraph at lines 258--266
+Overfull \hbox (37.9086pt too wide) in paragraph at lines 375--391
   [][][][] 
  []
 
@@ -674,65 +729,65 @@ Overfull \hbox (24.30862pt too wide) in paragraph at lines 258--266
 <LSG_full.pdf, id=434, 361.35pt x 361.35pt>
 File: LSG_full.pdf Graphic file (type pdf)
 <use LSG_full.pdf>
-Package pdftex.def Info: LSG_full.pdf  used on input line 281.
+Package pdftex.def Info: LSG_full.pdf  used on input line 408.
 (pdftex.def)             Requested size: 252.94499pt x 252.94327pt.
  [20]
-Overfull \hbox (4.25835pt too wide) detected at line 299
+Overfull \hbox (4.25835pt too wide) detected at line 426
 $\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 16)$ 
  []
 
 
-Overfull \hbox (4.25835pt too wide) detected at line 299
+Overfull \hbox (4.25835pt too wide) detected at line 426
 $\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 17)$ 
  []
 
 
-Overfull \hbox (4.25835pt too wide) detected at line 300
+Overfull \hbox (4.25835pt too wide) detected at line 427
 $\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 18)$ 
  []
 
 
-Overfull \hbox (13.25018pt too wide) detected at line 300
+Overfull \hbox (13.25018pt too wide) detected at line 427
 $\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 01[]$ 
  []
 
 
-Overfull \hbox (4.75006pt too wide) detected at line 300
+Overfull \hbox (4.75006pt too wide) detected at line 427
 $\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 02[]$ 
  []
 
 
-Overfull \hbox (9.00012pt too wide) detected at line 301
+Overfull \hbox (9.00012pt too wide) detected at line 428
 $\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 01[]$ 
  []
 
 
-Overfull \hbox (4.25835pt too wide) detected at line 301
+Overfull \hbox (4.25835pt too wide) detected at line 428
 $\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 00)$ 
  []
 
 
-Overfull \hbox (4.25835pt too wide) detected at line 301
+Overfull \hbox (4.25835pt too wide) detected at line 428
 $\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 01)$ 
  []
 
 
-Overfull \hbox (4.25835pt too wide) detected at line 304
+Overfull \hbox (4.25835pt too wide) detected at line 431
 $\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 00)$ 
  []
 
 
-Overfull \hbox (4.25835pt too wide) detected at line 305
+Overfull \hbox (4.25835pt too wide) detected at line 432
 $\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 07)$ 
  []
 
 
-Overfull \hbox (13.25018pt too wide) detected at line 307
+Overfull \hbox (13.25018pt too wide) detected at line 434
 $\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 80[]$ 
  []
 
 
-Overfull \hbox (4.25835pt too wide) detected at line 312
+Overfull \hbox (4.25835pt too wide) detected at line 439
 $\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 28)$ 
  []
 
@@ -740,93 +795,93 @@ $\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 28)$
 <effects.pdf, id=454, 578.16pt x 289.08pt>
 File: effects.pdf Graphic file (type pdf)
 <use effects.pdf>
-Package pdftex.def Info: effects.pdf  used on input line 325.
+Package pdftex.def Info: effects.pdf  used on input line 454.
 (pdftex.def)             Requested size: 469.75502pt x 234.8769pt.
 
-Overfull \hbox (2.43086pt too wide) in paragraph at lines 324--326
-  [] 
+Overfull \hbox (9.23085pt too wide) in paragraph at lines 451--455
+  [][][] 
  []
 
 [22 <./effects.pdf>] [23]
-Overfull \hbox (12.79169pt too wide) detected at line 370
+Overfull \hbox (12.79169pt too wide) detected at line 499
 $\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05[]$ 
  []
 
 
-Overfull \hbox (12.79169pt too wide) detected at line 370
+Overfull \hbox (12.79169pt too wide) detected at line 499
 $\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 06[]$ 
  []
 
 
-Overfull \hbox (3.8889pt too wide) detected at line 371
+Overfull \hbox (3.8889pt too wide) detected at line 500
 $\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 02)$ 
  []
 
 
-Overfull \hbox (3.8889pt too wide) detected at line 371
+Overfull \hbox (3.8889pt too wide) detected at line 500
 $\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 00)$ 
  []
 
 
-Overfull \hbox (3.8889pt too wide) detected at line 371
+Overfull \hbox (3.8889pt too wide) detected at line 500
 $\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 02)$ 
  []
 
 
-Overfull \hbox (3.8889pt too wide) detected at line 372
+Overfull \hbox (3.8889pt too wide) detected at line 501
 $\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 00)$ 
  []
 
 
-Overfull \hbox (8.69446pt too wide) detected at line 372
+Overfull \hbox (8.69446pt too wide) detected at line 501
 $\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 62[]$ 
  []
 
 
-Overfull \hbox (3.8889pt too wide) detected at line 373
+Overfull \hbox (3.8889pt too wide) detected at line 502
 $\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 29)$ 
  []
 
 
-Overfull \hbox (3.8889pt too wide) detected at line 373
+Overfull \hbox (3.8889pt too wide) detected at line 502
 $\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 23)$ 
  []
 
 
-Overfull \hbox (12.79169pt too wide) detected at line 375
+Overfull \hbox (12.79169pt too wide) detected at line 504
 $\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 86[]$ 
  []
 
 
-Overfull \hbox (3.8889pt too wide) detected at line 375
+Overfull \hbox (3.8889pt too wide) detected at line 504
 $\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 36)$ 
  []
 
 
-Overfull \hbox (3.8889pt too wide) detected at line 376
+Overfull \hbox (3.8889pt too wide) detected at line 505
 $\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 40)$ 
  []
 
-[24] [25] (./china_3whos_0423_social network.bbl [26] [27] [28])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 410.
- [29]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 410.
+[24] [25] [26] (./china_3who_reTrackSubmit.bbl [27] [28] [29])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 539.
+ [30]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 539.
 
-(./china_3whos_0423_social network.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 410.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 410.
-Package rerunfilecheck Info: File `"china_3whos_0423_social network".out' has n
-ot changed.
+(./china_3who_reTrackSubmit.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 539.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 539.
+Package rerunfilecheck Info: File `china_3who_reTrackSubmit.out' has not change
+d.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9796 strings out of 492162
- 145328 string characters out of 6129062
- 263456 words of memory out of 5000000
- 13790 multiletter control sequences out of 15000+600000
- 51219 words of font info for 102 fonts, out of 8000000 for 9000
+ 11272 strings out of 492162
+ 165804 string characters out of 6129062
+ 315401 words of memory out of 5000000
+ 15245 multiletter control sequences out of 15000+600000
+ 51325 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,11n,49p,1901b,659s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,11n,49p,1879b,661s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2019/texmf-
@@ -842,12 +897,11 @@ nts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
->
-Output written on "china_3whos_0423_social network.pdf" (29 pages, 387551 bytes
-).
+><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy6.pfb>
+Output written on china_3who_reTrackSubmit.pdf (30 pages, 398289 bytes).
 PDF statistics:
- 599 PDF objects out of 1000 (max. 8388607)
- 521 compressed objects within 6 object streams
- 125 named destinations out of 1000 (max. 500000)
+ 606 PDF objects out of 1000 (max. 8388607)
+ 526 compressed objects within 6 object streams
+ 126 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
